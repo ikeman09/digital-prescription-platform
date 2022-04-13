@@ -3,13 +3,19 @@
 <html>
     <head>
         <title>Me and PHP</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     
     <body>
-        <?php
-            // handson1: my first PHP program
-            print "<h1>This is my first PHP program.</h1>";
-            print "But <b>not</b> my last!";
-        ?>
+        <div id="bar">
+            <div id="logo">
+                <img src="prescription-logo.png">
+            </div>
+        </div>
+        <div id="content">
+            fsjsasahjk
+        </div>
+        
+        
     </body>
 </html>
