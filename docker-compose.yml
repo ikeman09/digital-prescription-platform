@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: school-php
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - ${PHP_PORT}:80
+    restart: always
+
+  db:
+    container_name: school-mariadb
+    env_file:
+      - .env
+    image: mariadb:10.3
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"
+  phpmyadmin:
+    image: phpmyadmin
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - "${PHPMYADMIN_PORT}:80"
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+    depends_on:
+      - db
+
