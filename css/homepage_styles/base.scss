@@ -1,0 +1,37 @@
+@import "./variables";
+
+html {
+  font-size: 3.5vw; // scale down
+  font-family: 'Roboto', sans-serif;
+  color: $color-black-text;
+  line-height: 1.5rem;
+
+  @media (min-width: $breakpoint-iphone6) {
+    font-size: 95%;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 100%; // defaults to 16px
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+.desktop-maxwidth {
+  @include desktop-maxwidth;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding: 20px 0;
+
+  @media (min-width: $breakpoint-tablet) {
+
+  }
+}
+
+.white-text {
+  color: $color-white-text;
+}

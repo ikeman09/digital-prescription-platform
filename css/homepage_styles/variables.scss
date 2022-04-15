@@ -1,0 +1,75 @@
+
+/*
+BREAKPOINTS from MaterialUI
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 960px
+lg, large: 1280px
+xl, extra-large: 1920px
+ */
+
+$breakpoint-xs: 320px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+
+$breakpoint-iphone6: 375px;
+
+$breakpoint-phone: $breakpoint-xs;
+$breakpoint-tablet: $breakpoint-md;
+$breakpoint-desktop: $breakpoint-lg;
+
+$site-maxwidth: $breakpoint-xl;
+$maxwidth: 1140px;
+
+@mixin desktop-maxwidth {
+  max-width: $maxwidth;
+  margin: 0 auto;
+}
+
+@mixin section-padding {
+  padding: 30px 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 60px 20px;
+  }
+}
+
+@mixin cell-padding {
+  padding: 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 20px;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 10px 14px 0 rgba(0,0,0,.25);
+}
+
+/* --- FONTS --- */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local('Roboto'), url(../../assets/font/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto-Bold'), url(../../assets/font/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Italic';
+  font-style: normal;
+  src: local('Roboto-Italic'), url(../../assets/font/Roboto/Roboto-Italic.ttf) format('truetype');
+}
+
+/* --- COLORS --- */
+$color-primary-blue: #007BFF;
+$color-primary-gray: #C4C4C4;
+
+$color-black-text: #000000;
+$color_white-text: #FFFFFF;
+$color-crystal_blue: #49A0AE;
