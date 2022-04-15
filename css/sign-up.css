@@ -1,0 +1,116 @@
+body{
+    max-width: 400px;
+    margin: auto;
+}
+
+p{
+    font-family: Roboto-Light;
+    font-size: medium;
+}
+
+p#back{
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+p#button{
+    margin: auto;
+}
+
+div#box{
+    width: 400px;
+    height: 100%;
+    background-color: #fffafa;
+}
+
+div#bar{
+    background-color: #007BFF;
+    height: 11%;
+    position: static;
+}
+
+div#logo{
+    text-align: center;
+}
+
+img{
+    margin-top: -5%;
+    height: 150%;
+
+}
+
+div#content{
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    font-family: Roboto-Light;
+    margin-top: 10%;
+    font-size: 1.4rem;
+}
+
+div#log-in{
+    width: 400px;
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+p#log-in-here{
+    text-align: center;
+}
+
+p#log-in-here a{
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+button{
+    width: 80%;
+    height: 16%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: x-large;
+    box-shadow: 0 8px 9px #d3d3d3;
+    margin:auto;
+    display:block;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        background-color: #fffafa;
+    }
+    p{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div#forgot-pwd{
+        width: 400px;
+    }
+
+    div#sign-up{
+        width: 400px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}

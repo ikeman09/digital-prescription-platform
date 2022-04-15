@@ -1,0 +1,210 @@
+body{
+    max-width: 400px;
+    margin: auto;
+}
+
+div#box{
+    width: 400px;
+    height: 100%;
+    background-color: #fffafa;
+}
+
+div#bar{
+    background-color: #007BFF;
+    height: 11%;
+    position: static;
+}
+
+div#logo{
+    text-align: center;
+}
+
+img{
+    margin-top: -5%;
+    height: 150%;
+}
+
+img#shake-hands{
+    margin-top: 10%;
+    height: 15%;
+    width: 45%;
+}
+
+p{
+    font-family: Roboto-Light;
+}
+
+p#back{
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+p#bold{
+    font-family: Roboto-Light;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+p#bold2{
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    color: #808080;
+}
+
+p#good{
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    color: #808080;
+}
+
+span#blue{
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+span#blue2{
+    font-family: Roboto-Medium;
+    font-size: 25px;
+    color: #007BFF;
+}
+
+p#smaller{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin: 0% 10% 5% 8%;
+    color: #808080;
+}
+
+p#inter{
+    font-family: Inter-Bold;
+    font-size: 25px;
+    color: #808080;
+    text-align: center;
+}
+
+p#agree{
+    text-align: center;
+    font-size: small;
+    margin: 0% 20% 5% 20%;
+}
+
+p#copyright{
+    text-align: center;
+    font-size: small;
+}
+
+p#reg-as-pharma{
+    text-align: center;
+}
+
+p#reg-as-pharma a{
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+
+div#txt-bottom{
+    width: 400px;
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+p#button{
+    margin: auto;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: black; 
+}
+
+div#content{
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    font-size: 1rem;
+}
+
+form{
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+input#inputted{
+    width: 95%;
+    height: 8%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+input#button{
+    width: 95%;
+    height: 5%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: larger;
+    font-weight:bolder;
+    box-shadow: 0 8px 9px #d3d3d3;
+}
+
+button{
+    width: 70%;
+    height: 10%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: x-large;
+    box-shadow: 0 8px 9px #d3d3d3;
+    margin:auto;
+    display:block;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../font/Inter-Bold.ttf);
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        background-color: #fffafa;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    div#forgot-pwd{
+        width: 400px;
+    }
+
+    div#sign-up{
+        width: 400px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
