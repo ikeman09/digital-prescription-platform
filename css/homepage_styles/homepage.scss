@@ -1,0 +1,220 @@
+@import "./base";
+
+.homepage {
+  img {
+    max-width: 100%;
+  }
+}
+
+.navbar{
+  display: flex;
+  padding: 0;
+  width: 100%;
+  background-color: $color-primary-blue;
+
+  &__wrapper {
+    padding: 0 10px;
+    max-width: 1140px;
+    width: 100%;
+    display: inline-flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    height: 50px;
+    padding: 10px;
+  }
+
+  &__button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: $color-white-text;
+    background-color: $color-crystal_blue;
+    border-radius: 25px;
+    padding: 8px 10px;
+    border: none;
+    height: 20px;
+  }
+}
+
+.dmpp{
+  @include section-padding;
+  text-align: center;
+  background-color: $color-primary-gray;
+
+  &__wrapper{
+    @include desktop-maxwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    @include cell-padding;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+    @include cell-padding;
+  }
+}
+
+.mainhero{
+  @include section-padding;
+  text-align: center;
+
+  &__wrapper{
+    @include desktop-maxwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    @include cell-padding;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+    @include cell-padding;
+  }
+}
+
+.how-it-works {
+  @include section-padding;
+
+  &__items {
+    @include desktop-maxwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  &__item-image{
+    background-color: $color-crystal_blue;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+
+  &__arrow {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+    }
+  }
+}
+
+.doctor{
+  @include section-padding;
+  text-align: center;
+  background-color: $color-primary-gray;
+
+  &__wrapper{
+    @include desktop-maxwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    @include cell-padding;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+    @include cell-padding;
+  }
+}
+
+.pharmacy{
+  @include section-padding;
+  text-align: center;
+  background-color: $color-primary-gray;
+
+  &__wrapper{
+    @include desktop-maxwidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    @include cell-padding;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+    @include cell-padding;
+  }
+}
+
+.footer {
+  background-color: $color-primary-blue;
+  font-style: Italic;
+  color: $color_white-text;
+
+  &__wrapper{
+    @include desktop-maxwidth;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__left {
+    margin-left: 20px;
+    a{
+      text-decoration: none;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+    a{
+      margin-right: 20px;
+      text-decoration: none;
+      color: $color_white-text;
+    }
+  }
+}
