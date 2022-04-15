@@ -1,0 +1,160 @@
+body{
+    max-width: 400px;
+    margin: auto;
+}
+
+div#box{
+    width: 400px;
+    height: 100%;
+    background-color: #fffafa;
+}
+
+div#bar{
+    background-color: #007BFF;
+    height: 11%;
+    position: static;
+}
+
+div#logo{
+    text-align: center;
+}
+
+img{
+    margin-top: -5%;
+    height: 150%;
+
+}
+
+p{
+    font-family: Roboto-Light;
+}
+
+p#back{
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+p#bold{
+    font-family: Inter-Bold;
+    font-size: larger;
+    font-weight: bolder;
+    color: #808080;
+}
+
+p#bold2{
+    font-family: Inter-Bold;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #808080;
+}
+
+p#smaller{
+    font-size: 14px;
+    margin: 0% 8% 5% 8%;
+}
+
+p#agree{
+    text-align: center;
+    font-size: small;
+    margin: 0% 8% 5% 8%;
+}
+
+p#copyright{
+    text-align: center;
+    font-size: small;
+}
+
+p#reg-as-pharma{
+    text-align: center;
+}
+
+p#reg-as-pharma a{
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+
+div#txt-bottom{
+    width: 200px;
+    text-align: center;
+    float: left;
+    font-family: Roboto-Light;
+}
+
+a:link{
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited { 
+    text-decoration: underline; 
+    color:black; 
+}
+
+div#content{
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    font-family: Roboto-Light;
+    margin: 10% 8% 0 8%;
+    font-size: 1rem;
+}
+
+form{
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+input#inputted{
+    width: 95%;
+    height: 8%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+input#button{
+    width: 40%;
+    height: 4%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: larger;
+    font-weight:bolder;
+    box-shadow: 0 8px 9px #d3d3d3;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../font/Inter-Bold.ttf);
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        background-color: #fffafa;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    div#forgot-pwd{
+        width: 400px;
+    }
+
+    div#sign-up{
+        width: 400px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}

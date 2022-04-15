@@ -1,0 +1,121 @@
+body{
+    max-width: 400px;
+    margin: auto;
+}
+
+p{
+    font-family: Roboto-Light;
+}
+
+p#back{
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+p#copyright{
+    text-align: center;
+    font-size: smaller;
+}
+
+div#box{
+    width: 400px;
+    height: 100%;
+    background-color: #fffafa;
+}
+
+a:link{
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited { 
+    text-decoration: underline; 
+    color:black; 
+}
+
+div#sign-up{
+    width: 200px;
+    text-align: center;
+    margin-left: 50%;
+    font-family: Roboto-Light;
+}
+
+div#bar{
+    background-color: #007BFF;
+    height: 11%;
+    position: static;
+}
+
+div#logo{
+    text-align: center;
+}
+
+img{
+    margin-top: -5%;
+    height: 150%;
+
+}
+
+div#content{
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    font-family: Roboto-Light;
+    margin-top: 10%;
+    font-size: 1.25rem;
+}
+
+form{
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+input#inputted{
+    width: 95%;
+    height: 8%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+input#button{
+    width: 95%;
+    height: 5%;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-size: larger;
+    font-weight:bolder;
+    box-shadow: 0 8px 9px #d3d3d3;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        background-color: #fffafa;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    div#forgot-pwd{
+        width: 400px;
+    }
+
+    div#sign-up{
+        width: 400px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
