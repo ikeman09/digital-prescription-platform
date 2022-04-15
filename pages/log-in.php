@@ -10,7 +10,7 @@
             <p id="back"><a href="">Back</a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
             <div id="content">
@@ -19,13 +19,13 @@
                 <p><b>Sign in</b></p>
             </div>
 
-            <form> <!--Sends the inputs of the form to the current executing script-->
+            <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Email address *" required>
                     <input id= "inputted" type="password" placeholder="Password *" required>
                 </div>
 
-                <input id = "button" value="Log in" type="submit"><!--Submit Button-->
+                <input id = "button" value="Log in" type="submit">
             </form>
             <br>
 
@@ -38,8 +38,7 @@
                 <p id="sign-up-here"><a href="sign-up.php">Sign up here</a></p>  
             </div>
 
-            <p id="copyright">
-                
+            <p id="copyright">               
                 Copyright © DMPP 2022.
             </p>
 

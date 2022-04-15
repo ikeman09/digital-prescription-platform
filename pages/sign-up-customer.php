@@ -10,7 +10,7 @@
             <p id="back"><a href="sign-up.php"><u>Back</u></a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
             <div id="content">
@@ -20,13 +20,13 @@
                 <p id="bold2">Signing up is FREE!</p>
             </div>
 
-            <form> <!--Sends the inputs of the form to the current executing script-->
+            <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Email address *" required>
                     <input id= "inputted" type="password" placeholder="Password *" required>
                 </div>
 
-                <input id = "button" value="Submit" type="submit"><!--Submit Button-->
+                <input id = "button" value="Submit" type="submit">
             </form>
 
             <p id="agree">By clicking “Submit", you agree to our Terms of Use and Privacy Policy</p>

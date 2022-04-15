@@ -10,14 +10,14 @@
             <p id="back"><a href="">Back</a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
             <div id="content">
                 <p><b>Create your profile</b></p>
             </div>
 
-            <form> <!--Sends the inputs of the form to the current executing script-->
+            <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Name *" required>
                     <input id= "inputted" type="text" placeholder="Address *" required>
@@ -26,16 +26,13 @@
                     <input id= "inputted" type="text" placeholder="Birthday *" required>
                 </div>
 
-                <input id = "button" value="Complete" type="submit"><!--Submit Button-->
+                <input id = "button" value="Complete" type="submit">
             </form>
             <br>
 
             <p id="copyright">               
                 Copyright © DMPP 2022.
             </p>
-
-        </div>
-        
-        
+        </div>      
     </body>
 </html>

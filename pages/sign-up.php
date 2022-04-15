@@ -10,7 +10,7 @@
             <p id="back"><a href="log-in.php"><u>Back</u></a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
             <div id="content">
@@ -33,9 +33,6 @@
                 Already have an account?<br>
                 <p id="log-in-here"><a href="log-in.php">Log in</a></p>  
             </div>
-
-        </div>
-        
-        
+        </div>        
     </body>
 </html>

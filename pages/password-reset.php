@@ -10,7 +10,7 @@
             <p id="back"><a href="log-in.php"><u>Back</u></a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
             <div id="content">
@@ -19,7 +19,7 @@
                 <p>Please check your email for the confirmation code.</p>
             </div>
 
-            <form> <!--Sends the inputs of the form to the current executing script-->
+            <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Email address *" required>
                     <input id= "inputted" type="text" placeholder="Confirmation Code *" required>
@@ -27,7 +27,7 @@
                     <input id= "inputted" type="text" placeholder="Confirm Password *" required>
                 </div>
 
-                <input id = "button" value="Reset Password" type="submit"><!--Submit Button-->
+                <input id = "button" value="Reset Password" type="submit">
             </form>
             <br>
 

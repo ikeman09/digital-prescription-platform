@@ -10,12 +10,12 @@
             <p id="back"><a href="sign-up.php"><u>Back</u></a></p>
             <div id="bar">
                 <div id="logo">
-                    <img src="../logo.png" alt="logo">
+                    <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
 
             <div id="content">
-                <img src="../shake-hands.jpg" id="shake-hands" alt="shake-hands">
+                <img src="../assets/images/shake-hands.jpg" id="shake-hands" alt="shake-hands">
                 <p id="bold"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <b>incididunt ut labore et dolore magna aliqua.</b></p>
 
                 <a href="#inter">
@@ -45,14 +45,14 @@
 
             <p id="inter">Signing up is FREE!</p>
             
-            <form> <!--Sends the inputs of the form to the current executing script-->
+            <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Email address *" required>
                     <input id= "inputted" type="password" placeholder="Your Name *" required>
                     <input id= "inputted" type="password" placeholder="Your Establishment Name *" required>
                 </div>
 
-                <input id = "button" value="Submit" type="submit"><!--Submit Button-->
+                <input id = "button" value="Submit" type="submit">
             </form>
 
             <p id="agree">By clicking “Submit", you agree to our Terms of Use and Privacy Policy</p>
@@ -69,9 +69,6 @@
                 Copyright © DMPP 2022.
             </p>
             <br>
-
-        </div>
-        
-        
+        </div>       
     </body>
 </html>
