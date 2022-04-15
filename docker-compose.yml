@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: school-php
+    container_name: digital-prescription-platform
     env_file:
       - .env
     depends_on:
@@ -17,7 +17,7 @@ services:
     restart: always
 
   db:
-    container_name: school-mariadb
+    container_name: digital-prescription-platform-mariadb
     env_file:
       - .env
     image: mariadb:10.3
