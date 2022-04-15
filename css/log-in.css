@@ -110,7 +110,7 @@ input#button{
 
 @font-face {
     font-family: Roboto-Light;
-    src: url(../font/Roboto/Roboto-Light.ttf);
+    src: url(../assets/font/Roboto/Roboto-Light.ttf);
 }
 
 @media only screen and (max-width: 320px) {
