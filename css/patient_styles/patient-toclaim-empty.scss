@@ -1,0 +1,28 @@
+@import "./_patient-default";
+
+.section {
+    @include claim-section();
+    
+    #toclaim {
+        @include section-color;
+    }    
+}
+
+.main {
+    @include center();
+    margin-top: 15%;
+    
+    h1 {
+        font-family: 'Inter-Medium';
+    }
+    p {
+        @include main-paragraph();
+    }
+}
+
+.footer {
+    .prescriptions {
+        @include footer-blue();
+    }
+}
+

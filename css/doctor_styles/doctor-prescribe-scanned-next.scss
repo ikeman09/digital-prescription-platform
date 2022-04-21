@@ -1,0 +1,57 @@
+@import "./doctor-default";
+
+.main {
+    text-align: left;
+    margin-top: 7%;
+
+    .names {
+        @include center();
+        text-align: left;
+        margin: -1% 23.5% 1% auto;
+
+        p {
+            font-size: 150%;
+            margin-bottom: 1%;
+        }
+
+        #patient {
+            border-bottom: 4px solid $outline_color;
+            width: 95%;
+            padding-bottom: 1%;
+        }
+    }
+    .content {
+        @include center();
+
+        p {
+            text-align: left;
+            margin-left: 3%;
+            font-size: 150%;
+        }
+
+        input[type=text] {
+            @include input-text();
+            text-align: left;
+            margin-left: 1%;
+            border-radius: 5px;
+            width: 95%;
+        }
+        
+        input[type=button] {
+            @include big-button();
+
+            margin-top: 1%;
+            padding: 3% 6% 3% 6%;
+            font-size: 150%;
+            font-family: Inter-Bold;
+            border-radius: 20px;
+            margin-bottom: 12%;
+        }
+    }
+}
+
+.footer {
+    .prescriptions {
+        @include footer-blue();
+    }
+}

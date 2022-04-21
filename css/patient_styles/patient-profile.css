@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Inter-regular';
+  font-style: normal;
+  src: local("Inter-regular"), url("../../assets/font/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-style: normal;
+  src: local("Inter-Bold"), url("../../assets/font/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-style: normal;
+  src: local("Inter-Medium"), url("../../assets/font/Inter/Inter-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter-regular';
+  color: #808080;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #007BFF;
+  text-align: left;
+}
+
+.header .logo {
+  padding: 1px 0px 1px 5px;
+}
+
+.header .logo img {
+  width: 7%;
+}
+
+.footer {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  -webkit-column-count: 3;
+          column-count: 3;
+  color: #808080;
+  background-color: #F0F3F8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer img {
+  width: 13%;
+  margin-top: -50%;
+}
+
+.footer .prescriptions {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .myqr {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .profile {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.main {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.main img {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  margin-top: 10%;
+}
+
+.main #name {
+  margin-top: 5%;
+}
+
+.main .container {
+  margin-top: 3.4%;
+}
+
+.main .container .info {
+  -webkit-column-count: 2;
+          column-count: 2;
+  background-color: #F0F3F8;
+  border: 1px solid #C4C4C4;
+  border-bottom: 0px;
+  padding: 1%;
+}
+
+.main .container .info p {
+  text-align: left;
+  font-size: 150%;
+}
+
+.main .container .info #left {
+  text-align: right;
+}
+
+.main .container .info #last-item {
+  border-bottom: 1px;
+}
+
+.main .changepass {
+  margin-top: 10%;
+}
+
+.main .changepass p {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #F0F3F8;
+  width: 34%;
+  padding: 1.5%;
+  border: 1px solid #C4C4C4;
+}
+
+.footer .profile {
+  background-color: #007BFF;
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .profile p {
+  color: white;
+  font-family: 'Inter-Bold';
+}
+/*# sourceMappingURL=patient-profile.css.map */

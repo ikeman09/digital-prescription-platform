@@ -1,0 +1,57 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter-regular';
+    color: $inactive_color;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    @include center();
+    @include static-header();
+    
+    background-color: $main_color;
+    text-align: left;
+
+    .logo {
+        padding: 1px 0px 1px 5px;
+        img {
+            width: 7%;
+        }
+    }
+}
+
+.footer {
+    @include center();
+    column-count: 3;
+    color: $inactive_color;
+    background-color: #F0F3F8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    img {
+        width: 13%;
+        margin-top: -50%;
+    }
+
+    .prescriptions {
+        padding: $footer_padding;
+    }
+
+    .myqr {
+        padding: $footer_padding;
+    }
+
+    .profile {
+        padding: $footer_padding;
+    }
+}
+
+

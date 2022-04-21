@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Inter-regular';
+  font-style: normal;
+  src: local("Inter-regular"), url("../../assets/font/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-style: normal;
+  src: local("Inter-Bold"), url("../../assets/font/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-style: normal;
+  src: local("Inter-Medium"), url("../../assets/font/Inter/Inter-Medium.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter-regular';
+  color: #808080;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #007BFF;
+  text-align: left;
+}
+
+.header .logo {
+  padding: 1px 0px 1px 5px;
+}
+
+.header .logo img {
+  width: 7%;
+}
+
+.footer {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  -webkit-column-count: 3;
+          column-count: 3;
+  color: #808080;
+  background-color: #F0F3F8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer img {
+  width: 13%;
+  margin-top: -50%;
+}
+
+.footer .prescriptions {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .myqr {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .profile {
+  padding: 11.5% 0 0.4% 0;
+}
+
+.section {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 4.3%;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+.section h3 {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  font-family: 'Inter-Bold';
+  color: #808080;
+}
+
+.section #toclaim {
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+}
+
+.main {
+  position: static;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.main h1 {
+  font-family: 'Inter-Medium';
+}
+
+.main p {
+  width: 50%;
+  margin: 4% auto;
+  font-family: 'Inter-Medium';
+}
+
+.footer .prescription {
+  background-color: #007BFF;
+  padding: 11.5% 0 0.4% 0;
+}
+
+.footer .prescription p {
+  color: white;
+  font-family: 'Inter-Bold';
+}
+
+.main {
+  -webkit-column-count: 2;
+          column-count: 2;
+  width: 45%;
+  margin-top: 8%;
+}
+
+.main .item {
+  border-radius: 10%;
+  background-color: #CCF2FF;
+  padding: 2%;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+
+.main .item p {
+  float: left;
+  text-align: left;
+  margin: 0;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.main .item img {
+  width: 25%;
+  border-radius: 20%;
+  float: left;
+}
+
+.main .item .qrcode {
+  float: right;
+  background-color: #007BFF;
+  width: 30%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.main .item .qrcode p {
+  color: white;
+}
+
+.main .item .qrcode img {
+  width: 40%;
+}
+/*# sourceMappingURL=patient-toclaim.css.map */
