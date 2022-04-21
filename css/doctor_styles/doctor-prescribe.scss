@@ -1,0 +1,39 @@
+@import "./doctor-default";
+
+
+.main {
+    @include center();
+    margin-top: 7%;
+
+    #square {
+        @include center();
+        background-color: $outline_color;
+        padding: 25% 10% 25% 10%;
+        border-radius: 20px;
+    }
+
+    p {
+        margin-top: 1.5%;
+    }
+
+    form {
+        margin-top: 3%;
+        input[type=text] {
+            width: 50%;
+            background-color: $inactive_color_2;
+            border-color: 1px solid $outline_color;
+            border-radius: 5px;
+        }
+        input[type=button] {
+            @include big-button();
+            width: 10%;
+            
+        }
+    }
+}
+
+.footer {
+    .prescriptions {
+        @include footer-blue();
+    }
+}

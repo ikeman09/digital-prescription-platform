@@ -1,0 +1,41 @@
+@import "./_patient-default";
+
+.main {
+    @include center();
+    text-align: left;
+    margin-top: 5%;
+
+    #back {
+        text-decoration: underline;
+        margin-left: 2%;
+    }
+
+    #confirmation {
+        margin-top: -1.5%;
+        margin-left: 5.5%;
+    }
+
+    form {
+        margin-top: 4%;
+        p {
+            font-size: 150%;
+            margin-left: 5%;
+            margin-bottom: 0.5%;
+        }
+        input {
+            @include input-text;
+        }
+    }
+    .changepass {
+        @include change-pass();
+        margin-top: 29%;
+    }
+}
+
+.footer {
+    .profile {
+        @include footer-blue();
+    }
+}
+
+

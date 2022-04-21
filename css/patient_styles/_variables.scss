@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Inter-regular';
+    font-style: normal;
+    src: local('Inter-regular'), url('../../assets/font/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    font-style: normal;
+    src: local('Inter-Bold'), url('../../assets/font/Inter/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    font-style: normal;
+    src: local('Inter-Medium'), url('../../assets/font/Inter/Inter-Medium.ttf');
+}
+
+$main_color: #007BFF;
+$inactive_color: #808080;
+$inactive_color_2: #F0F3F8;
+$outline_color: #C4C4C4;
+$footer_padding: 11.5% 0 0.4% 0;
+
+@mixin center {
+    position: static;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+@mixin static-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin footer-blue {
+    background-color: $main_color;
+    padding: $footer_padding;
+    
+    p {
+        color: white;
+        font-family: 'Inter-Bold';
+    }
+}
+
+@mixin section-color {
+    color: $main_color;
+    border-bottom: 2px solid $main_color; 
+}
+
+@mixin claim-section {
+    @include center();
+    @include static-header();
+    margin-top: 4.3%;
+    
+    column-count: 2;
+        
+    h3 {
+        padding-top: 1%;
+        padding-bottom: 2%;
+        font-family: 'Inter-Bold';
+        color: $inactive_color;
+    }
+}
+
+@mixin change-pass {
+    margin-top: 10%;
+
+    p {
+        @include center();
+        background-color: $inactive_color_2;
+        width: 34%;
+        padding: 1.5%;
+        border: 1px solid $outline_color;
+    }
+}
+
+@mixin drug-item {
+    border-radius: 10%;
+    background-color: #CCF2FF;
+    padding: 2%;
+    overflow: hidden;
+    margin-bottom: 2%;
+
+    p {
+        float: left;
+        text-align: left;
+        margin: 0;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    img {
+        width: 25%;
+        border-radius: 20%;
+        float: left;
+    }
+}
+
+@mixin drug-position {
+    column-count: 2;
+    width: 45%;
+    margin-top: 8%;
+}
+
+@mixin main-paragraph {
+    width: 50%;
+    margin: 4% auto;
+    font-family: 'Inter-Medium';
+}
+
+@mixin input-text {
+    width: 90%;
+    margin-left: 4.5%;
+    font-size: 210%;
+    margin-bottom: 2%;
+    background-color: $inactive_color_2;
+}

@@ -1,0 +1,23 @@
+@import './patient-toclaim-empty';
+
+.main {
+    @include drug-position();
+
+    .item {
+        @include drug-item();
+
+        .qrcode {
+            float: right;
+            background-color: $main_color;
+            width: 30%;
+            padding: 1%;
+            border-radius: 10px;
+            p {
+                color: white;
+            }
+            img {
+                width: 40%;
+            }
+        }
+    }
+}

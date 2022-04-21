@@ -1,0 +1,24 @@
+@import "./_patient-default";
+
+.main {
+    @include center();
+
+    img {
+        @include center();
+
+        margin-top: 10%;
+        border-radius: 5%;
+    }
+
+    h3 {
+        margin-top: 5%;
+        font-family: Inter-Medium;
+    }
+    
+}
+
+.footer {
+    .myqr {
+        @include footer-blue;
+    }
+}
