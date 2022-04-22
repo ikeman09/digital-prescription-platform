@@ -22,7 +22,7 @@
             <a href="sign-up-customer.php">
                 <button type="button">Patient<br><br><p id="button">Lorem ipsum dolor sit amet, consectetur adipiscing</p></button>
             </a><br>
-            <a href="password-reset.php">
+            <a href="sign-up-doctor.php">
                 <button type="button">Doctor<br><br><p id="button">Lorem ipsum dolor sit amet, consectetur adipiscing</p></button>
             </a><br>
             <a href="sign-up-pharmacy.php">
