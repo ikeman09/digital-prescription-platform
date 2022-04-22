@@ -1,0 +1,143 @@
+body{
+    max-width: 400px;
+    margin: auto;
+}
+
+div#box{
+    width: 400px;
+    height: 100%;
+    background-color: white;
+}
+
+div#bar{
+    background-color: #007BFF;
+    height: 8%;
+    position: static;
+    margin-bottom: 5%;
+}
+
+div#logo{
+    text-align: left;
+    padding: 1px 0px 1px 5px;
+}
+
+img{
+    width: 15%;
+    height: 90%;
+}
+
+.navbar__button {
+    text-decoration: none;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    background-color: #49A0AE;
+    border-radius: 5px;
+    float: right;
+    height: 20px;
+    font-family: Roboto-Light;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    position: static;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    -webkit-column-count: 3;
+            column-count: 3;
+    color: #808080;
+    background-color: #F0F3F8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar img{
+    width: 25%;
+    margin-top: -50%;
+    margin-bottom: -10%;
+}
+
+.navbar .inventory{
+    padding: 11.5% 0 0.4% 0;
+}
+
+.navbar .scan{
+    background-color: #007BFF;
+    padding: 11.5% 0 0.4% 0;
+}
+
+.navbar .history {
+    padding: 11.5% 0 0.4% 0;
+}
+
+.navbar .scan p{
+    color: white;
+}
+
+.navbar p{
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 1%;
+}
+
+.qr img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+p{
+    text-align: center;
+    font-weight: 100;
+    font-family: Roboto-Light;
+}
+
+form{
+    text-align: center;
+    font-family: Roboto-Light;
+}
+
+input#inputted{
+    float: left;
+    width: 80%;
+    height: 30px;
+    background-color: #F0F3F8;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+input#button{
+    float: right;
+    width: 15%;
+    height: 30px;
+    background-color: #54A7FF;
+    color: white;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../assets/font/Roboto/Roboto-Light.ttf);
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+        background-color: #fffafa;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
