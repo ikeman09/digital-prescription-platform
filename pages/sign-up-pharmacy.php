@@ -48,7 +48,7 @@
             <form>
                 <div>
                     <input id= "inputted" type="text" placeholder="Email address *" required>
-                    <input id= "inputted" type="password" placeholder="Your Name *" required>
+                    <input id= "inputted" type="text" placeholder="Your Name *" required>
                     <input id= "inputted" type="password" placeholder="Your Establishment Name *" required>
                 </div>
 

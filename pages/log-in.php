@@ -7,7 +7,7 @@
     
     <body>
         <div id="box">
-            <p id="back"><a href="">Back</a></p>
+            <p id="back"></p>
             <div id="bar">
                 <div id="logo">
                     <img src="../assets/images/prescription-logo.png" alt="logo">
