@@ -24,7 +24,7 @@
 
             <ul id="bold">
                 <li>Professional Regulation Commission (PRC) ID</li>
-                <li>One Primary Valid ID (click <a href="https://governmentph.com/list-valid-id-in-the-philippines/">here</a> for the list) </li>
+                <li>One Primary Valid ID (click <a href="https://governmentph.com/list-valid-id-in-the-philippines/" target="_blank">here</a> for the list) </li>
             </ul>
 
             <p id="copyright">
