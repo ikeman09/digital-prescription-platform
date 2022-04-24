@@ -173,24 +173,18 @@ a {
 }
 
 .header {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
-}
+  /*   @include center();
+    @include static-header();
+    
+    background-color: $main_color;
+    text-align: left;
 
-.header .logo {
-  padding: 1px 0px 1px 5px;
-}
-
-.header .logo img {
-  width: 7%;
+    .logo {
+        padding: 1px 0px 1px 5px;
+        img {
+            width: 7%;
+        }
+    }*/
 }
 
 .footer {

@@ -17,66 +17,61 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Inter-regular';
   color: #808080;
 }
 
-a {
+* body {
+  max-width: 50%;
+}
+
+* a {
   text-decoration: none;
 }
 
-.header {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
+* ul {
+  list-style-type: none;
 }
 
-.header .logo {
+.header {
+  background-color: #007BFF;
+  position: fixed;
+  width: 50%;
+}
+
+.header img {
+  width: 7%;
   padding: 1px 0px 1px 5px;
 }
 
-.header .logo img {
-  width: 7%;
-}
-
 .footer {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  -webkit-column-count: 2;
-          column-count: 2;
   color: #808080;
   background-color: #F0F3F8;
+  width: 50%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
-.footer img {
-  width: 9%;
-  margin-top: -50%;
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
 }
 
-.footer .prescriptions {
-  padding: 7.5% 0 0.4% 0;
+.footer ul li {
+  padding-top: 1%;
 }
 
-.footer .myqr {
-  padding: 7.5% 0 0.4% 0;
+.footer ul li p {
+  font-family: Inter-Bold;
 }
 
-.footer .profile {
-  padding: 7.5% 0 0.4% 0;
+.footer ul li img {
+  width: 7%;
 }
 /*# sourceMappingURL=doctor-default.css.map */

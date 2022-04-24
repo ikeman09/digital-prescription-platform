@@ -22,7 +22,7 @@
         </div>
 
         <div class="content">
-            <p>To claim:</p>
+            <!--<p>To claim:</p>
             <div class="list">
                 <div class="item">
                     <img src="../../assets/images/paracetamol.jpeg">
@@ -34,7 +34,7 @@
                     <p>Ascorbic Acid Sig #30</p>
                     <p>Once a day</p>
                 </div>
-            </div>
+            </div> -->
 
             <p>Claim:</p>
             <div class="list">

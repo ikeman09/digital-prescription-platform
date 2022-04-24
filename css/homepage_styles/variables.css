@@ -1,0 +1,30 @@
+/*
+BREAKPOINTS from MaterialUI
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 960px
+lg, large: 1280px
+xl, extra-large: 1920px
+ */
+/* --- FONTS --- */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local("Roboto"), url(../../assets/font/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto-Bold"), url(../../assets/font/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  font-style: normal;
+  src: local("Roboto-Italic"), url(../../assets/font/Roboto/Roboto-Italic.ttf) format("truetype");
+}
+
+/* --- COLORS --- */
+/*# sourceMappingURL=variables.css.map */
