@@ -22,21 +22,6 @@ $inactive_color_2: #F0F3F8;
 $outline_color: #C4C4C4;
 $footer_padding: 7.5% 0 0.4% 0;
 
-@mixin center {
-    position: static;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-@mixin static-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-
 @mixin footer-blue {
     background-color: $main_color;
     padding: $footer_padding;

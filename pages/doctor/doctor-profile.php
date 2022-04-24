@@ -9,9 +9,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="../../assets/images/prescription-logo.png" alt="logo">
-        </div>
+        <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
     <div class="main">
@@ -45,18 +43,22 @@
         </a>
     </div>
 
-    <div class="footer">
-        <a href="doctor-prescribe.php">
-            <div class="prescriptions">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>Prescribe</p>
-            </div>
-        </a>
-        <div class="profile">
-            <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-            <p>Profile</p>
-        </div>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="doctor-profile.php">
+                <li>
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Prescribe</p>
+                </li>
+            </a>
+            <a href="doctor-profile.php">
+                <li>
+                <img src="../../assets/images/Circle_(grey).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
     
 
 </body>

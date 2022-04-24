@@ -9,36 +9,34 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="../../assets/images/prescription-logo.png" alt="logo">
-        </div>
+        <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
-    <div class="main">
-        <div>
-            <div id="square"></div>
-            <p>Trouble scanning? Enter the code below:</p>
-            <form>
-                <input type="text">
-                <a href="doctor-prescribe-scanned.php">
-                    <input type="button" value="Enter">
-                </a>
-            </form>
-        </div>
+    <div class="content">
+        <img src="../../assets/images/square.png">
+        <p>Trouble scanning? Enter the code below:</p>
+        <form>
+            <input type="text">
+            <input type="button" value="Enter">
+        </form>
     </div>
 
-    <div class="footer">
-        <div class="prescriptions">
-            <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-            <p>Prescribe</p>
-        </div>
-        <a href="doctor-profile.php">
-            <div class="profile">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>Profile</p>
-            </div>
-        </a>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="doctor-profile.php">
+                <li>
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Prescribe</p>
+                </li>
+            </a>
+            <a href="doctor-profile.php">
+                <li>
+                <img src="../../assets/images/Circle_(grey).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
     
 
 </body>
