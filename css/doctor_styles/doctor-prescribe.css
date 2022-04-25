@@ -71,6 +71,21 @@
   width: 7%;
 }
 
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header img {
+    width: 12%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li img {
+    width: 16%;
+  }
+}
+
 .content {
   text-align: center;
   padding-top: 2%;
@@ -98,5 +113,27 @@
   font-size: 100%;
   padding: 0.2% 0 0.2% 0;
   width: 10%;
+}
+
+@media (max-width: 768px) {
+  .content img {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .content form input[type=text] {
+    width: 70%;
+  }
+  .content form input[type=button] {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content img {
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 /*# sourceMappingURL=doctor-prescribe.css.map */

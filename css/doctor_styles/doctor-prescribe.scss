@@ -25,3 +25,30 @@
     }
 }
 
+@media (max-width: 768px) {
+    .content {
+        img {
+            width: 100%;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+        form {
+            input[type=text] {
+                width: 70%;
+            }
+            input[type=button] {
+                width: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        img {
+            width: 70%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+}

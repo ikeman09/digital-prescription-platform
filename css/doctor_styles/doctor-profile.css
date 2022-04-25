@@ -190,8 +190,8 @@ a {
 
 .header {
   background-color: #007BFF;
-  position: fixed;
-  width: 50%;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .header img {
@@ -222,5 +222,20 @@ a {
 
 .footer ul li img {
   width: 7%;
+}
+
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header img {
+    width: 12%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li img {
+    width: 16%;
+  }
 }
 /*# sourceMappingURL=doctor-profile.css.map */
