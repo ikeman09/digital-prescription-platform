@@ -13,47 +13,52 @@
     </div>
 
     <div class="main">
+        <div class="top">
+            <img src="../../assets/images/profile.png">
+            <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
+        </div>
 
-        <img src="../../assets/images/profile.png">
-        <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
-
-        <div class="container">
+        <div class="column">
             <div class="info">
-                <p id="left">Address:</p>
+                <p>Address:</p>
                 <p>Bolong subd. Kidapawan City</p>
             </div>
             <div class="info">
-                <p id="left">Age:</p>
+                <p>Age:</p>
                 <p>20</p>
             </div>
             <div class="info">
-                <p id="left">Sex:</p>
+                <p>Sex:</p>
                 <p>Male</p>
             </div>
-            <div class="info" id="last-item">
-                <p id="left">Birthday:</p>
+            <div class="info">
+                <p>Birthday:</p>
                 <p>02/17/2002</p>
             </div>
         </div>
 
-        <a href="doctor-changepass.php">
-            <div class="changepass">
-                <p> Change password </p>
-            </div>
-        </a>
+        
+        <div class="changepass">
+            <form>
+                <a href="doctor-changepass.php">
+                    <input type="button" value="Change Password">
+                </a>
+            </form>
+        </div>
+        
     </div>
 
     <nav class="footer">
         <ul>
             <a href="doctor-profile.php">
-                <li>
+                <li id="prescribe">
                     <img src="../../assets/images/Circle_(grey).png">
                     <p>Prescribe</p>
                 </li>
             </a>
             <a href="doctor-profile.php">
-                <li>
-                <img src="../../assets/images/Circle_(grey).png">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(grey).png">
                     <p>Profile</p>
                 </li>
             </a>

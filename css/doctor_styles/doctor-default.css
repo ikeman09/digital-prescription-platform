@@ -65,6 +65,7 @@
 
 .footer ul li {
   padding-top: 1%;
+  font-size: 1.5rem;
 }
 
 .footer ul li img {
@@ -80,6 +81,9 @@
   }
   .footer {
     width: 100%;
+  }
+  .footer ul li {
+    font-size: 1rem;
   }
   .footer ul li img {
     width: 16%;

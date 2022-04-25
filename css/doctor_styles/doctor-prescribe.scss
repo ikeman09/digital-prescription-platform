@@ -16,16 +16,17 @@
             background-color: $inactive_color_2;
             border: 1px solid $outline_color;
             border-radius: 5px;
+            font-size: 1.4rem;
         }
         input[type=button] {
             @include big-button();
-
+            font-size: 1.4rem;
             width: 10%;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .content {
         img {
             width: 100%;
@@ -37,7 +38,9 @@
                 width: 70%;
             }
             input[type=button] {
-                width: 15%;
+                font-size: 1rem;
+                width: 20%;
+                padding-top: 2%;
             }
         }
     }
