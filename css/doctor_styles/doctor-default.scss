@@ -32,7 +32,6 @@
 .footer {
     color: $inactive_color;
     background-color: #F0F3F8;
-    
     width: 50%;
     position: fixed;
     bottom: 0;
@@ -52,4 +51,26 @@
     }
 }
 
+@media (max-width: 1024px) {
+    body {
+        max-width: 100%;
+    }
+
+    .header {
+        img {
+            width: 12%;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        ul {
+            li {
+                img {
+                    width: 16%;
+                }
+            }
+        }
+    }
+}
 
