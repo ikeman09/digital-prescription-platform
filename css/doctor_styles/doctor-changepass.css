@@ -184,6 +184,7 @@ a {
   background-color: #007BFF;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
 }
 
 .header img {

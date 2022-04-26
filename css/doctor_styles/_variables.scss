@@ -63,9 +63,8 @@ $footer_padding: 7.5% 0 0.4% 0;
 @mixin big-button {
     background-color: #54A7FF;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 100%;
-    padding: 0.2% 0 0.2% 0;
 }
 
 @mixin input-text {

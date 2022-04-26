@@ -9,52 +9,58 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="../../assets/images/prescription-logo.png" alt="logo">
-        </div>
+        <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
     <div class="main">
-        <div class="names">
-            <p>Doctor: Ron Jay Slementz B. Cervo</p>
-            <p id="patient">Patient: John Ray Clementz A. Servo</p>
+        <div class="info">
+            <p>John Ray Clementz A. Servo</p>
+            <p id="doctor">Ron Jay Slementz B. Cervo</p>
         </div>
-        <form class="content">
-            <p>Diagnosis:</p>
-            <input type="text">
-            <p>Pharmacy: </p>
-            <input type="text">
-            <p>Medicine: </p>
-            <input type="text">
-            <p>No. of Packs: </p>
-            <input type="text">
-            <p>Date prescribed: </p>
-            <input type="text">
-            <p>Days of intake: </p>
-            <input type="text">
-            <p>Hourly consumption: </p>
-            <input type="text">
 
-            <br>
-            <input type="button" value="Prescribe">
-        </form>
+        <div class="content">
+            <form class="form-content">
+                <p>Diagnosis:</p>
+                <input type="text">
+                <p>Pharmacy: </p>
+                <input type="text">
+                <p>Medicine: </p>
+                <input type="text">
+                <p>No. of Packs: </p>
+                <input type="text">
+                <p>Date prescribed: </p>
+                <input type="text">
+                <p>Days of intake: </p>
+                <input type="text">
+                <p>Hourly consumption: </p>
+                <input type="text">
+
+                <br>
+                <div class="button-wrapper">
+                    <input type="button" value="Prescribe">
+                </div>
+            </form>
+        </div>
         
     </div>
 
-    <div class="footer">
-        <a href="doctor-prescribe.php">
-            <div class="prescriptions">
-                <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-                <p>Prescriptions</p>
-            </div>
-        </a>
-        <a href="doctor-profile.php">
-            <div class="profile">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>Profile</p>
-            </div>
-        </a>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="doctor-profile.php">
+                <li id="prescribe">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Prescribe</p>
+                </li>
+            </a>
+            <a href="doctor-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    
     
     
 </body>

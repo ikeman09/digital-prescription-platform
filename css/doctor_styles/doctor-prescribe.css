@@ -39,6 +39,7 @@
   background-color: #007BFF;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
 }
 
 .header img {
@@ -114,9 +115,8 @@
 .content form input[type=button] {
   background-color: #54A7FF;
   color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 100%;
-  padding: 0.2% 0 0.2% 0;
   font-size: 1.4rem;
   width: 10%;
 }
