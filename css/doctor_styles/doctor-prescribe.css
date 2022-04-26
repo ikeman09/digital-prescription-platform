@@ -17,118 +17,140 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Inter-regular';
   color: #808080;
 }
 
-a {
+* body {
+  max-width: 50%;
+}
+
+* a {
   text-decoration: none;
 }
 
-.header {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
+* ul {
+  list-style-type: none;
 }
 
-.header .logo {
+.header {
+  background-color: #007BFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header img {
+  width: 7%;
   padding: 1px 0px 1px 5px;
 }
 
-.header .logo img {
+.footer {
+  color: #808080;
+  background-color: #F0F3F8;
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.footer ul li {
+  padding-top: 1%;
+  font-size: 1.5rem;
+}
+
+.footer ul li img {
   width: 7%;
 }
 
-.footer {
-  position: static;
-  width: 50%;
-  margin: auto;
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header img {
+    width: 12%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 1rem;
+  }
+  .footer ul li img {
+    width: 16%;
+  }
+}
+
+.content {
   text-align: center;
-  -webkit-column-count: 2;
-          column-count: 2;
-  color: #808080;
-  background-color: #F0F3F8;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding-top: 2%;
 }
 
-.footer img {
-  width: 9%;
-  margin-top: -50%;
-}
-
-.footer .prescriptions {
-  padding: 7.5% 0 0.4% 0;
-}
-
-.footer .myqr {
-  padding: 7.5% 0 0.4% 0;
-}
-
-.footer .profile {
-  padding: 7.5% 0 0.4% 0;
-}
-
-.main {
-  position: static;
+.content img {
   width: 50%;
-  margin: auto;
-  text-align: center;
-  margin-top: 7%;
 }
 
-.main #square {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  background-color: #C4C4C4;
-  padding: 25% 10% 25% 10%;
-  border-radius: 20px;
+.content form {
+  padding-top: 2%;
 }
 
-.main p {
-  margin-top: 1.5%;
-}
-
-.main form {
-  margin-top: 3%;
-}
-
-.main form input[type=text] {
+.content form input[type=text] {
   width: 50%;
   background-color: #F0F3F8;
-  border-color: 1px solid #C4C4C4;
+  border: 1px solid #C4C4C4;
   border-radius: 5px;
+  font-size: 1.4rem;
 }
 
-.main form input[type=button] {
+.content form input[type=button] {
   background-color: #54A7FF;
   color: white;
-  border-radius: 5px;
-  font-size: 100%;
-  padding: 0.2% 0 0.2% 0;
-  width: 10%;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  font-family: Inter-Bold;
+  padding: 1.2% 6% 1.2% 6%;
+  padding: 0.5% 5% 0.5% 5%;
 }
 
-.footer .prescriptions {
+.footer #prescribe {
   background-color: #007BFF;
-  padding: 7.5% 0 0.4% 0;
 }
 
-.footer .prescriptions p {
+.footer #prescribe p {
   color: white;
-  font-family: 'Inter-Bold';
+}
+
+@media (max-width: 767px) {
+  .content img {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .content form input[type=text] {
+    width: 70%;
+  }
+  .content form input[type=button] {
+    font-size: 1rem;
+    width: 20%;
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content img {
+    width: 70%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 /*# sourceMappingURL=doctor-prescribe.css.map */

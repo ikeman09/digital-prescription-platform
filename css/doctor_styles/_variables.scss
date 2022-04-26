@@ -22,64 +22,34 @@ $inactive_color_2: #F0F3F8;
 $outline_color: #C4C4C4;
 $footer_padding: 7.5% 0 0.4% 0;
 
-@mixin center {
-    position: static;
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-
 @mixin footer-blue {
     background-color: $main_color;
-    padding: $footer_padding;
-    
     p {
         color: white;
-        font-family: 'Inter-Bold';
     }
 }
-
-@mixin drug-item {
-    border-radius: 10%;
-    background-color: #CCF2FF;
-    padding: 2%;
-    overflow: hidden;
-    margin-bottom: 2%;
-
-    p {
-        float: left;
-        text-align: left;
-        margin: 0;
-        margin-top: 1%;
-        margin-left: 2%;
-    }
-    img {
-        width: 25%;
-        border-radius: 20%;
-        float: left;
-    }
-}
-
-@mixin drug-position {
-    column-count: 2;
-    width: 45%;
-    margin-top: 8%;
-}
-
 
 @mixin big-button {
     background-color: #54A7FF;
     color: white;
-    border-radius: 5px;
-    font-size: 100%;
-    padding: 0.2% 0 0.2% 0;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-family: Inter-Bold;
+    padding: 1.2% 6% 1.2% 6%;
 }
 
-@mixin input-text {
+@mixin big-button-2 {
+    font-size: 1.4rem;
+    box-shadow: none;
+    padding: 1% 6% 1% 6%;
+    border-radius: 5px;
+    border: 1px solid $outline_color;
+}
+
+@mixin text-input {
+    font-size: 1.8rem;
     width: 100%;
-    margin-left: 4.5%;
-    font-size: 210%;
-    margin-bottom: 2%;
+    padding-bottom: 1%;
     background-color: $inactive_color_2;
+    border-bottom: 1px solid $outline_color;
 }

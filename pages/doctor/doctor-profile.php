@@ -9,54 +9,61 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <img src="../../assets/images/prescription-logo.png" alt="logo">
-        </div>
+        <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
     <div class="main">
+        <div class="top">
+            <img src="../../assets/images/profile.png">
+            <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
+        </div>
 
-        <img src="../../assets/images/profile.png">
-        <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
-
-        <div class="container">
+        <div class="column">
             <div class="info">
-                <p id="left">Address:</p>
+                <p>Address:</p>
                 <p>Bolong subd. Kidapawan City</p>
             </div>
             <div class="info">
-                <p id="left">Age:</p>
+                <p>Age:</p>
                 <p>20</p>
             </div>
             <div class="info">
-                <p id="left">Sex:</p>
+                <p>Sex:</p>
                 <p>Male</p>
             </div>
-            <div class="info" id="last-item">
-                <p id="left">Birthday:</p>
+            <div class="info">
+                <p>Birthday:</p>
                 <p>02/17/2002</p>
             </div>
         </div>
 
-        <a href="doctor-changepass.php">
-            <div class="changepass">
-                <p> Change password </p>
-            </div>
-        </a>
+        
+        <div class="changepass">
+            <form>
+                <a href="doctor-changepass.php">
+                    <input type="button" value="Change Password">
+                </a>
+            </form>
+        </div>
+        
     </div>
 
-    <div class="footer">
-        <a href="doctor-prescribe.php">
-            <div class="prescriptions">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>Prescribe</p>
-            </div>
-        </a>
-        <div class="profile">
-            <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-            <p>Profile</p>
-        </div>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="doctor-prescribe.php">
+                <li id="prescribe">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Prescribe</p>
+                </li>
+            </a>
+            <a href="doctor-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(indigo).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
     
 
 </body>

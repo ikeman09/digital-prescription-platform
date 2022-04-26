@@ -17,211 +17,140 @@
 }
 
 * {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Inter-regular';
   color: #808080;
 }
 
-a {
+* body {
+  max-width: 50%;
+}
+
+* a {
   text-decoration: none;
 }
 
-.header {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
+* ul {
+  list-style-type: none;
 }
 
-.header .logo {
+.header {
+  background-color: #007BFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header img {
+  width: 7%;
   padding: 1px 0px 1px 5px;
 }
 
-.header .logo img {
+.footer {
+  color: #808080;
+  background-color: #F0F3F8;
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.footer ul li {
+  padding-top: 1%;
+  font-size: 1.5rem;
+}
+
+.footer ul li img {
   width: 7%;
 }
 
-.footer {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  -webkit-column-count: 3;
-          column-count: 3;
-  color: #808080;
-  background-color: #F0F3F8;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.footer img {
-  width: 13%;
-  margin-top: -50%;
-}
-
-.footer .prescriptions {
-  padding: 11.5% 0 0.4% 0;
-}
-
-.footer .myqr {
-  padding: 11.5% 0 0.4% 0;
-}
-
-.footer .profile {
-  padding: 11.5% 0 0.4% 0;
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header img {
+    width: 12%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 1rem;
+  }
+  .footer ul li img {
+    width: 16%;
+  }
 }
 
 .main {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  text-align: left;
-  margin-top: 5%;
-}
-
-.main #back {
-  text-decoration: underline;
-  margin-left: 2%;
-}
-
-.main #confirmation {
-  margin-top: -1.5%;
-  margin-left: 5.5%;
-}
-
-.main form {
-  margin-top: 4%;
-}
-
-.main form p {
-  font-size: 150%;
-  margin-left: 5%;
-  margin-bottom: 0.5%;
-}
-
-.main form input {
   width: 90%;
-  margin-left: 4.5%;
-  font-size: 210%;
-  margin-bottom: 2%;
+}
+
+.main .back {
+  padding: 2% 0 2% 0;
+}
+
+.main .form-container {
+  padding-top: 5%;
+}
+
+.main .form-container form {
+  padding-bottom: 1%;
+}
+
+.main .form-container form p {
+  font-size: 1.4rem;
+  padding-bottom: 1%;
+}
+
+.main .form-container form input {
+  font-size: 1.8rem;
+  width: 100%;
+  padding-bottom: 1%;
   background-color: #F0F3F8;
+  border-bottom: 1px solid #C4C4C4;
 }
 
 .main .changepass {
-  margin-top: 10%;
-  margin-top: 29%;
+  text-align: center;
+  padding-top: 10%;
 }
 
-.main .changepass p {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  background-color: #F0F3F8;
-  width: 34%;
-  padding: 1.5%;
+.main .changepass input[type=button] {
+  font-size: 1.4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1% 6% 1% 6%;
+  border-radius: 5px;
   border: 1px solid #C4C4C4;
 }
 
-.footer .profile {
+.footer #profile {
   background-color: #007BFF;
-  padding: 11.5% 0 0.4% 0;
 }
 
-.footer .profile p {
+.footer #profile p {
   color: white;
-  font-family: 'Inter-Bold';
 }
 
-@font-face {
-  font-family: 'Inter-regular';
-  font-style: normal;
-  src: local("Inter-regular"), url("../../assets/font/Inter/Inter-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Inter-Bold';
-  font-style: normal;
-  src: local("Inter-Bold"), url("../../assets/font/Inter/Inter-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'Inter-Medium';
-  font-style: normal;
-  src: local("Inter-Medium"), url("../../assets/font/Inter/Inter-Medium.ttf");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter-regular';
-  color: #808080;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
-}
-
-.header .logo {
-  padding: 1px 0px 1px 5px;
-}
-
-.header .logo img {
-  width: 7%;
-}
-
-.footer {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  -webkit-column-count: 2;
-          column-count: 2;
-  color: #808080;
-  background-color: #F0F3F8;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.footer img {
-  width: 9%;
-  margin-top: -50%;
-}
-
-.footer .prescriptions {
-  padding: 7.5% 0 0.4% 0;
-}
-
-.footer .myqr {
-  padding: 7.5% 0 0.4% 0;
-}
-
-.footer .profile {
-  padding: 7.5% 0 0.4% 0;
+@media (max-width: 767px) {
+  .main {
+    padding-top: 5%;
+  }
+  .main .form-container form {
+    padding-bottom: 5%;
+  }
+  .main .form-container form p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=doctor-changepass.css.map */

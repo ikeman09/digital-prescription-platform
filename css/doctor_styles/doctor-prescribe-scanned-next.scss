@@ -1,57 +1,101 @@
 @import "./doctor-default";
 
 .main {
-    text-align: left;
-    margin-top: 7%;
-
-    .names {
-        @include center();
-        text-align: left;
-        margin: -1% 23.5% 1% auto;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    
+    .info {
+        background-color: #54A7FF;
+        border-radius: 20px;
+        padding: 3% 2% 3% 2%;
+        width: 80%;
 
         p {
-            font-size: 150%;
-            margin-bottom: 1%;
+            color: white;
         }
 
-        #patient {
-            border-bottom: 4px solid $outline_color;
-            width: 95%;
-            padding-bottom: 1%;
+        :first-child {
+            font-size: 2.5rem;
+            font-family: Inter-Bold;
+            border-bottom: 1.5px solid white;
+        }
+
+        #doctor {
+            padding-top: 1%;
         }
     }
+
     .content {
-        @include center();
+        width: 80%;
+        padding-top: 1%;
 
-        p {
-            text-align: left;
-            margin-left: 3%;
-            font-size: 150%;
-        }
+        .form-content {
+            background-color: #f5faff;
+            padding: 2% 2% 5% 2%;
+            border-radius: 25px;
+            p {
+                font-size: 1.6rem;
+                padding-bottom: 0.5%;
+            }
+            input[type=text] {
+                width: 100%;
+                font-size: 1.8rem;
+                background-color: $inactive_color_2;
+                border: 1px solid $outline_color;
+            }
 
-        input[type=text] {
-            @include input-text();
-            text-align: left;
-            margin-left: 1%;
-            border-radius: 5px;
-            width: 95%;
-        }
-        
-        input[type=button] {
-            @include big-button();
+            .button-wrapper {
+                padding-top: 5%;
+                text-align: center;
 
-            margin-top: 1%;
-            padding: 3% 6% 3% 6%;
-            font-size: 150%;
-            font-family: Inter-Bold;
-            border-radius: 20px;
-            margin-bottom: 12%;
+                input[type=button] {
+                    @include big-button();
+                }
+            }
         }
     }
 }
 
 .footer {
-    .prescriptions {
+    #prescribe {
         @include footer-blue();
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        margin-top: 10%;
+        .info {
+            width: 90%;
+
+            :first-child {
+                font-size: 1.4rem;
+            }
+
+            #doctor {
+                padding-top: 2%;
+            }
+        }
+
+        .content {
+            padding-top: 5%;
+            width: 100%;
+
+            .form-content {
+                padding-top: 10%;
+                padding-bottom: 10%;
+                p {
+                    font-size: 1rem;
+                }
+
+                .button-wrapper {
+                    padding-top: 7%;
+
+                    input[type=button] {
+                        padding: 3% 10% 3% 10%;
+                    }
+                }
+            }
+        }
     }
 }

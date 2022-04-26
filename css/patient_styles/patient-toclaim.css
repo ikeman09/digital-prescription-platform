@@ -124,12 +124,12 @@ a {
   font-family: 'Inter-Medium';
 }
 
-.footer .prescription {
+.footer .prescriptions {
   background-color: #007BFF;
   padding: 11.5% 0 0.4% 0;
 }
 
-.footer .prescription p {
+.footer .prescriptions p {
   color: white;
   font-family: 'Inter-Bold';
 }

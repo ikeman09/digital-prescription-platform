@@ -1,53 +1,158 @@
 @import "./doctor-default";
 
 .main {
-    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+
     .info {
-        @include center();
-        text-align: left;
+        background-color: #54A7FF;
+        border-radius: 20px;
+        padding: 1% 2% 3% 2%;
+        width: 80%;
+
         p {
-            margin: 0 0% 1% 2%;
+            color: white;
         }
-        #name {
-            font-size: 150%;
+       
+        .name {
+            p {
+                font-size: 2.5rem;
+                font-family: Inter-Bold;
+                border-bottom: 1.5px solid white;
+            }
         }
-        #last {
-            padding-bottom: 1.5%;
-            border-bottom: 1px solid $inactive_color;
-            width: 70%;
+
+        .other-info {
+            p {
+                margin: 0;
+                font-size: 1.2rem;
+                padding: 0.7%;
+            }
         }
+        
     }
 
-    .content {
-        p {
-            @include center();
-            margin: 1% 0 -8% 2.7%;
-        }
-        .list {
-            @include center();
-            @include drug-position();
+    .container {
 
-            .item {
-                @include drug-item();
+        #to-claim-header, #claim-header {
+            font-size: 2rem;
+            font-family: Inter-Bold;
+            padding: 2%;
+            padding-left: 10%;
+        }
+
+        .flex-wrapper {
+            width: 80%;
+            background-color: $inactive_color_2;
+            border-radius: 20px;
+            padding-bottom: 1%;
+            display: flex;
+            justify-content: space-between;
+
+            .column {
+                padding-top: 2%;
+                display: flex;
+                flex-direction: column;
+                
+
+                .item {
+                    background-color: #30AADD;
+                    width: 100%;
+                    border-radius: 20px;
+                    padding-right: 2%;
+                    margin-bottom: 2%;
+
+                    img {
+                        width: 25%;
+                        padding: 4%;
+                        border-radius: 40px;
+                        float: left;
+                    }
+                    .item-info {
+                        padding-top: 5%;
+                        p {
+                            color: white;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
             }
         }
     }
 
     form {
-        @include center();
-        margin: 2% auto 5% auto;
-        input[type=button] {
+        text-align: center;
+        padding-top: 2%;
+        input[type="button"] {
             @include big-button();
-            padding: 1% 5% 1% 5%;
-            font-size: 150%;
-            font-family: Inter-Medium;
+            font-size: 1.2rem;
+            padding: 1% 6% 1% 6%;
             border-radius: 10px;
         }
     }
 }
 
 .footer {
-    .prescriptions {
-        @include footer-blue();
+    ul {
+        #prescribe {
+            @include footer-blue();
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        .info {
+            .name {
+                margin-top: 1%;
+                p {
+                    font-size: 2.3rem;
+                }
+            }
+
+            .other-info {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        form {
+            padding-bottom: 5%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        .info {
+            .name {
+                margin-top: 1%;
+                p {
+                    font-size: 1.12rem;
+                    text-align: center;
+                }
+            }
+
+            .other-info {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .container {
+            #to-claim-header, #claim-header {
+                font-size: 1.3rem;
+            }
+
+            .flex-wrapper {
+                flex-direction: column;
+            }
+        }
+
+        form {
+            padding-bottom: 10%;
+        }
     }
 }
