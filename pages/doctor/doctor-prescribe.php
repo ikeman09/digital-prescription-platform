@@ -17,15 +17,17 @@
         <p>Trouble scanning? Enter the code below:</p>
         <form>
             <input type="text">
-            <input type="button" value="Enter">
+            <a href="doctor-prescribe-scanned.php">
+                <input type="button" value="Enter">
+            </a>
         </form>
     </div>
 
     <nav class="footer">
         <ul>
-            <a href="doctor-profile.php">
+            <a href="doctor-prescribe.php">
                 <li id="prescribe">
-                    <img src="../../assets/images/Circle_(grey).png">
+                    <img src="../../assets/images/Circle_(indigo).png">
                     <p>Prescribe</p>
                 </li>
             </a>

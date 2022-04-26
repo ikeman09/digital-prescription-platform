@@ -50,9 +50,6 @@
 
                 input[type=button] {
                     @include big-button();
-                    font-family: Inter-Bold;
-                    font-size: 1.4rem;
-                    padding: 1.2% 6% 1.2% 6%;
                 }
             }
         }

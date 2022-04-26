@@ -183,7 +183,9 @@
   background-color: #54A7FF;
   color: white;
   border-radius: 15px;
-  font-size: 100%;
+  font-size: 1.4rem;
+  font-family: Inter-Bold;
+  padding: 1.2% 6% 1.2% 6%;
   font-size: 1.2rem;
   padding: 1% 6% 1% 6%;
   border-radius: 10px;

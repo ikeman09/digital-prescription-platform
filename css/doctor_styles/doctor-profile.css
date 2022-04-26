@@ -91,6 +91,10 @@
   }
 }
 
+.main {
+  padding-bottom: 20%;
+}
+
 .main .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +175,9 @@
   }
   .main .top p {
     font-size: 1rem;
+  }
+  .main .column {
+    font-size: 1.2rem;
   }
   .main .changepass {
     padding-top: 10%;

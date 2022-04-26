@@ -1,6 +1,7 @@
 @import "./doctor-default";
 
 .main {
+    padding-bottom: 20%;
     .top {
         display: flex;
         flex-direction: column;
@@ -36,11 +37,7 @@
         text-align: center;
         form {
             input {
-                font-size: 1.4rem;
-                box-shadow: none;
-                padding: 1% 6% 1% 6%;
-                border-radius: 5px;
-                border: 1px solid $outline_color;
+                @include big-button-2();
             }
         }
     }
@@ -84,6 +81,10 @@
             p {
                 font-size: 1rem;
             }
+        }
+
+        .column {
+            font-size: 1.2rem;
         }
 
         .changepass {
