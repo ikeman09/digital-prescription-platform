@@ -210,6 +210,7 @@ a {
 
 .footer ul li {
   padding-top: 1%;
+  font-size: 1.5rem;
 }
 
 .footer ul li img {
@@ -225,6 +226,9 @@ a {
   }
   .footer {
     width: 100%;
+  }
+  .footer ul li {
+    font-size: 1rem;
   }
   .footer ul li img {
     width: 16%;

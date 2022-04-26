@@ -26,6 +26,14 @@
     }
 }
 
+.footer {
+    ul {
+        #prescribe {
+            @include footer-blue();
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .content {
         img {

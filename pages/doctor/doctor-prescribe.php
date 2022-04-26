@@ -24,12 +24,12 @@
     <nav class="footer">
         <ul>
             <a href="doctor-profile.php">
-                <li>
+                <li id="prescribe">
                     <img src="../../assets/images/Circle_(grey).png">
                     <p>Prescribe</p>
                 </li>
             </a>
-            <a href="doctor-profile.php">
+            <a id="profile" href="doctor-profile.php">
                 <li>
                 <img src="../../assets/images/Circle_(grey).png">
                     <p>Profile</p>

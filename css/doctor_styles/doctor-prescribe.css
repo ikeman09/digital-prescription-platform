@@ -121,6 +121,14 @@
   width: 10%;
 }
 
+.footer ul #prescribe {
+  background-color: #007BFF;
+}
+
+.footer ul #prescribe p {
+  color: white;
+}
+
 @media (max-width: 767px) {
   .content img {
     width: 100%;

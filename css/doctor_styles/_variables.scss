@@ -24,11 +24,8 @@ $footer_padding: 7.5% 0 0.4% 0;
 
 @mixin footer-blue {
     background-color: $main_color;
-    padding: $footer_padding;
-    
     p {
         color: white;
-        font-family: 'Inter-Bold';
     }
 }
 

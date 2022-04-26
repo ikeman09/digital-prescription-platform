@@ -37,8 +37,9 @@
 
 .header {
   background-color: #007BFF;
-  position: fixed;
-  width: 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .header img {
@@ -65,114 +66,175 @@
 
 .footer ul li {
   padding-top: 1%;
+  font-size: 1.5rem;
 }
 
 .footer ul li img {
   width: 7%;
 }
 
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header img {
+    width: 12%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 1rem;
+  }
+  .footer ul li img {
+    width: 16%;
+  }
+}
+
 .main {
-  margin-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 10%;
 }
 
 .main .info {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  text-align: left;
+  background-color: #54A7FF;
+  border-radius: 20px;
+  padding: 1% 2% 3% 2%;
+  width: 80%;
 }
 
 .main .info p {
-  margin: 0 0% 1% 2%;
+  color: white;
 }
 
-.main .info #name {
-  font-size: 150%;
+.main .info .name p {
+  font-size: 2.5rem;
+  font-family: Inter-Bold;
+  border-bottom: 1.5px solid white;
 }
 
-.main .info #last {
-  padding-bottom: 1.5%;
-  border-bottom: 1px solid #808080;
-  width: 70%;
+.main .info .other-info p {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0.7%;
 }
 
-.main .content p {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  margin: 1% 0 -8% 2.7%;
+.main .container #to-claim-header, .main .container #claim-header {
+  font-size: 2rem;
+  font-family: Inter-Bold;
+  padding: 2%;
+  padding-left: 10%;
 }
 
-.main .content .list {
-  position: static;
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  width: 45%;
-  margin-top: 8%;
+.main .container .flex-wrapper {
+  width: 80%;
+  background-color: #F0F3F8;
+  border-radius: 20px;
+  padding-bottom: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main .content .list .item {
-  border-radius: 10%;
-  background-color: #CCF2FF;
-  padding: 2%;
-  overflow: hidden;
+.main .container .flex-wrapper .column {
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .container .flex-wrapper .column .item {
+  background-color: #30AADD;
+  width: 100%;
+  border-radius: 20px;
+  padding-right: 2%;
   margin-bottom: 2%;
 }
 
-.main .content .list .item p {
+.main .container .flex-wrapper .column .item img {
+  width: 25%;
+  padding: 4%;
+  border-radius: 40px;
   float: left;
-  text-align: left;
-  margin: 0;
-  margin-top: 1%;
-  margin-left: 2%;
 }
 
-.main .content .list .item img {
-  width: 25%;
-  border-radius: 20%;
-  float: left;
+.main .container .flex-wrapper .column .item .item-info {
+  padding-top: 5%;
+}
+
+.main .container .flex-wrapper .column .item .item-info p {
+  color: white;
+  font-size: 1.1rem;
 }
 
 .main form {
-  position: static;
-  width: 50%;
-  margin: auto;
   text-align: center;
-  margin: 2% auto 5% auto;
+  padding-top: 2%;
 }
 
-.main form input[type=button] {
+.main form input[type="button"] {
   background-color: #54A7FF;
   color: white;
   border-radius: 5px;
   font-size: 100%;
   padding: 0.2% 0 0.2% 0;
-  padding: 1% 5% 1% 5%;
-  font-size: 150%;
-  font-family: Inter-Medium;
+  font-size: 1.2rem;
+  padding: 1% 6% 1% 6%;
   border-radius: 10px;
 }
 
-.footer .prescriptions {
+.footer ul #prescribe {
   background-color: #007BFF;
-  padding: 7.5% 0 0.4% 0;
 }
 
-.footer .prescriptions p {
+.footer ul #prescribe p {
   color: white;
-  font-family: 'Inter-Bold';
+}
+
+@media (max-width: 1024px) {
+  .main .info .name {
+    margin-top: 1%;
+  }
+  .main .info .name p {
+    font-size: 2.3rem;
+  }
+  .main .info .other-info p {
+    font-size: 1rem;
+  }
+  .main form {
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main .info .name {
+    margin-top: 1%;
+  }
+  .main .info .name p {
+    font-size: 1.12rem;
+    text-align: center;
+  }
+  .main .info .other-info p {
+    font-size: 1rem;
+  }
+  .main .container #to-claim-header, .main .container #claim-header {
+    font-size: 1.3rem;
+  }
+  .main .container .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main form {
+    padding-bottom: 10%;
+  }
 }
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */

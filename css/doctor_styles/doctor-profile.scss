@@ -49,10 +49,7 @@
 .footer {
     ul {
         #profile {
-            background-color: $main_color;
-            p {
-                color: white;
-            }
+            @include footer-blue();
         }
     }
 }
