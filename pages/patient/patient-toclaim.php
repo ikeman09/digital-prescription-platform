@@ -59,7 +59,7 @@
 
     <nav class="footer">
         <ul>
-            <a href="doctor-prescribe.php">
+            <a href="patient-toclaim.php">
                 <li id="prescriptions">
                     <img src="../../assets/images/Circle_(indigo).png">
                     <p>My prescriptions</p>

@@ -21,7 +21,6 @@
                 <p id="claim"> Claimed </p>
             </a>
         </div>
-
     </div>
 
 
