@@ -8,52 +8,77 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+<div class="header">
         <div class="logo">
             <img src="../../assets/images/prescription-logo.png" alt="logo">
         </div>
-    </div>
 
-    <div class="section">
-        <h3 id="toclaim"> To Claim </h3>
-        <h3 id="claimed"> Claimed </h3>
+        <div class="section">
+            <a href="#">
+                <p id="to-claim"> To Claim </p>
+            </a>
+            <a href="./patient-claimed.php">
+                <p id="claim"> Claimed </p>
+            </a>
+        </div>
+
     </div>
+    
 
     <div class="main">
-        <div class="item">
-            <img src="../../assets/images/paracetamol.jpeg">
-            <p>Paracetamol Tab #30</p>
-            <p>Sig: A.D.</p>
-            <div class="qrcode">
-                <img src="../../assets/images/qrcode-small.png">
-                <p> Check QR </p>
+        <div class="grid-container">
+            <div class="item">
+                <div class="item-info">
+                    <img src="../../assets/images/paracetamol.jpeg">
+                    <div class="item-paragraph">
+                        <p>Paracetamol Tab #30</p>
+                        <p>Sig: A.D.</p>
+                    </div>
+                </div>
+                <div class="qrcode">
+                    <img src="../../assets/images/qrcode-small.png">
+                    <p> Check QR </p>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="../../assets/images/ascorbic.jpeg">
-            <p>Ascorbic Acid #30</p>
-            <p>Sig: Once a day.</p>
-            <div class="qrcode">
-                <img src="../../assets/images/qrcode-small.png">
-                <p> Check QR </p>
+            <div class="item">
+                <div class="item-info">
+                    <img src="../../assets/images/ascorbic.jpeg">
+                    <div class="item-paragraph">
+                        <p>Ascorbic Acid #30</p>
+                        <p>Sig: Once a day.</p>
+                    </div>
+                </div>
+                <div class="qrcode">
+                    <img src="../../assets/images/qrcode-small.png">
+                    <p> Check QR </p>
+                </div>
             </div>
+            
         </div>
     </div>
 
-    <div class="footer">
-        <div class="prescriptions">
-            <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-            <p>My prescriptions</p>
-        </div>
-        <div class="myqr">
-        <img src="../../assets/images/qrcode-small.png" alt="qr code">
-            <p>My QR</p>
-        </div>
-        <div class="profile">
-            <img src="../../assets/images/Circle_(grey).png" alt="circle">
-            <p>Profile</p>
-        </div>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="doctor-prescribe.php">
+                <li id="prescriptions">
+                    <img src="../../assets/images/Circle_(indigo).png">
+                    <p>My prescriptions</p>
+                </li>
+            </a>
+            <a href="patient-qr.php">
+                <li id="myqr">
+                    <img src="../../assets/images/qrcode-small.png">
+                    <p>My QR</p>
+                </li>
+            </a>
+            <a href="patient-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
     
 
 </body>

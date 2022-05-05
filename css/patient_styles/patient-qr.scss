@@ -23,7 +23,7 @@
 
 .footer {
     #myqr {
-        @include footer-blue;
+        @include footer-blue();
     }
 }
 

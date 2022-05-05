@@ -48,7 +48,7 @@ ul {
 
 .header .logo img {
   width: 7%;
-  padding: 1px 0px 1px 5px;
+  padding: 5px 0px 3px 5px;
 }
 
 .footer {
@@ -69,8 +69,8 @@ ul {
 }
 
 .footer ul li {
-  padding-top: 1%;
-  font-size: 1rem;
+  padding: 2% 0 1.5% 0;
+  font-size: 1.4rem;
 }
 
 .footer ul li img {
@@ -81,17 +81,32 @@ ul {
   body {
     max-width: 100%;
   }
-  .header img {
-    width: 20%;
+  .header .logo img {
+    width: 10%;
   }
   .footer {
     width: 100%;
   }
   .footer ul li {
-    font-size: 1rem;
+    padding-top: 3%;
   }
   .footer ul li img {
+    width: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .logo img {
     width: 14%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+  }
+  .footer ul li img {
+    width: 25%;
   }
 }
 
@@ -99,45 +114,109 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   text-align: center;
 }
 
 .header .section a {
   width: 100%;
+  background-color: white;
 }
 
 .header .section a p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: 'Inter-Bold';
-  padding: 2% 0 2% 0;
+  padding: 4% 0 3% 0;
 }
 
 .header .section #to-claim {
-  border-bottom: 3px solid #007BFF;
+  border-bottom: 4px solid #007BFF;
+  color: #007BFF;
 }
 
 .main {
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2% 0 12% 0;
+}
+
+.main .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin: auto;
+  padding: 2% 0;
+  background-color: #F0F3F8;
+  width: 95%;
+  border-radius: 15px;
 }
 
-.main h1 {
-  font-family: 'Inter-Bold';
-  padding-bottom: 2%;
+.main .grid-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #30AADD;
+  border-radius: 20px;
+  margin-bottom: 2%;
+  width: 100%;
+  padding: 2%;
+}
+
+.main .grid-container .item .item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main .grid-container .item .item-info p {
+  color: white;
+  font-size: 1rem;
+}
+
+.main .grid-container .item .item-info img {
+  width: 30%;
+  border-radius: 20px;
+}
+
+.main .grid-container .item .qrcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #007BFF;
+  border-radius: 8px;
+  width: 65%;
+  padding: 2% 0;
+}
+
+.main .grid-container .item .qrcode p {
+  color: white;
+}
+
+.main .grid-container .item .qrcode img {
+  width: 40%;
+  border-radius: 8px;
 }
 
 .footer #prescriptions {
@@ -145,22 +224,43 @@ ul {
 }
 
 .footer #prescriptions p {
+  font-family: Inter-Bold;
   color: white;
 }
 
-.main .item .qrcode {
-  float: right;
-  background-color: #007BFF;
-  width: 30%;
-  padding: 1%;
-  border-radius: 10px;
-}
-
-.main .item .qrcode p {
-  color: white;
-}
-
-.main .item .qrcode img {
-  width: 40%;
+@media (max-width: 767px) {
+  .header .section a p {
+    font-size: 1.1rem;
+    padding: 6%;
+  }
+  .header .section #to-claim {
+    border-bottom: 2px solid #007BFF;
+    color: #007BFF;
+  }
+  .main .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .main .grid-container .item .item-info p {
+    font-size: 0.85rem;
+  }
+  .main .grid-container .item .qrcode {
+    padding: 2%;
+  }
+  .main .grid-container .item .qrcode p {
+    font-size: 0.8rem;
+  }
+  .footer ul a li {
+    padding-top: 5px;
+  }
 }
 /*# sourceMappingURL=patient-toclaim.css.map */
