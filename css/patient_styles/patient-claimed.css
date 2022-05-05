@@ -23,135 +23,204 @@
   color: #808080;
 }
 
+body {
+  margin: auto;
+  max-width: 50%;
+}
+
 a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
 }
 
 .header .logo {
-  padding: 1px 0px 1px 5px;
+  background-color: #007BFF;
 }
 
 .header .logo img {
   width: 7%;
+  padding: 5px 0px 3px 5px;
 }
 
 .footer {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  -webkit-column-count: 3;
-          column-count: 3;
   color: #808080;
   background-color: #F0F3F8;
+  width: 50%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
-.footer img {
-  width: 13%;
-  margin-top: -50%;
-}
-
-.footer .prescriptions {
-  padding: 11.5% 0 0.4% 0;
-}
-
-.footer .myqr {
-  padding: 11.5% 0 0.4% 0;
-}
-
-.footer .profile {
-  padding: 11.5% 0 0.4% 0;
-}
-
-.section {
-  position: static;
-  max-width: 50%;
-  margin: auto;
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 4.3%;
-  -webkit-column-count: 2;
-          column-count: 2;
 }
 
-.section h3 {
-  padding-top: 1%;
-  padding-bottom: 2%;
+.footer ul li {
+  padding: 2% 0 1.5% 0;
+  font-size: 1.4rem;
+}
+
+.footer ul li img {
+  width: 12.5%;
+}
+
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header .logo img {
+    width: 10%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    padding-top: 3%;
+  }
+  .footer ul li img {
+    width: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .logo img {
+    width: 14%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+  }
+  .footer ul li img {
+    width: 25%;
+  }
+}
+
+.header .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.header .section a {
+  width: 100%;
+  background-color: white;
+}
+
+.header .section a p {
+  font-size: 1.5rem;
   font-family: 'Inter-Bold';
-  color: #808080;
+  padding: 4% 0 3% 0;
 }
 
-.section #claimed {
+.header .section #claim {
+  border-bottom: 4px solid #007BFF;
   color: #007BFF;
-  border-bottom: 2px solid #007BFF;
 }
 
 .main {
-  position: static;
-  max-width: 50%;
+  padding: 2% 0 12% 0;
+}
+
+.main .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
   margin: auto;
-  text-align: center;
-  -webkit-column-count: 2;
-          column-count: 2;
-  width: 45%;
-  margin-top: 8%;
+  padding: 2% 0;
+  background-color: #F0F3F8;
+  width: 95%;
+  border-radius: 15px;
 }
 
-.main .item {
-  border-radius: 10%;
-  background-color: #CCF2FF;
-  padding: 2%;
-  overflow: hidden;
+.main .grid-container .item {
+  background-color: #30AADD;
+  border-radius: 20px;
   margin-bottom: 2%;
+  width: 100%;
 }
 
-.main .item p {
-  float: left;
-  text-align: left;
-  margin: 0;
-  margin-top: 1%;
-  margin-left: 2%;
-}
-
-.main .item img {
+.main .grid-container .item img {
   width: 25%;
-  border-radius: 20%;
+  padding: 4%;
+  border-radius: 40px;
   float: left;
 }
 
-.main .item p {
-  width: 50%;
-  margin: 4% auto;
-  font-family: 'Inter-Medium';
+.main .grid-container .item .item-info {
+  padding-top: 5%;
 }
 
-.footer .prescriptions {
-  background-color: #007BFF;
-  padding: 11.5% 0 0.4% 0;
-}
-
-.footer .prescriptions p {
+.main .grid-container .item .item-info p {
   color: white;
-  font-family: 'Inter-Bold';
+  font-size: 1.1rem;
+}
+
+.footer #prescriptions {
+  background-color: #007BFF;
+}
+
+.footer #prescriptions p {
+  font-family: Inter-Bold;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .section a p {
+    font-size: 1.1rem;
+    padding: 6%;
+  }
+  .header .section #claim {
+    border-bottom: 2px solid #007BFF;
+  }
+  .main {
+    padding-bottom: 18%;
+  }
+  .main .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .grid-container .item {
+    width: 85%;
+  }
+  .footer ul a li {
+    padding-top: 5px;
+  }
 }
 /*# sourceMappingURL=patient-claimed.css.map */

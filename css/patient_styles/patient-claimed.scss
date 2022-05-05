@@ -1,0 +1,118 @@
+@import "./patient-default";
+
+
+.header {
+    .section {
+        display: flex;
+        text-align: center;
+    
+        a {
+            width: 100%;
+            background-color: white;
+            p {
+                font-size: 1.5rem;
+                font-family: 'Inter-Bold';
+                padding: 4% 0 3% 0;
+            }
+        }
+    
+        #claim {
+            border-bottom: 4px solid $main_color;
+            color: $main_color;
+        }
+    }
+}
+
+
+.main {
+    padding: 2% 0 12% 0;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        justify-items: center;
+        column-gap: 10px;
+        margin: auto;
+        padding: 2% 0;
+    
+        background-color: $inactive_color_2;
+        width: 95%;
+        border-radius: 15px;
+        
+        
+        .item {
+            background-color: #30AADD;
+            border-radius: 20px;
+            margin-bottom: 2%;
+            width: 100%;
+            
+            img {
+                width: 25%;
+                padding: 4%;
+                border-radius: 40px;
+                float: left;
+            }
+            .item-info {
+                padding-top: 5%;
+                p {
+                    color: white;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    #prescriptions {
+        @include footer-blue();
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        font-size: 1rem;
+    }
+
+}
+@media (max-width: 767px) {
+    .header {
+        .section {
+            a {
+                p {
+                    font-size: 1.1rem;
+                    padding: 6%;
+                }
+            }
+
+            #claim{
+                border-bottom: 2px solid $main_color;
+            }
+        }
+    }
+
+    .main {
+        padding-bottom: 18%;
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .item {
+                width: 85%;
+            }
+        }
+    }
+
+    .footer {
+        ul {
+            a {
+                li {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+
