@@ -23,7 +23,7 @@
         <ul>
             <a href="patient-toclaim-empty.php">
                 <li id="prescriptions">
-                    <img src="../../assets/images/Circle_(indigo).png">
+                    <img src="../../assets/images/Circle_(grey).png">
                     <p>My prescriptions</p>
                 </li>
             </a>
@@ -42,7 +42,5 @@
         </ul>
     </nav>
     
-    
-
 </body>
 </html>
