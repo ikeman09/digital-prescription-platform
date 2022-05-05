@@ -44,6 +44,30 @@
             </div>
         </a>
     </div>
+
+    <nav class="footer">
+        <ul>
+            <a href="doctor-prescribe.php">
+                <li id="prescriptions">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Prescribe</p>
+                </li>
+            </a>
+            <a href="patient-qr.php">
+                <li id="myqr">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>My QR</p>
+                </li>
+            </a>
+            <a href="patient-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(indigo).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
+    
     
 
 </body>
