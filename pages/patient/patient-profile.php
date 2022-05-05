@@ -42,7 +42,7 @@
         
         <div class="changepass">
             <form>
-                <a href="doctor-changepass.php">
+                <a href="patient-changepass.php">
                     <input type="button" value="Change Password">
                 </a>
             </form>
@@ -54,7 +54,7 @@
         <ul>
             <a href="patient-toclaim-empty.php">
                 <li id="prescriptions">
-                    <img src="../../assets/images/Circle_(indigo).png">
+                    <img src="../../assets/images/Circle_(grey).png">
                     <p>My prescriptions</p>
                 </li>
             </a>
@@ -66,7 +66,7 @@
             </a>
             <a href="patient-profile.php">
                 <li id="profile">
-                    <img src="../../assets/images/Circle_(grey).png">
+                    <img src="../../assets/images/Circle_(indigo).png">
                     <p>Profile</p>
                 </li>
             </a>
