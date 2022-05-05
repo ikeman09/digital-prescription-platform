@@ -23,131 +23,189 @@
   color: #808080;
 }
 
+body {
+  margin: auto;
+  max-width: 50%;
+}
+
 a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  background-color: #007BFF;
-  text-align: left;
 }
 
 .header .logo {
-  padding: 1px 0px 1px 5px;
+  background-color: #007BFF;
 }
 
 .header .logo img {
   width: 7%;
+  padding: 5px 0px 3px 5px;
 }
 
 .footer {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  -webkit-column-count: 3;
-          column-count: 3;
   color: #808080;
   background-color: #F0F3F8;
+  width: 50%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
-.footer img {
-  width: 13%;
-  margin-top: -50%;
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
 }
 
-.footer .prescriptions {
-  padding: 11.5% 0 0.4% 0;
+.footer ul li {
+  padding: 2% 0 1.5% 0;
+  font-size: 1.4rem;
 }
 
-.footer .myqr {
-  padding: 11.5% 0 0.4% 0;
+.footer ul li img {
+  width: 12.5%;
 }
 
-.footer .profile {
-  padding: 11.5% 0 0.4% 0;
+@media (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  .header .logo img {
+    width: 10%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    padding-top: 3%;
+  }
+  .footer ul li img {
+    width: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .logo img {
+    width: 14%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer ul li {
+    font-size: 0.8rem;
+  }
+  .footer ul li img {
+    width: 25%;
+  }
 }
 
 .main {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
+  padding-bottom: 10%;
 }
 
-.main img {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
+.main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.main .top img {
   width: 30%;
-  margin-top: 10%;
 }
 
-.main #name {
-  margin-top: 5%;
+.main .top p {
+  font-size: 1.5rem;
+  padding-top: 4%;
 }
 
-.main .container {
-  margin-top: 3.4%;
+.main .column {
+  padding-bottom: 3%;
+  font-size: 1.4rem;
 }
 
-.main .container .info {
-  -webkit-column-count: 2;
-          column-count: 2;
+.main .column .info {
   background-color: #F0F3F8;
-  border: 1px solid #C4C4C4;
-  border-bottom: 0px;
-  padding: 1%;
+  padding: 1% 3%;
+  border-bottom: 1px solid #C4C4C4;
 }
 
-.main .container .info p {
-  text-align: left;
-  font-size: 150%;
-}
-
-.main .container .info #left {
-  text-align: right;
-}
-
-.main .container .info #last-item {
-  border-bottom: 1px;
+.main .column .info :first-child {
+  color: #C4C4C4;
 }
 
 .main .changepass {
-  margin-top: 10%;
+  text-align: center;
 }
 
-.main .changepass p {
-  position: static;
-  max-width: 50%;
-  margin: auto;
-  text-align: center;
-  background-color: #F0F3F8;
-  width: 34%;
-  padding: 1.5%;
+.main .changepass form input {
+  font-size: 1.4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1% 6% 1% 6%;
+  border-radius: 5px;
   border: 1px solid #C4C4C4;
 }
 
-.footer .profile {
+.footer #profile {
   background-color: #007BFF;
-  padding: 11.5% 0 0.4% 0;
 }
 
-.footer .profile p {
+.footer #profile p {
+  font-family: Inter-Bold;
   color: white;
-  font-family: 'Inter-Bold';
+}
+
+@media (max-width: 1024px) {
+  .main .top img {
+    width: 40%;
+  }
+  .main .changepass {
+    padding-top: 5%;
+  }
+  .main .changepass form input {
+    padding: 2% 12% 2% 12%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding-top: 5%;
+  }
+  .main .top img {
+    width: 70%;
+  }
+  .main .top p {
+    font-size: 1rem;
+  }
+  .main .column {
+    font-size: 1.2rem;
+  }
+  .main .changepass {
+    padding-top: 10%;
+  }
+  .main .changepass form input {
+    font-size: 1.2rem;
+    padding: 2% 12% 2% 12%;
+  }
 }
 /*# sourceMappingURL=patient-profile.css.map */

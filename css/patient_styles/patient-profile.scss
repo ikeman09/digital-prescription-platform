@@ -1,49 +1,100 @@
-@import "./_patient-default";
+@import "./patient-default";
 
 .main {
-        @include center();
-
-        img {
-                @include center();
-                width: 30%;
-                margin-top: 10%;
-        }
-
-        #name {
-                margin-top: 5%;
-        }
+    padding-bottom: 10%;
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
         
-        .container {
-                margin-top: 3.4%;
-                .info {
-                        column-count: 2;
-                        background-color: $inactive_color_2;;
-                        border: 1px solid $outline_color;
-                        border-bottom: 0px;
-                        padding: 1%;
-
-                        p {
-                                text-align: left;
-                                font-size: 150%;
-                        }
-
-                        #left {
-                                text-align: right;
-                        }
-                        #last-item {
-                                border-bottom: 1px;
-                        }
-                }
+        img {
+            width: 30%;
         }
-
-        .changepass {
-                @include change-pass();
+        p {
+            font-size: 1.5rem;
+            padding-top: 4%;
         }
+        padding-bottom: 2%;
+    }   
+
+    .column {
+        padding-bottom: 3%;
+        font-size: 1.4rem;
+
+        .info {
+            background-color: $inactive_color_2;
+            padding: 1% 3%;
+            border-bottom: 1px solid $outline_color;
+
+            :first-child {
+                color: $outline_color;
+            }
+        }
+    }
+
+    .changepass {
+        text-align: center;
+        form {
+            input {
+                @include big-button-2();
+            }
+        }
+    }
 }
 
 .footer {
-        .profile {
-                @include footer-blue;
-        }
+    #profile {
+        @include footer-blue();
+    }
 }
+
+@media (max-width: 1024px) {
+    .main {
+        .top {
+            img { 
+                width: 40%;
+            }
+        }
+
+        .changepass {
+            padding-top: 5%;
+            form {
+                input {
+                    padding: 2% 12% 2% 12%
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 767px) { //767px kay yawa ning ipad mini
+    .main {
+        padding-top: 5%;
+        .top {
+            img { 
+                width: 70%;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .column {
+            font-size: 1.2rem;
+        }
+
+        .changepass {
+            padding-top: 10%;
+            form {
+                input {
+                    font-size: 1.2rem;
+                    padding: 2% 12% 2% 12%
+                }
+            }
+        }
+    }
+}
+
 

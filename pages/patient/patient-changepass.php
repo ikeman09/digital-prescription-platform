@@ -15,41 +15,51 @@
     </div>
 
     <div class="main">
-        <a href="patient-profile.php" id="back">Back</a>
-        <form>
-            <p>Old password: </p>
-            <input type="password">
-            <p>New password: </p>
-            <input type="password">
-            <p>Confirm new password: </p>
-            <input type="password">
-        </form>
-        <p id="confirmation">*A confirmation email will be sent to your email address</p>
+        <div class="back">
+            <a href="patient-profile.php" id="back">Back</a>
+        </div>
+
+        <div class="form-container">
+            <form>
+                <p>Old password: </p>
+                <input type="password">
+                <p>New password: </p>
+                <input type="password">
+                <p>Confirm new password: </p>
+                <input type="password">
+            </form>
+            <p>*A confirmation email will be sent to your email address</p>
+        </div>
 
         <div class="changepass">
-            <p> Change password </p>
+            <form>
+                <input type="button" value="Change password">
+            </form>
         </div>
         
     </div>
 
-    <div class="footer">
-        <a href="patient-toclaim-empty.php">
-            <div class="prescriptions">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>My prescriptions</p>
-            </div>
-        </a>
-        <a href="patient-qr.php">
-            <div class="myqr">
-                <img src="../../assets/images/qrcode-small.png" alt="qr code">
-                <p>My QR</p>
-            </div>
-        </a>
-        <div class="profile">
-            <img src="../../assets/images/Circle_(indigo).png" alt="circle">
-            <p>Profile</p>
-        </div>
-    </div>
-
+    <nav class="footer">
+        <ul>
+            <a href="patient-toclaim-empty.php">
+                <li id="prescriptions">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>My prescriptions</p>
+                </li>
+            </a>
+            <a href="patient-qr.php">
+                <li id="myqr">
+                    <img src="../../assets/images/qrcode-small.png">
+                    <p>My QR</p>
+                </li>
+            </a>
+            <a href="patient-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(indigo).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
 </body>
 </html>

@@ -19,25 +19,28 @@
         <h3>Patient Code: 1234567890</h3>
     </div>
 
-    <div class="footer">
-        <a href="patient-toclaim-empty.php">
-            <div class="prescriptions">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>My prescriptions</p>
-            </div>
-        </a>
-        <div class="myqr">
-        <img src="../../assets/images/qrcode-small.png" alt="qr code">
-            <p>My QR</p>
-        </div>
-        <a href="patient-profile.php">
-            <div class="profile">
-                <img src="../../assets/images/Circle_(grey).png" alt="circle">
-                <p>Profile</p>
-            </div>
-        </a>
-    </div>
+    <nav class="footer">
+        <ul>
+            <a href="patient-toclaim-empty.php">
+                <li id="prescriptions">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>My prescriptions</p>
+                </li>
+            </a>
+            <a href="patient-qr.php">
+                <li id="myqr">
+                    <img src="../../assets/images/qrcode-small.png">
+                    <p>My QR</p>
+                </li>
+            </a>
+            <a href="patient-profile.php">
+                <li id="profile">
+                    <img src="../../assets/images/Circle_(grey).png">
+                    <p>Profile</p>
+                </li>
+            </a>
+        </ul>
+    </nav>
     
-
 </body>
 </html>
