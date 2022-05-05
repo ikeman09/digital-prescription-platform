@@ -1,0 +1,49 @@
+@import "./_patient-default";
+
+.main {
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+        border-radius: 5%;
+    }
+
+    h3 {
+        padding-top: 2%;
+        font-size: 1.5rem;
+        font-family: Inter-Medium;
+    }
+    
+}
+
+.footer {
+    #myqr {
+        @include footer-blue;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        img {
+            width: 80%;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+}
+    
