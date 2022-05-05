@@ -1,10 +1,8 @@
 @import './patient-toclaim-empty';
 
 .main {
-    @include drug-position();
 
     .item {
-        @include drug-item();
 
         .qrcode {
             float: right;
