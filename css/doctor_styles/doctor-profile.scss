@@ -1,18 +1,18 @@
 @import "./doctor-default";
 
 .main {
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     .top {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         padding-top: 2%;
         
-
         img {
-            width: 40%;
+            width: 30%;
         }
         p {
+            font-size: 1.5rem;
             padding-top: 4%;
         }
         padding-bottom: 2%;
@@ -44,10 +44,8 @@
 }
 
 .footer {
-    ul {
-        #profile {
-            @include footer-blue();
-        }
+    #profile {
+        @include footer-blue();
     }
 }
 
@@ -98,5 +96,4 @@
         }
     }
 }
-
 
