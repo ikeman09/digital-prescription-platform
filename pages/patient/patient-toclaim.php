@@ -53,7 +53,6 @@
                     <p> Check QR </p>
                 </div>
             </div>
-            
         </div>
     </div>
 
