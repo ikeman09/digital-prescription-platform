@@ -58,7 +58,7 @@
                 padding-top: 5%;
                 p {
                     color: white;
-                    font-size: 1.1rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -73,7 +73,15 @@
 
 @media (max-width: 1024px) {
     .main {
-        font-size: 1rem;
+        .grid-container {
+            .item {
+                .item-info {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -102,6 +110,12 @@
 
             .item {
                 width: 85%;
+
+                .item-info {
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
             }
         }
     }

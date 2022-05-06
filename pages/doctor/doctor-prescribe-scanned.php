@@ -14,35 +14,35 @@
 
     <div class="main">
         <div class="info">
-            <div class="name">
-                <p>SERVO, JOHN RAY CLEMENTZ A.</p>
-            </div>
-            <div class="other-info">
-                <p>Bolong subd. Kidapawan City</p>
-                <p>Age: 20</p> 
-                <p>Sex: M</p>
-                <p>Date: 03/29/2022</p>
+            <div class="info-wrapper">
+                <div class="name">
+                    <p>SERVO, JOHN RAY CLEMENTZ A.</p>
+                </div>
+                <div class="other-info">
+                    <p>Bolong subd. Kidapawan City</p>
+                    <p>Age: 20</p> 
+                    <p>Sex: M</p>
+                    <p>Date: 03/29/2022</p>
+                </div>
             </div>
         </div>
 
         <div class="container to-claim">
-            <p id="to-claim-header">To claim</p>
-            <div class="flex-wrapper">
-                <div class="column column-1">
-                    <div class="item item-1">
-                        <img src="../../assets/images/colace.jpeg">
+            <div class="container-wrapper">
+                <p id="to-claim-header">To claim</p>
+                <div class="grid-container">
+                    <div class="item">
+                        <img src="../../assets/images/paracetamol.jpeg">
                         <div class="item-info">
                             <p>Paracetamol Tab #30</p>
                             <p>Sig: A.D.</p>
                         </div>
                     </div>
-                </div>
-                <div class="column column-2">
-                    <div class="item item-2">
+                    <div class="item">
                         <img src="../../assets/images/ascorbic.jpeg">
                         <div class="item-info">
-                            <p>Ascorbic Acid Sig #30</p>
-                            <p>Once a day</p>
+                            <p>Ascorbic Acid #30</p>
+                            <p>Sig: Once a day.</p>
                         </div>
                     </div>
                 </div>
@@ -50,9 +50,9 @@
         </div>
 
         <div class="container claim">
-            <p id="claim-header">Claimed</p>
-            <div class="flex-wrapper">
-                <div class="column column-1">
+            <div class="container-wrapper">
+                <p id="claim-header">Claimed</p>
+                <div class="grid-container">
                     <div class="item">
                         <img src="../../assets/images/colace.jpeg">
                         <div class="item-info">
@@ -81,8 +81,6 @@
                             <p>1 tab</p>
                         </div>
                     </div>
-                </div>
-                <div class="column column-2">
                     <div class="item">
                         <img src="../../assets/images/paracetamol.jpeg">
                         <div class="item-info">

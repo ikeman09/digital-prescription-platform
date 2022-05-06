@@ -3,76 +3,83 @@
 .main {
     padding-top: 2%;
     padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .info {
-        background-color: #54A7FF;
-        border-radius: 20px;
-        padding: 1% 2% 3% 2%;
         width: 80%;
-
-        p {
-            color: white;
-        }
-       
-        .name {
+        padding-bottom: 2%;
+        .info-wrapper {
+            background-color: #54A7FF;
+            border-radius: 20px;
+            padding: 3.5%;
+            
+    
             p {
-                font-size: 2.5rem;
-                font-family: Inter-Bold;
-                border-bottom: 1.5px solid white;
+                color: white;
+            }
+           
+            .name {
+                padding-bottom: 1%;
+                p {
+                    font-size: 2.5rem;
+                    font-family: Inter-Bold;
+                    border-bottom: 3px solid white;
+                }
+            }
+    
+            .other-info {
+                p {
+                    margin: 0;
+                    font-size: 1.2rem;
+                    padding: 0.7%;
+                }
             }
         }
-
-        .other-info {
-            p {
-                margin: 0;
-                font-size: 1.2rem;
-                padding: 0.7%;
-            }
-        }
-        
     }
 
     .container {
+        width: 80%;
+        padding-bottom: 1%;
 
-        #to-claim-header, #claim-header {
-            font-size: 2rem;
-            font-family: Inter-Bold;
-            padding: 2%;
-            padding-left: 10%;
-        }
-
-        .flex-wrapper {
-            width: 80%;
+        .container-wrapper {
             background-color: $inactive_color_2;
-            border-radius: 20px;
-            padding-bottom: 1%;
-            display: flex;
-            justify-content: space-between;
-
-            .column {
-                padding-top: 2%;
-                display: flex;
-                flex-direction: column;
+            border-radius: 15px;
+    
+            #to-claim-header, #claim-header {
+                font-size: 2rem;
+                font-family: Inter-Bold;
+                padding: 1% 0 0 4%;
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: 45% 45%;
+                justify-content: center;
+                justify-items: center;
+                column-gap: 10px;
+                row-gap: 5px;
+                margin: auto;
+                padding: 2% 0;
                 
-
                 .item {
                     background-color: #30AADD;
-                    width: 100%;
                     border-radius: 20px;
-                    padding-right: 2%;
-                    margin-bottom: 2%;
-
+                    width: 100%;
+                    display: flex;
+        
                     img {
-                        width: 25%;
+                        width: 20%;
                         padding: 4%;
-                        border-radius: 40px;
-                        float: left;
+                        border-radius: 30px;
                     }
+        
                     .item-info {
                         padding-top: 5%;
                         p {
                             color: white;
-                            font-size: 1.1rem;
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -81,11 +88,12 @@
     }
 
     form {
+        width: 100%;
         text-align: center;
-        padding-top: 2%;
+        padding: 2% 0 1% 0;
         input[type="button"] {
             @include big-button();
-            font-size: 1.2rem;
+            font-size: 2rem;
             padding: 1% 6% 1% 6%;
             border-radius: 10px;
         }
@@ -103,22 +111,45 @@
 @media (max-width: 1024px) {
     .main {
         .info {
-            .name {
-                margin-top: 1%;
-                p {
-                    font-size: 2.3rem;
+            .info-wrapper {
+                .name {
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+    
+                .other-info {
+                    p {
+                        font-size: 1rem;
+                    }
                 }
             }
+        }
 
-            .other-info {
-                p {
-                    font-size: 1rem;
+        .container {
+            .container-wrapper {
+                #to-claim-header, #claim-header {
+                    font-size: 1.7rem;
+                }
+
+                .grid-container {
+                    .item {
+                        border-radius: 8px;
+                        .item-info {
+                            p {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
                 }
             }
         }
 
         form {
-            padding-bottom: 5%;
+            input[type="button"] {
+                font-size: 1.5rem;
+                border-radius: 5px;
+            }
         }
     }
 }
@@ -126,33 +157,55 @@
 @media (max-width: 767px) {
     .main {
         .info {
-            .name {
-                margin-top: 1%;
-                p {
-                    font-size: 1.12rem;
-                    text-align: center;
+            .info-wrapper {
+                padding: 5%;
+                border-radius: 8px;
+                .name {
+                    p {
+                        font-size: 1.1rem;
+                    }
                 }
-            }
-
-            .other-info {
-                p {
-                    font-size: 1rem;
+    
+                .other-info {
+                    p {
+                        font-size: 0.8rem;
+                    }
                 }
             }
         }
 
         .container {
-            #to-claim-header, #claim-header {
-                font-size: 1.3rem;
-            }
+            .container-wrapper {
 
-            .flex-wrapper {
-                flex-direction: column;
+                #to-claim-header, #claim-header {
+                    font-size: 1.3rem;
+                }
+
+                .grid-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+        
+                    .item {
+                        width: 85%;
+                        
+                        .item-info {
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
             }
         }
 
         form {
             padding-bottom: 10%;
+            input[type="button"] {
+                font-size: 1rem;
+                padding: 2% 10% 2% 10%;
+                
+            }
         }
     }
 }
