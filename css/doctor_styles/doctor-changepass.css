@@ -109,6 +109,7 @@ ul {
 
 .main {
   width: 90%;
+  margin: auto;
 }
 
 .main .back {
@@ -116,7 +117,7 @@ ul {
 }
 
 .main .form-container {
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .main .form-container form {
