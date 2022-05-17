@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10vh;
 
     p {
         padding: 0.5vw 0 1vw 0;
@@ -34,7 +35,6 @@
         height: 500px;
         background-color: $inactive_color;
         border-radius: 20px;
-        margin-top: -8vw;
     }
 
 }

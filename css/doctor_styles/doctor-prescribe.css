@@ -123,6 +123,7 @@ p, ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 10vh;
 }
 
 .content p {
@@ -160,7 +161,6 @@ p, ul {
   height: 500px;
   background-color: #808080;
   border-radius: 20px;
-  margin-top: -8vw;
 }
 
 .footer ul a #prescribe {
