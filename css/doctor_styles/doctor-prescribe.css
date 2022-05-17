@@ -183,4 +183,32 @@ p, ul {
     width: 50vw;
   }
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding-bottom: 20vh;
+  }
+  .content .square {
+    width: 350px;
+    height: 350px;
+  }
+  .content p {
+    font-size: 0.9rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  .content form input[type=text] {
+    width: 60vw;
+    height: 1.5vh;
+  }
+  .content form a input[type=button] {
+    background-color: #54A7FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 70px;
+    height: 25px;
+  }
+}
 /*# sourceMappingURL=doctor-prescribe.css.map */
