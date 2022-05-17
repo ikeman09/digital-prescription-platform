@@ -13,14 +13,14 @@
     </div>
 
     <div class="content">
-        <img src="../../assets/images/square.png">
+        <!-- <img src="../../assets/images/square.png">
         <p>Trouble scanning? Enter the code below:</p>
         <form>
             <input type="text">
             <a href="doctor-prescribe-scanned.php">
                 <input type="button" value="Enter">
             </a>
-        </form>
+        </form> -->
     </div>
 
     <nav class="footer">
