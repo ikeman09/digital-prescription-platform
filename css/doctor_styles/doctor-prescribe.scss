@@ -6,10 +6,35 @@
     justify-content: center;
     align-items: center;
 
+    p {
+        padding: 0.5vw 0 1vw 0;
+        font-size: 1.1rem;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        input[type=text] {
+            width: 20vw;
+            height: 25px;
+        }
+        a {
+            input[type=button] {
+                @include button-color;
+                font-size: 1.2rem;
+                width: 100px;
+                height: 32px;
+            }
+        }
+    }
+
     .square {
         width: 500px;
         height: 500px;
         background-color: $inactive_color;
         border-radius: 20px;
+        margin-top: -8vw;
     }
+
 }

@@ -122,10 +122,41 @@ p, ul {
           align-items: center;
 }
 
+.content p {
+  padding: 0.5vw 0 1vw 0;
+  font-size: 1.1rem;
+}
+
+.content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.content form input[type=text] {
+  width: 20vw;
+  height: 25px;
+}
+
+.content form a input[type=button] {
+  background-color: #54A7FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 32px;
+}
+
 .content .square {
   width: 500px;
   height: 500px;
   background-color: #808080;
   border-radius: 20px;
+  margin-top: -8vw;
 }
 /*# sourceMappingURL=doctor-prescribe.css.map */

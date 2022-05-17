@@ -30,16 +30,14 @@ $footer_padding: 7.5% 0 0.4% 0;
     }
 }
 
-@mixin big-button {
+@mixin button-color {
     background-color: #54A7FF;
     color: white;
-    border-radius: 8px;
-    font-size: 1.4rem;
-    font-family: Inter-Bold;
-    padding: 1.2% 6% 1.2% 6%;
+    border: none;
+    border-radius: 5px;
 }
 
-@mixin big-button-2 {
+@mixin button-color-2 {
     font-size: 1.4rem;
     box-shadow: none;
     padding: 1% 6% 1% 6%;
