@@ -101,8 +101,8 @@ p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
-  padding: 1% 0 0.2% 0;
+  gap: 5px;
+  padding: 1.5% 0 0.2% 0;
 }
 
 .footer ul a li img {
@@ -112,6 +112,18 @@ p, ul {
 @media (max-width: 1024px) {
   .header, .content, .footer {
     width: 100vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .header img {
+    width: 60px;
+  }
+  .footer ul a li p {
+    font-size: 1rem;
+  }
+  .footer ul a li img {
+    width: 30px;
   }
 }
 
