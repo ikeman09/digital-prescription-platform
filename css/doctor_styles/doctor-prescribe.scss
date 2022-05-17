@@ -48,3 +48,20 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .header, .content, .footer {
+        width: 100vw;
+    }
+
+    .content {
+        p {
+            padding-bottom: 3%;
+        }
+        form {
+            input[type=text] {
+                width: 50vw;
+            }
+        }
+    }
+}

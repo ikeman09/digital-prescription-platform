@@ -171,4 +171,16 @@ p, ul {
   font-family: Inter-Bold;
   color: white;
 }
+
+@media (max-width: 1024px) {
+  .header, .content, .footer {
+    width: 100vw;
+  }
+  .content p {
+    padding-bottom: 3%;
+  }
+  .content form input[type=text] {
+    width: 50vw;
+  }
+}
 /*# sourceMappingURL=doctor-prescribe.css.map */
