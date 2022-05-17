@@ -13,7 +13,6 @@
         </div>
 
         <div class="content">
-            <img src="../../assets/images/square.png">
             <p>Trouble scanning? Enter the code below:</p>
             <form>
                 <input type="text">

@@ -1,1 +1,5 @@
-@import "./doctor-default";
+@import "./doctor-base";
+
+.content {
+    display: flex;
+}

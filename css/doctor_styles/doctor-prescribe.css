@@ -105,4 +105,10 @@ p, ul {
 .footer ul a li img {
   width: 40px;
 }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=doctor-prescribe.css.map */
