@@ -13,6 +13,7 @@
         </div>
 
         <div class="content">
+            <div class="square"></div>
             <p>Trouble scanning? Enter the code below:</p>
             <form>
                 <input type="text">

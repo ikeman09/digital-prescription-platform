@@ -2,4 +2,11 @@
 
 .content {
     display: flex;
+
+    .square {
+        width: 500px;
+        height: 500px;
+        background-color: $inactive_color;
+        border-radius: 20px;
+    }
 }
