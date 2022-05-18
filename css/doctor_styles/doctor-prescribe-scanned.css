@@ -274,4 +274,13 @@ p {
   font-family: Inter-Bold;
   font-size: 1.2rem;
 }
+
+.footer ul a #prescribe {
+  background-color: #007BFF;
+}
+
+.footer ul a #prescribe p {
+  font-family: Inter-Bold;
+  color: white;
+}
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */

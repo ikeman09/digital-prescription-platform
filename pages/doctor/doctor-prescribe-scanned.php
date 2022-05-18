@@ -10,7 +10,7 @@
 <body>
     <div class="header">
         <img src="../../assets/images/prescription-logo.png" alt="logo">
-        <a href="./doctor-prescribed-scanned-next.php">
+        <a href="./doctor-prescribe-scanned-next.php">
             <button>
                 Next
             </button>

@@ -117,3 +117,13 @@ p {
         }
     }
 }
+
+.footer {
+    ul {
+        a {
+            #prescribe {
+                @include footer-blue;
+            }
+        }
+    }
+}
