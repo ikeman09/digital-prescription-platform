@@ -169,7 +169,7 @@ p {
 
 .content .info .info-wrapper {
   background-color: #007BFF;
-  width: 48em;
+  width: 45em;
   border-radius: 10px;
   padding: 0 4% 3% 4%;
   -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -214,7 +214,7 @@ p {
 }
 
 .content .container .container-wrapper .flex-container {
-  width: 37vw;
+  width: 45em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -241,15 +241,15 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  width: 23em;
-  height: 8em;
+  width: 21em;
+  height: 7em;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 .content .container .container-wrapper .flex-container .item img {
-  width: 7em;
+  width: 6em;
   border-radius: 5px;
 }
 
@@ -259,7 +259,6 @@ p {
 
 .content .container .container-wrapper .flex-container .item .item-info :first-child {
   font-family: Inter-Bold;
-  font-size: 1.1em;
 }
 
 .footer ul a #prescribe {

@@ -38,7 +38,7 @@ p {
 
         .info-wrapper {
             background-color: $main_color;
-            width: 48em;
+            width: 45em;
             border-radius: 10px;
             padding: 0 4% 3% 4%;
             box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -81,7 +81,7 @@ p {
             }
 
             .flex-container {
-                width: 37vw;
+                width: 45em;
                 flex: 1;
                 display: flex;
                 justify-content: space-evenly;
@@ -94,13 +94,13 @@ p {
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    width: 23em;
-                    height: 8em;
+                    width: 21em;
+                    height: 7em;
                     border-radius: 10px;
                     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 
                     img {
-                        width: 7em;
+                        width: 6em;
                         border-radius: 5px;
                     }
 
@@ -109,7 +109,6 @@ p {
 
                         :first-child {
                             font-family: Inter-Bold;
-                            font-size: 1.1em;
                         }
                     }
                 }

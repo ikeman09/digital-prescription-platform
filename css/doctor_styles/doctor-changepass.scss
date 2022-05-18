@@ -26,7 +26,6 @@
         text-align: center;
         padding-top: 10%;
         input[type=button] {
-            @include big-button-2();
         }
     }
 }
