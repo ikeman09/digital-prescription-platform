@@ -37,7 +37,7 @@
         text-align: center;
         form {
             input {
-                @include big-button-2();
+                @include button-color-2();
             }
         }
     }
