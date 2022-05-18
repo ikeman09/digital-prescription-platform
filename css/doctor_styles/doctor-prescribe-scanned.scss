@@ -32,7 +32,8 @@ p {
         padding-top: 2%;
 
 
-        p, h1 {
+        p,
+        h1 {
             color: white;
         }
 
@@ -43,7 +44,7 @@ p {
             border-radius: 10px;
             padding: 0 4% 3% 4%;
             box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
-            
+
             .name {
                 h1 {
                     font-family: Inter-Bold;
@@ -73,7 +74,8 @@ p {
             padding: 3%;
             border-radius: 10px;
 
-            #to-claim-header, #claim-header {
+            #to-claim-header,
+            #claim-header {
                 color: $inactive_color;
                 font-family: Inter-Bold;
                 font-size: 1.5rem;
@@ -107,6 +109,7 @@ p {
 
                     .item-info {
                         width: 200px;
+
                         :first-child {
                             font-family: Inter-Bold;
                             font-size: 1.2rem;
@@ -123,6 +126,57 @@ p {
         a {
             #prescribe {
                 @include footer-blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .content {
+        .info {
+            .info-wrapper {
+                .name {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                }
+                .other-info {
+                    .up {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size:0.8rem;
+                    }
+                }
+            }
+        }
+
+        .container {
+            .container-wrapper {
+                .flex-container {
+                    .item {
+                        width: 240px;
+                        height: 70px;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        .item-info {
+                            width: 150px;
+
+                            p {
+                                font-size: 0.5rem;
+                            }
+
+                            :first-child {
+                                font-family: Inter-Bold;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
