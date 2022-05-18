@@ -282,7 +282,7 @@ p {
   color: white;
 }
 
-@media (max-width: 1366px) {
+@media (width: 1366px) {
   .content .info .info-wrapper {
     width: 35em;
   }
@@ -306,6 +306,42 @@ p {
   .content .container .container-wrapper .flex-container .item .item-info :first-child {
     font-family: Inter-Bold;
     font-size: 0.75em;
+  }
+}
+
+@media (max-width: 767px) {
+  .content .info .info-wrapper {
+    width: 20em;
+  }
+  .content .info .info-wrapper .name h1 {
+    font-size: 1.2em;
+  }
+  .content .info .info-wrapper .other-info .up {
+    font-size: 1.1em;
+  }
+  .content .info .info-wrapper .other-info p {
+    font-size: 0.9em;
+  }
+  .content .container .container-wrapper .flex-container {
+    width: 20em;
+  }
+  .content .container .container-wrapper .flex-container .item {
+    width: 18em;
+    height: 6em;
+  }
+  .content .container .container-wrapper .flex-container .item img {
+    width: 5em;
+    border-radius: 5px;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info {
+    width: 11em;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info p {
+    font-size: 0.6em;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info :first-child {
+    font-family: Inter-Bold;
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */
