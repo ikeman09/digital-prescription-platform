@@ -185,6 +185,8 @@ p {
   height: 28vh;
   border-radius: 10px;
   padding: 0 4% 3% 4%;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 .content .info .info-wrapper .name h1 {
