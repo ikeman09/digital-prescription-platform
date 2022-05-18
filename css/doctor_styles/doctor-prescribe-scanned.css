@@ -283,46 +283,4 @@ p {
   font-family: Inter-Bold;
   color: white;
 }
-
-@media (max-width: 1366px) and (min-width: 768px) {
-  .content .info .info-wrapper .name h1 {
-    font-size: 1.5rem;
-  }
-  .content .info .info-wrapper .other-info .up {
-    font-size: 1rem;
-  }
-  .content .info .info-wrapper .other-info p {
-    font-size: 0.8rem;
-  }
-  .content .container .container-wrapper .flex-container .item {
-    width: 240px;
-    height: 70px;
-  }
-  .content .container .container-wrapper .flex-container .item img {
-    width: 50px;
-    height: 50px;
-  }
-  .content .container .container-wrapper .flex-container .item .item-info {
-    width: 150px;
-  }
-  .content .container .container-wrapper .flex-container .item .item-info p {
-    font-size: 0.5rem;
-  }
-  .content .container .container-wrapper .flex-container .item .item-info :first-child {
-    font-family: Inter-Bold;
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .content .info .info-wrapper .name h1 {
-    font-size: 1.5rem;
-  }
-  .content .info .info-wrapper .other-info .up {
-    font-size: 1rem;
-  }
-  .content .info .info-wrapper .other-info p {
-    font-size: 0.8rem;
-  }
-}
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */
