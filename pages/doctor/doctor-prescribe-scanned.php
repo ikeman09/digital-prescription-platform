@@ -36,10 +36,10 @@
             </div>
         </div>
 
-        <!-- <div class="container to-claim">
+        <div class="container to-claim">
             <div class="container-wrapper">
                 <p id="to-claim-header">To claim</p>
-                <div class="grid-container">
+                <div class="flex-container">
                     <div class="item">
                         <img src="../../assets/images/paracetamol.jpeg">
                         <div class="item-info">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- 
         <div class="container claim">
             <div class="container-wrapper">

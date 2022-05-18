@@ -17,10 +17,10 @@
 }
 
 $main_color: #007BFF;
+$accent_color: #54A7FF;
 $inactive_color: #808080;
 $inactive_color_2: #F0F3F8;
 $outline_color: #C4C4C4;
-$footer_padding: 7.5% 0 0.4% 0;
 
 @mixin footer-blue {
     background-color: $main_color;
@@ -31,7 +31,7 @@ $footer_padding: 7.5% 0 0.4% 0;
 }
 
 @mixin button-color {
-    background-color: #54A7FF;
+    background-color: $accent_color;
     color: white;
     border: none;
     border-radius: 5px;

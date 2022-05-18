@@ -58,4 +58,61 @@ p {
             }
         }
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+
+        p {
+            color: white;
+        }
+
+        .container-wrapper {
+            background-color: $inactive_color_2;
+            padding: 3%;
+            border-radius: 10px;
+
+            #to-claim-header {
+                color: $inactive_color;
+                font-family: Inter-Bold;
+                font-size: 1.5rem;
+                padding-bottom: 2%;
+            }
+            .flex-container {
+                width: 37vw;
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                .item {
+                    background-color: $accent_color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    width: 340px;
+                    height: 150px;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 5px;
+                    }
+
+                    .item-info {
+                        width: 200px;
+                        :first-child {
+                            font-family: Inter-Bold;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
