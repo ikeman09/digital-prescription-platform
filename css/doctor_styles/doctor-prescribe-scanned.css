@@ -114,6 +114,18 @@ p, ul {
   }
 }
 
+@media (max-width: 767px) {
+  .header img {
+    width: 60px;
+  }
+  .footer ul a li p {
+    font-size: 1rem;
+  }
+  .footer ul a li img {
+    width: 30px;
+  }
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -268,5 +280,32 @@ p {
 .footer ul a #prescribe p {
   font-family: Inter-Bold;
   color: white;
+}
+
+@media (max-width: 1366px) {
+  .content .info .info-wrapper {
+    width: 35em;
+  }
+  .content .container .container-wrapper .flex-container {
+    width: 35em;
+  }
+  .content .container .container-wrapper .flex-container .item {
+    width: 15em;
+    height: 5em;
+  }
+  .content .container .container-wrapper .flex-container .item img {
+    width: 4em;
+    border-radius: 5px;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info {
+    width: 8em;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info p {
+    font-size: 0.6em;
+  }
+  .content .container .container-wrapper .flex-container .item .item-info :first-child {
+    font-family: Inter-Bold;
+    font-size: 0.75em;
+  }
 }
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */

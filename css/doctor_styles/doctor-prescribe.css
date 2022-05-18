@@ -114,6 +114,18 @@ p, ul {
   }
 }
 
+@media (max-width: 767px) {
+  .header img {
+    width: 60px;
+  }
+  .footer ul a li p {
+    font-size: 1rem;
+  }
+  .footer ul a li img {
+    width: 30px;
+  }
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;

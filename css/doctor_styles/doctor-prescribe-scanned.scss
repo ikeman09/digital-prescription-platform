@@ -126,3 +126,44 @@ p {
         }
     }
 }
+
+@media (max-width: 1366px) {
+    .content {
+        .info {
+            .info-wrapper {
+                width: 35em;
+            }
+        }
+
+        .container {
+            .container-wrapper {
+                .flex-container {
+                    width: 35em;
+    
+                    .item {
+                        width: 15em;
+                        height: 5em;
+
+                        img {
+                            width: 4em;
+                            border-radius: 5px;
+                        }
+
+                        .item-info {
+                            width: 8em;
+
+                            p {
+                                font-size: 0.6em;
+                            }
+
+                            :first-child {
+                                font-family: Inter-Bold;
+                                font-size: 0.75em;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
