@@ -10,24 +10,33 @@
 <body>
     <div class="header">
         <img src="../../assets/images/prescription-logo.png" alt="logo">
+        <a href="./doctor-prescribed-scanned-next.php">
+            <button>
+                Next
+            </button>
+        </a>
     </div>
 
-    <div class="main">
+    <div class="content">
         <div class="info">
             <div class="info-wrapper">
                 <div class="name">
-                    <p>SERVO, JOHN RAY CLEMENTZ A.</p>
+                    <h1>SERVO, JOHN RAY CLEMENTZ A.</h1>
                 </div>
                 <div class="other-info">
+                    <p class="up">Address</p>
                     <p>Bolong subd. Kidapawan City</p>
-                    <p>Age: 20</p> 
-                    <p>Sex: M</p>
-                    <p>Date: 03/29/2022</p>
+                    <p class="up">Age</p>
+                    <p>20</p> 
+                    <p class="up">Sex</p>
+                    <p>M</p>
+                    <p class="up">Date</p>
+                    <p>03/29/2022</p>
                 </div>
             </div>
         </div>
 
-        <div class="container to-claim">
+        <!-- <div class="container to-claim">
             <div class="container-wrapper">
                 <p id="to-claim-header">To claim</p>
                 <div class="grid-container">
@@ -47,8 +56,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-
+        </div> -->
+        <!-- 
         <div class="container claim">
             <div class="container-wrapper">
                 <p id="claim-header">Claimed</p>
@@ -110,14 +119,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div>-->
 
-        <form>
-            <a href="doctor-prescribe-scanned-next.php">
-            <input type="button" value="Next">
-            </a>
-        </form>
     </div>
     
     <nav class="footer">

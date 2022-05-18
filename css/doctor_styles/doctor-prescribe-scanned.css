@@ -126,4 +126,73 @@ p, ul {
     width: 30px;
   }
 }
-/*# sourceMappingURL=doctor-prescribed-scanned.css.map */
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header button {
+  background-color: #54A7FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  width: 150px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.content .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1% 4%;
+}
+
+.content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2%;
+}
+
+.content .info p, .content .info h1 {
+  color: white;
+}
+
+.content .info .info-wrapper {
+  background-color: #007BFF;
+  width: 34vw;
+  height: 28vh;
+  border-radius: 10px;
+  padding: 0 4% 3% 4%;
+}
+
+.content .info .info-wrapper .name h1 {
+  font-family: Inter-Bold;
+}
+
+.content .info .info-wrapper .other-info .up {
+  font-family: Inter-Medium;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=doctor-prescribe-scanned.css.map */
