@@ -22,7 +22,7 @@
 }
 
 body {
-  height: auto;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@ p, ul {
 }
 
 .header img {
-  width: 75px;
+  width: 5rem;
   padding: 0.5%;
 }
 
@@ -101,12 +101,12 @@ p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5px;
+  gap: 0.4rem;
   padding: 1.5% 0 0.2% 0;
 }
 
 .footer ul a li img {
-  width: 40px;
+  width: 2.5rem;
 }
 
 @media (max-width: 1024px) {

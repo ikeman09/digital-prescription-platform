@@ -22,7 +22,7 @@
 }
 
 body {
-  height: auto;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@ p, ul {
 }
 
 .header img {
-  width: 75px;
+  width: 5rem;
   padding: 0.5%;
 }
 
@@ -101,12 +101,12 @@ p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5px;
+  gap: 0.4rem;
   padding: 1.5% 0 0.2% 0;
 }
 
 .footer ul a li img {
-  width: 40px;
+  width: 2.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -150,8 +150,8 @@ p {
   border: none;
   border-radius: 5px;
   font-size: 1.4rem;
-  width: 150px;
-  height: 50px;
+  width: 8rem;
+  height: 3rem;
   margin-right: 20px;
 }
 
@@ -182,8 +182,7 @@ p {
 
 .content .info .info-wrapper {
   background-color: #007BFF;
-  width: 34vw;
-  height: 28vh;
+  width: 48rem;
   border-radius: 10px;
   padding: 0 4% 3% 4%;
   -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -196,7 +195,7 @@ p {
 
 .content .info .info-wrapper .other-info .up {
   font-family: Inter-Medium;
-  font-size: 1.2rem;
+  font-size: 1.4em;
 }
 
 .content .container {
@@ -235,9 +234,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
@@ -255,26 +254,25 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  width: 340px;
-  height: 150px;
+  width: 23em;
+  height: 8em;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 .content .container .container-wrapper .flex-container .item img {
-  width: 100px;
-  height: 100px;
+  width: 7em;
   border-radius: 5px;
 }
 
 .content .container .container-wrapper .flex-container .item .item-info {
-  width: 200px;
+  width: 13em;
 }
 
 .content .container .container-wrapper .flex-container .item .item-info :first-child {
   font-family: Inter-Bold;
-  font-size: 1.2rem;
+  font-size: 1.1em;
 }
 
 .footer ul a #prescribe {
@@ -286,12 +284,7 @@ p {
   color: white;
 }
 
-@media (max-width: 1366px) {
-  .header button {
-    width: 100px;
-    height: 30px;
-    font-size: 1.1rem;
-  }
+@media (max-width: 1366px) and (min-width: 768px) {
   .content .info .info-wrapper .name h1 {
     font-size: 1.5rem;
   }
@@ -317,6 +310,18 @@ p {
   }
   .content .container .container-wrapper .flex-container .item .item-info :first-child {
     font-family: Inter-Bold;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content .info .info-wrapper .name h1 {
+    font-size: 1.5rem;
+  }
+  .content .info .info-wrapper .other-info .up {
+    font-size: 1rem;
+  }
+  .content .info .info-wrapper .other-info p {
     font-size: 0.8rem;
   }
 }

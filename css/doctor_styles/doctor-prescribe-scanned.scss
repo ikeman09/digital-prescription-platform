@@ -13,8 +13,8 @@ p {
     button {
         @include button-color;
         font-size: 1.4rem;
-        width: 150px;
-        height: 50px;
+        width: 8rem;
+        height: 3rem;
         margin-right: 20px; // Need
     }
 }
@@ -31,7 +31,6 @@ p {
         justify-content: center;
         padding-top: 2%;
 
-
         p,
         h1 {
             color: white;
@@ -39,8 +38,7 @@ p {
 
         .info-wrapper {
             background-color: $main_color;
-            width: 34vw;
-            height: 28vh;
+            width: 48rem;
             border-radius: 10px;
             padding: 0 4% 3% 4%;
             box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
@@ -54,7 +52,7 @@ p {
             .other-info {
                 .up {
                     font-family: Inter-Medium;
-                    font-size: 1.2rem;
+                    font-size: 1.4em;
                 }
             }
         }
@@ -86,7 +84,7 @@ p {
                 width: 37vw;
                 flex: 1;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
                 gap: 20px;
 
@@ -96,23 +94,22 @@ p {
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    width: 340px;
-                    height: 150px;
+                    width: 23em;
+                    height: 8em;
                     border-radius: 10px;
                     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 
                     img {
-                        width: 100px;
-                        height: 100px;
+                        width: 7em;
                         border-radius: 5px;
                     }
 
                     .item-info {
-                        width: 200px;
+                        width: 13em;
 
                         :first-child {
                             font-family: Inter-Bold;
-                            font-size: 1.2rem;
+                            font-size: 1.1em;
                         }
                     }
                 }
@@ -131,14 +128,7 @@ p {
     }
 }
 
-@media (max-width: 1366px) {
-    .header {
-        button {
-            width: 100px;
-            height: 30px;
-            font-size: 1.1rem;
-        }
-    }
+@media (max-width: 1366px) and (min-width: 768px) {
     .content {
         .info {
             .info-wrapper {
@@ -182,6 +172,28 @@ p {
                                 font-size: 0.8rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        .info {
+            .info-wrapper {
+                .name {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                }
+                .other-info {
+                    .up {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size:0.8rem;
                     }
                 }
             }
