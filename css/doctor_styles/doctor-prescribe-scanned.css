@@ -287,6 +287,11 @@ p {
 }
 
 @media (max-width: 1366px) {
+  .header button {
+    width: 100px;
+    height: 30px;
+    font-size: 1.1rem;
+  }
   .content .info .info-wrapper .name h1 {
     font-size: 1.5rem;
   }
