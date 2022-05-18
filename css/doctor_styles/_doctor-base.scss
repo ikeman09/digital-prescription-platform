@@ -26,8 +26,7 @@ p, ul {
 .header {
     background-color: $main_color;
     
-    position: sticky;
-    top: 0;
+    position: fixed;
 
     img {
         width: 5rem;
@@ -36,6 +35,7 @@ p, ul {
 }
 
 .content {
+    margin-top: 5rem; // NEED THIS CAUSE POSITION: FIXED
     flex: 1;
 }
 
@@ -74,28 +74,28 @@ p, ul {
     }
 }
 
-@media(max-width: 767px) {
-    .header {
-        img {
-            width: 60px;
-        }
-    }
+// @media(max-width: 767px) {
+//     .header {
+//         img {
+//             width: 60px;
+//         }
+//     }
 
-    .footer {
-        ul {
-            a {
-                li {
-                    p {
-                        font-size: 1rem;
-                    }
-                    img {
-                        width: 30px;
-                    }
-                }
-            }
-        }
-    }
-}
+//     .footer {
+//         ul {
+//             a {
+//                 li {
+//                     p {
+//                         font-size: 1rem;
+//                     }
+//                     img {
+//                         width: 30px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
     
 

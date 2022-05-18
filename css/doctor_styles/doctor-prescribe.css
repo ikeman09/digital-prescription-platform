@@ -48,9 +48,7 @@ p, ul {
 
 .header {
   background-color: #007BFF;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: fixed;
 }
 
 .header img {
@@ -59,6 +57,7 @@ p, ul {
 }
 
 .content {
+  margin-top: 5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -112,18 +111,6 @@ p, ul {
 @media (max-width: 1024px) {
   .header, .content, .footer {
     width: 100vw;
-  }
-}
-
-@media (max-width: 767px) {
-  .header img {
-    width: 60px;
-  }
-  .footer ul a li p {
-    font-size: 1rem;
-  }
-  .footer ul a li img {
-    width: 30px;
   }
 }
 
