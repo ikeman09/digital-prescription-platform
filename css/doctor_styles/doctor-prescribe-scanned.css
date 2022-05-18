@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Inter-regular';
+  font-style: normal;
+  src: local("Inter-regular"), url("../../assets/font/Inter/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-style: normal;
+  src: local("Inter-Bold"), url("../../assets/font/Inter/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-style: normal;
+  src: local("Inter-Medium"), url("../../assets/font/Inter/Inter-Medium.ttf");
+}
+
+* {
+  font-family: Inter-Regular;
+  color: #808080;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header, .content, .footer {
+  width: 50vw;
+}
+
+.header {
+  background-color: #007BFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header img {
+  width: 75px;
+  padding: 0.5%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  background-color: #F0F3F8;
+}
+
+.footer ul a {
+  text-decoration: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer ul a li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  padding: 1.5% 0 0.2% 0;
+}
+
+.footer ul a li img {
+  width: 40px;
+}
+
+@media (max-width: 1024px) {
+  .header, .content, .footer {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .header img {
+    width: 60px;
+  }
+  .footer ul a li p {
+    font-size: 1rem;
+  }
+  .footer ul a li img {
+    width: 30px;
+  }
+}
+/*# sourceMappingURL=doctor-prescribed-scanned.css.map */
