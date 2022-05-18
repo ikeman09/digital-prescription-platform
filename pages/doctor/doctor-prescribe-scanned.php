@@ -57,11 +57,11 @@
                 </div>
             </div>
         </div>
-        <!-- 
+        
         <div class="container claim">
             <div class="container-wrapper">
                 <p id="claim-header">Claimed</p>
-                <div class="grid-container">
+                <div class="flex-container">
                     <div class="item">
                         <img src="../../assets/images/colace.jpeg">
                         <div class="item-info">
@@ -120,7 +120,7 @@
                     </div>
                 </div>
             </div> 
-        </div>-->
+        </div>
 
     </div>
     

@@ -62,7 +62,7 @@ p {
     .container {
         display: flex;
         justify-content: center;
-        padding-top: 2%;
+        padding: 2% 0;
 
         p {
             color: white;
@@ -73,12 +73,13 @@ p {
             padding: 3%;
             border-radius: 10px;
 
-            #to-claim-header {
+            #to-claim-header, #claim-header {
                 color: $inactive_color;
                 font-family: Inter-Bold;
                 font-size: 1.5rem;
                 padding-bottom: 2%;
             }
+
             .flex-container {
                 width: 37vw;
                 flex: 1;

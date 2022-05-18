@@ -205,7 +205,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2%;
+  padding: 2% 0;
 }
 
 .content .container p {
@@ -218,7 +218,7 @@ p {
   border-radius: 10px;
 }
 
-.content .container .container-wrapper #to-claim-header {
+.content .container .container-wrapper #to-claim-header, .content .container .container-wrapper #claim-header {
   color: #808080;
   font-family: Inter-Bold;
   font-size: 1.5rem;
