@@ -190,7 +190,21 @@ p, ul {
   color: white;
 }
 
+@media (max-width: 1366px) {
+  .content .square {
+    width: 400px;
+    height: 400px;
+  }
+  .content form input[type=text] {
+    width: 30vw;
+  }
+}
+
 @media (max-width: 1024px) {
+  .content .square {
+    width: 500px;
+    height: 500px;
+  }
   .content p {
     padding-bottom: 3%;
   }
