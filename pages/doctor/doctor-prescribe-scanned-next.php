@@ -12,34 +12,35 @@
         <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
-    <div class="main">
+    <div class="content">
         <div class="info">
             <p>John Ray Clementz A. Servo</p>
             <p id="doctor">Ron Jay Slementz B. Cervo</p>
         </div>
 
-        <div class="content">
-            <form class="form-content">
-                <p>Diagnosis:</p>
-                <input type="text">
-                <p>Pharmacy: </p>
-                <input type="text">
-                <p>Medicine: </p>
-                <input type="text">
-                <p>No. of Packs: </p>
-                <input type="text">
-                <p>Date prescribed: </p>
-                <input type="text">
-                <p>Days of intake: </p>
-                <input type="text">
-                <p>Hourly consumption: </p>
-                <input type="text">
+        <div class="main">
+            <div class="main-wrapper">
+                <form class="main-form">
+                    <p>Diagnosis:</p>
+                    <input type="text">
+                    <p>Pharmacy: </p>
+                    <input type="text">
+                    <p>Medicine: </p>
+                    <input type="text">
+                    <p>No. of Packs: </p>
+                    <input type="text">
+                    <p>Date prescribed: </p>
+                    <input type="text">
+                    <p>Days of intake: </p>
+                    <input type="text">
+                    <p>Hourly consumption: </p>
+                    <input type="text">
 
-                <br>
-                <div class="button-wrapper">
-                    <input type="button" value="Prescribe">
-                </div>
-            </form>
+                    <div class="button-wrapper">
+                        <input type="button" value="Prescribe">
+                    </div>
+                </form>
+            </div>
         </div>
         
     </div>

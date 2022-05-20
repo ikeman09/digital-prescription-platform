@@ -1,59 +1,67 @@
-@import "./doctor-default";
+@import "./doctor-base"; 
 
-.main {
-    padding-top: 2%;
-    padding-bottom: 10%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.content {
+    padding: 2rem 0;
+    width: 55em;
     
     .info {
-        background-color: #54A7FF;
+        background-color: $accent_color;
+        padding: 3%;
         border-radius: 10px;
-        padding: 3% 2% 3% 2%;
-        width: 80%;
-
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+        
         p {
             color: white;
         }
 
         :first-child {
-            font-size: 2.5rem;
             font-family: Inter-Bold;
-            border-bottom: 1.5px solid white;
+            font-size: 2rem;
         }
 
         #doctor {
-            padding-top: 1%;
+            font-family: Inter-Medium;
+            font-size: 1.3rem;
         }
     }
 
-    .content {
-        width: 80%;
-        padding-top: 1%;
-
-        .form-content {
-            background-color: #f5faff;
-            padding: 2% 2% 5% 2%;
-            border-radius: 25px;
+    .main {
+        padding-top: 2%;
+        .main-wrapper {
+            background-color: $inactive_color_2;
+            padding: 2% 5% 2% 5%;
+            border-radius: 15px;
+            
             p {
-                font-size: 1.6rem;
-                padding-bottom: 0.5%;
+                font-family: Inter-Medium;
+                font-size: 1.5rem;
+                padding-top: 1%;
             }
-            input[type=text] {
-                width: 100%;
-                font-size: 1.8rem;
-                background-color: $inactive_color_2;
-                border: 1px solid $outline_color;
-            }
-
-            .button-wrapper {
-                padding-top: 5%;
-                text-align: center;
-
-                input[type=button] {
-                    @include big-button();
+    
+            .main-form {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                padding-top: 3%;
+                
+                input[type=text] {
+                    width: 100%;
+                    font-size: 1.3rem;
+                }
+    
+                .button-wrapper {
+                    align-self: center;
+                    justify-self: center;
+                    padding: 3% 0;
+    
+                    input[type=button] {
+                        @include button-color;
+                        font-family: Inter-Bold;
+                        font-size: 1.5rem;
+                        width: 15rem;
+                        height: 5rem;
+                        border-radius: 20px;
+                    }
                 }
             }
         }
@@ -61,45 +69,75 @@
 }
 
 .footer {
-    #prescribe {
-        @include footer-blue();
+    ul {
+        a {
+            #prescribe {
+                @include footer-blue;
+            }
+        }
     }
 }
 
-@media (max-width: 767px) {
-    .main {
-        padding-top: 5%;
+@media (width: 1366px) {
+    .content {
+        padding: 2rem 0;
+        width: 40em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        width: 45em;
+    }
+}
+
+@media (max-width: 766px) {
+    .content {
+        padding: 0;
+        width: 25em;
+
         .info {
-            width: 90%;
-
+    
             :first-child {
-                font-size: 1.4rem;
+                font-family: Inter-Bold;
+                font-size: 1.5rem;
             }
-
+    
             #doctor {
-                padding-top: 2%;
+                font-family: Inter-Medium;
+                font-size: 1rem;
             }
         }
-
-        .content {
-            padding-top: 3%;
-            width: 100%;
-
-            .form-content {
-                padding-top: 4%;
-
+        .main {
+            .main-wrapper {
                 p {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
-
-                .button-wrapper {
-                    padding-top: 7%;
-
-                    input[type=button] {
-                        padding: 3% 10% 3% 10%;
+        
+                .main-form {
+                    
+                    input[type=text] {
+                        font-size: 1.2rem;
+                    }
+        
+                    .button-wrapper {
+                        input[type=button] {
+                            @include button-color;
+                            font-family: Inter-Bold;
+                            font-size: 1.5rem;
+                            width: 13rem;
+                            height: 4rem;
+                            border-radius: 20px;
+                        }
                     }
                 }
             }
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .content {
+        width: 20em;
     }
 }

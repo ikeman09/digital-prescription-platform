@@ -1,0 +1,104 @@
+@import "./variables";
+
+* {
+    font-family: Inter-Regular;
+    color: $inactive_color;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header, .content, .footer {
+    width: 50vw;
+}
+
+.header {
+    background-color: $main_color;
+    
+    position: fixed;
+
+    img {
+        width: 5rem;
+        padding: 0.5%;
+    }
+}
+
+.content {
+    margin-top: 5rem; // NEED THIS CAUSE POSITION: FIXED
+    flex: 1;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background-color: #F0F3F8;
+        a {
+            text-decoration: none;
+            flex: 1;
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.4rem;
+
+                padding: 1.5% 0 0.2% 0;
+
+                img {
+                    width: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .header, .content, .footer {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        img {
+            width: 60px;
+        }
+    }
+
+    .footer {
+        ul {
+            a {
+                li {
+                    p {
+                        font-size: 1rem;
+                    }
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    
+
+
+
+

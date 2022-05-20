@@ -13,7 +13,7 @@
         <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
-    <div class="main">
+    <div class="content">
         <div class="back">
             <a href="doctor-profile.php" id="back">Back</a>
         </div>

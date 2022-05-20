@@ -12,7 +12,7 @@
         <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
-    <div class="main">
+    <div class="content">
         <div class="top">
             <img src="../../assets/images/profile.png">
             <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>

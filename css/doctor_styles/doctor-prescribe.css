@@ -17,42 +17,55 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter-regular';
+  font-family: Inter-Regular;
   color: #808080;
 }
 
 body {
-  margin: auto;
-  max-width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
+p, ul {
+  padding: 0;
+  margin: 0;
 }
 
-ul {
-  list-style-type: none;
+.header, .content, .footer {
+  width: 50vw;
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   background-color: #007BFF;
+  position: fixed;
 }
 
 .header img {
-  width: 7%;
-  padding: 5px 0px 3px 5px;
+  width: 5rem;
+  padding: 0.5%;
+}
+
+.content {
+  margin-top: 5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .footer {
-  color: #808080;
-  background-color: #F0F3F8;
-  width: 50%;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
 }
 
@@ -62,111 +75,168 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: center;
+  list-style: none;
+  background-color: #F0F3F8;
 }
 
-.footer ul li {
-  padding: 1.3% 0 0.8% 0;
-  font-size: 1.4rem;
+.footer ul a {
+  text-decoration: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.footer ul li img {
-  width: 8.5%;
+.footer ul a li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.4rem;
+  padding: 1.5% 0 0.2% 0;
+}
+
+.footer ul a li img {
+  width: 2.5rem;
 }
 
 @media (max-width: 1024px) {
-  body {
-    max-width: 100%;
-  }
-  .header img {
-    width: 10%;
-  }
-  .footer {
-    width: 100%;
-  }
-  .footer ul li {
-    padding-top: 2%;
-  }
-  .footer ul li img {
-    width: 10%;
+  .header, .content, .footer {
+    width: 100vw;
   }
 }
 
 @media (max-width: 767px) {
   .header img {
-    width: 14%;
+    width: 60px;
   }
-  .footer {
-    width: 100%;
+  .footer ul a li p {
+    font-size: 1rem;
   }
-  .footer ul li {
-    font-size: 0.8rem;
-  }
-  .footer ul li img {
-    width: 17%;
+  .footer ul a li img {
+    width: 30px;
   }
 }
 
 .content {
-  text-align: center;
-  padding-top: 2%;
-}
-
-.content img {
-  width: 50%;
-  padding-bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10vh;
 }
 
 .content p {
-  font-size: 1.5rem;
+  padding: 0.5vw 0 1vw 0;
+  font-size: 1.1rem;
+}
+
+.content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 .content form input[type=text] {
-  width: 50%;
-  background-color: #F0F3F8;
-  border: 1px solid #C4C4C4;
-  border-radius: 5px;
-  font-size: 1.4rem;
+  width: 20vw;
+  height: 25px;
 }
 
-.content form input[type=button] {
+.content form a input[type=button] {
   background-color: #54A7FF;
   color: white;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  font-family: Inter-Bold;
-  padding: 1.2% 6% 1.2% 6%;
-  padding: 0.5% 5% 0.5% 5%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 32px;
 }
 
-.footer #prescribe {
+.content .square {
+  width: 500px;
+  height: 500px;
+  background-color: #808080;
+  border-radius: 20px;
+}
+
+.footer ul a #prescribe {
   background-color: #007BFF;
 }
 
-.footer #prescribe p {
+.footer ul a #prescribe p {
   font-family: Inter-Bold;
   color: white;
 }
 
+@media (max-width: 1366px) {
+  .content .square {
+    width: 400px;
+    height: 400px;
+  }
+  .content form input[type=text] {
+    width: 30vw;
+  }
+}
+
 @media (max-width: 1024px) {
-  .content img {
-    width: 70%;
+  .content .square {
+    width: 500px;
+    height: 500px;
+  }
+  .content p {
+    padding-bottom: 3%;
+  }
+  .content form input[type=text] {
+    width: 50vw;
   }
 }
 
 @media (max-width: 767px) {
-  .content img {
-    width: 90%;
+  .content {
+    padding-bottom: 20vh;
+  }
+  .content .square {
+    width: 350px;
+    height: 350px;
   }
   .content p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
   }
   .content form input[type=text] {
-    width: 70%;
+    width: 60vw;
+    height: 1.5vh;
   }
-  .content form input[type=button] {
+  .content form a input[type=button] {
+    background-color: #54A7FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
     font-size: 1rem;
-    padding: 2% 5% 2% 5%;
+    width: 70px;
+    height: 25px;
   }
 }
 /*# sourceMappingURL=doctor-prescribe.css.map */
