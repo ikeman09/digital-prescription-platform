@@ -126,29 +126,38 @@ p, ul {
   }
 }
 
-.main {
-  width: 90%;
-  margin: auto;
+.content {
+  padding-top: 1%;
 }
 
-.main .back {
-  padding: 2% 0 2% 0;
+.content .back {
+  padding: 2% 3%;
 }
 
-.main .form-container {
-  padding-top: 2%;
+.content .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main .form-container form {
+.content .form-container form {
+  width: 95%;
   padding-bottom: 1%;
 }
 
-.main .form-container form p {
+.content .form-container form p {
   font-size: 1.4rem;
-  padding-bottom: 1%;
+  padding: 1%;
 }
 
-.main .form-container form input {
+.content .form-container form input[type=password] {
   font-size: 1.8rem;
   width: 100%;
   padding-bottom: 1%;
@@ -156,9 +165,24 @@ p, ul {
   border-bottom: 1px solid #C4C4C4;
 }
 
-.main .changepass {
+.content .form-container p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-left: 3%;
+}
+
+.content .changepass {
   text-align: center;
   padding-top: 10%;
+}
+
+.content .changepass input[type=button] {
+  font-size: 1.4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1% 6% 1% 6%;
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
 }
 
 .footer #profile {
@@ -171,14 +195,21 @@ p, ul {
 }
 
 @media (max-width: 767px) {
-  .main {
-    padding-top: 5%;
+  .content .back {
+    padding: 3% 5% 5% 5%;
   }
-  .main .form-container form {
-    padding-bottom: 5%;
+  .content .form-container form {
+    width: 90%;
   }
-  .main .form-container form p {
+  .content .form-container form p {
     font-size: 1rem;
+  }
+  .content .form-container p {
+    padding-left: 6%;
+  }
+  .content .changepass form input[type=button] {
+    font-size: 1.2rem;
+    padding: 2% 7%;
   }
 }
 /*# sourceMappingURL=doctor-changepass.css.map */
