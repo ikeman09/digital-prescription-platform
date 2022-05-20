@@ -213,4 +213,11 @@ p, ul {
   font-family: Inter-Bold;
   color: white;
 }
+
+@media (width: 1366px) {
+  .content {
+    padding: 2rem 0;
+    width: 40em;
+  }
+}
 /*# sourceMappingURL=doctor-prescribe-scanned-next.css.map */
