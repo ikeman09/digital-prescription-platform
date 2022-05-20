@@ -64,3 +64,13 @@
         }
     }
 }
+
+.footer {
+    ul {
+        a {
+            #prescribe {
+                @include footer-blue;
+            }
+        }
+    }
+}

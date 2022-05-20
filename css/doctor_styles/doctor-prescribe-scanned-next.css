@@ -201,4 +201,13 @@ p, ul {
   height: 5rem;
   border-radius: 20px;
 }
+
+.footer ul a #prescribe {
+  background-color: #007BFF;
+}
+
+.footer ul a #prescribe p {
+  font-family: Inter-Bold;
+  color: white;
+}
 /*# sourceMappingURL=doctor-prescribe-scanned-next.css.map */
