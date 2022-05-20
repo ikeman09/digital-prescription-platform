@@ -194,15 +194,9 @@ p, ul {
   color: white;
 }
 
-@media (max-width: 1024px) {
-  .main .top img {
-    width: 40%;
-  }
-  .main .changepass {
-    padding-top: 5%;
-  }
-  .main .changepass form input {
-    padding: 2% 12% 2% 12%;
+@media (width: 1366px) {
+  .main {
+    padding-top: 7rem;
   }
 }
 

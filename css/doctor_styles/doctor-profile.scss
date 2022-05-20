@@ -51,24 +51,16 @@
     }
 }
 
+@media (width: 1366px) {
+    .main {
+        padding-top: 7rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .main {
-        .top {
-            img { 
-                width: 40%;
-            }
-        }
-
-        .changepass {
-            padding-top: 5%;
-            form {
-                input {
-                    padding: 2% 12% 2% 12%
-                }
-            }
-        }
+        
     }
-    
 }
 
 @media (max-width: 767px) { //767px kay yawa ning ipad mini
