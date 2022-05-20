@@ -150,4 +150,55 @@ p, ul {
   font-family: Inter-Medium;
   font-size: 1.3rem;
 }
+
+.content .main {
+  background-color: #F0F3F8;
+  margin-top: 1%;
+  padding: 2% 5% 2% 5%;
+  border-radius: 15px;
+}
+
+.content .main p {
+  font-family: Inter-Medium;
+  font-size: 1.5rem;
+  padding-top: 1%;
+}
+
+.content .main .main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+  padding-top: 3%;
+}
+
+.content .main .main-form input[type=text] {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.content .main .main-form .button-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 3% 0;
+}
+
+.content .main .main-form .button-wrapper input[type=button] {
+  background-color: #54A7FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter-Bold;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 20px;
+}
 /*# sourceMappingURL=doctor-prescribe-scanned-next.css.map */

@@ -23,4 +23,44 @@
             font-size: 1.3rem;
         }
     }
+
+    .main {
+        background-color: $inactive_color_2;
+        margin-top: 1%;
+        padding: 2% 5% 2% 5%;
+        border-radius: 15px;
+        
+        p {
+            font-family: Inter-Medium;
+            font-size: 1.5rem;
+            padding-top: 1%;
+        }
+
+        .main-form {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding-top: 3%;
+            
+            input[type=text] {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+
+            .button-wrapper {
+                align-self: center;
+                justify-self: center;
+                padding: 3% 0;
+
+                input[type=button] {
+                    @include button-color;
+                    font-family: Inter-Bold;
+                    font-size: 1.5rem;
+                    width: 15rem;
+                    height: 5rem;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
 }

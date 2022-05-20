@@ -34,8 +34,7 @@
                 <input type="text">
                 <p>Hourly consumption: </p>
                 <input type="text">
-
-                <br>
+                
                 <div class="button-wrapper">
                     <input type="button" value="Prescribe">
                 </div>
