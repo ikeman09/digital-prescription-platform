@@ -1,0 +1,26 @@
+@import "./doctor-base"; 
+
+.content {
+    padding-top: 2rem;
+    width: 40vw;
+    
+    .info {
+        background-color: $accent_color;
+        padding: 3%;
+        border-radius: 10px;
+        
+        p {
+            color: white;
+        }
+
+        :first-child {
+            font-family: Inter-Bold;
+            font-size: 2rem;
+        }
+
+        #doctor {
+            font-family: Inter-Medium;
+            font-size: 1.3rem;
+        }
+    }
+}

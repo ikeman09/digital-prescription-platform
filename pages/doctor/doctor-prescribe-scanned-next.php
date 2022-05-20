@@ -12,14 +12,14 @@
         <img src="../../assets/images/prescription-logo.png" alt="logo">
     </div>
 
-    <div class="main">
+    <div class="content">
         <div class="info">
             <p>John Ray Clementz A. Servo</p>
             <p id="doctor">Ron Jay Slementz B. Cervo</p>
         </div>
 
-        <div class="content">
-            <form class="form-content">
+        <div class="main">
+            <form class="main-form">
                 <p>Diagnosis:</p>
                 <input type="text">
                 <p>Pharmacy: </p>
