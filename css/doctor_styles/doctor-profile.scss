@@ -1,15 +1,17 @@
 @import "./doctor-base";
 
 .main {
-    padding-bottom: 10%;
+    padding: 5% 0;
+    width: 50vw;
+
     .top {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 2%;
-        
+        justify-content: center;
+
         img {
-            width: 30%;
+            width: 20rem;
         }
         p {
             font-size: 1.5rem;
