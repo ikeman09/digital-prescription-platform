@@ -220,4 +220,42 @@ p, ul {
     width: 40em;
   }
 }
+
+@media (max-width: 1024px) {
+  .content {
+    width: 45em;
+  }
+}
+
+@media (max-width: 766px) {
+  .content {
+    padding: 0;
+    width: 25em;
+  }
+  .content .info :first-child {
+    font-family: Inter-Bold;
+    font-size: 1.5rem;
+  }
+  .content .info #doctor {
+    font-family: Inter-Medium;
+    font-size: 1rem;
+  }
+  .content .main .main-wrapper p {
+    font-size: 1.3rem;
+  }
+  .content .main .main-wrapper .main-form input[type=text] {
+    font-size: 1.2rem;
+  }
+  .content .main .main-wrapper .main-form .button-wrapper input[type=button] {
+    background-color: #54A7FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Inter-Bold;
+    font-size: 1.5rem;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 20px;
+  }
+}
 /*# sourceMappingURL=doctor-prescribe-scanned-next.css.map */

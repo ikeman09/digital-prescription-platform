@@ -83,3 +83,55 @@
         width: 40em;
     }
 }
+
+@media (max-width: 1024px) {
+    .content {
+        width: 45em;
+    }
+}
+
+@media (max-width: 766px) {
+    .content {
+        padding: 0;
+        width: 25em;
+
+        .info {
+    
+            :first-child {
+                font-family: Inter-Bold;
+                font-size: 1.5rem;
+            }
+    
+            #doctor {
+                font-family: Inter-Medium;
+                font-size: 1rem;
+            }
+        }
+
+        .main {
+            .main-wrapper {
+                p {
+                    font-size: 1.3rem;
+                }
+        
+                .main-form {
+                    
+                    input[type=text] {
+                        font-size: 1.2rem;
+                    }
+        
+                    .button-wrapper {
+                        input[type=button] {
+                            @include button-color;
+                            font-family: Inter-Bold;
+                            font-size: 1.5rem;
+                            width: 13rem;
+                            height: 4rem;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
