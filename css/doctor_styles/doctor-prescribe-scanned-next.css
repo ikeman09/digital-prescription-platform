@@ -258,4 +258,10 @@ p, ul {
     border-radius: 20px;
   }
 }
+
+@media (max-width: 400px) {
+  .content {
+    width: 20em;
+  }
+}
 /*# sourceMappingURL=doctor-prescribe-scanned-next.css.map */
