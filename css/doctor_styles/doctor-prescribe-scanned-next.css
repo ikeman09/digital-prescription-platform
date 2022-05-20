@@ -127,7 +127,7 @@ p, ul {
 }
 
 .content {
-  padding-top: 2rem;
+  padding: 2rem 0;
   width: 55em;
 }
 
