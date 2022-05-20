@@ -194,22 +194,16 @@ p, ul {
 }
 
 @media (max-width: 767px) {
-  .main {
-    padding-top: 5%;
-  }
-  .main .top img {
-    width: 70%;
-  }
-  .main .top p {
+  .content .top p {
     font-size: 1rem;
   }
-  .main .column {
+  .content .column {
     font-size: 1.2rem;
   }
-  .main .changepass {
+  .content .changepass {
     padding-top: 10%;
   }
-  .main .changepass form input {
+  .content .changepass form input {
     font-size: 1.2rem;
     padding: 2% 12% 2% 12%;
   }
