@@ -19,26 +19,28 @@
         </div>
 
         <div class="main">
-            <form class="main-form">
-                <p>Diagnosis:</p>
-                <input type="text">
-                <p>Pharmacy: </p>
-                <input type="text">
-                <p>Medicine: </p>
-                <input type="text">
-                <p>No. of Packs: </p>
-                <input type="text">
-                <p>Date prescribed: </p>
-                <input type="text">
-                <p>Days of intake: </p>
-                <input type="text">
-                <p>Hourly consumption: </p>
-                <input type="text">
-                
-                <div class="button-wrapper">
-                    <input type="button" value="Prescribe">
-                </div>
-            </form>
+            <div class="main-wrapper">
+                <form class="main-form">
+                    <p>Diagnosis:</p>
+                    <input type="text">
+                    <p>Pharmacy: </p>
+                    <input type="text">
+                    <p>Medicine: </p>
+                    <input type="text">
+                    <p>No. of Packs: </p>
+                    <input type="text">
+                    <p>Date prescribed: </p>
+                    <input type="text">
+                    <p>Days of intake: </p>
+                    <input type="text">
+                    <p>Hourly consumption: </p>
+                    <input type="text">
+
+                    <div class="button-wrapper">
+                        <input type="button" value="Prescribe">
+                    </div>
+                </form>
+            </div>
         </div>
         
     </div>

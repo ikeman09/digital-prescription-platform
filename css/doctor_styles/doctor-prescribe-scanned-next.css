@@ -128,7 +128,7 @@ p, ul {
 
 .content {
   padding-top: 2rem;
-  width: 40em;
+  width: 50em;
 }
 
 .content .info {
@@ -152,19 +152,22 @@ p, ul {
 }
 
 .content .main {
+  padding-top: 2%;
+}
+
+.content .main .main-wrapper {
   background-color: #F0F3F8;
-  margin-top: 1%;
   padding: 2% 5% 2% 5%;
   border-radius: 15px;
 }
 
-.content .main p {
+.content .main .main-wrapper p {
   font-family: Inter-Medium;
   font-size: 1.5rem;
   padding-top: 1%;
 }
 
-.content .main .main-form {
+.content .main .main-wrapper .main-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,12 +179,12 @@ p, ul {
   padding-top: 3%;
 }
 
-.content .main .main-form input[type=text] {
+.content .main .main-wrapper .main-form input[type=text] {
   width: 100%;
   font-size: 1.3rem;
 }
 
-.content .main .main-form .button-wrapper {
+.content .main .main-wrapper .main-form .button-wrapper {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -190,7 +193,7 @@ p, ul {
   padding: 3% 0;
 }
 
-.content .main .main-form .button-wrapper input[type=button] {
+.content .main .main-wrapper .main-form .button-wrapper input[type=button] {
   background-color: #54A7FF;
   color: white;
   border: none;
