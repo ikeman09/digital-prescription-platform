@@ -193,65 +193,6 @@ p, ul {
   color: white;
 }
 
-@media (width: 1366px) {
-  .main {
-    padding-top: 7rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .main {
-    padding: 15% 0;
-    width: 100vw;
-  }
-  .main .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 2%;
-  }
-  .main .top img {
-    width: 20rem;
-  }
-  .main .top p {
-    font-size: 1.5rem;
-    padding-top: 4%;
-  }
-  .main .column {
-    padding-bottom: 3%;
-    font-size: 1.4rem;
-  }
-  .main .column .info {
-    background-color: #F0F3F8;
-    padding: 1% 3%;
-    border-bottom: 1px solid #C4C4C4;
-  }
-  .main .column .info :first-child {
-    color: #C4C4C4;
-  }
-  .main .changepass {
-    text-align: center;
-  }
-  .main .changepass form input {
-    font-size: 1.4rem;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    padding: 1% 6% 1% 6%;
-    border-radius: 5px;
-    border: 1px solid #C4C4C4;
-  }
-}
-
 @media (max-width: 767px) {
   .main {
     padding-top: 5%;
