@@ -3,7 +3,8 @@
     <head>
         <title>DMPP</title>
         <link rel="stylesheet" href="../css/pharmacy-scan.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+        <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     </head>
     
     <body>
@@ -15,9 +16,13 @@
                 </div>
             </div>
             
+            
             <div class="qr">
-                <img src="../assets/images/square.png" alt="qr code">
+                <!--<img src="../assets/images/qrcode-grey-background.png" alt="qr code">-->
+                <video id="preview" class="p-1 border inactive" style="width:100%;" autoplay="autoplay"></video>
+                <p id="demo"></p>
             </div>
+            
 
             <p>Trouble scanning? Enter the code below: </p>
 
@@ -36,16 +41,18 @@
                         <p>Inventory</p>
                 </a>
                 <div class="scan">
-                    <img src="../assets/images/qr.png" alt="qr code">
+                    <img src="../assets/images/qrcode-small.png" alt="qr code">
                     <p>Scan Prescriptions</p>
                 </div>
                 <a href="pharmacy-history.php">
                     <div class="history">
                         <img src="../assets/images/circle.png" alt="circle">
                         <p>History</p>
+                    </div>
                 </a>
             </div>
 
-        </div>     
+        </div>   
+        <script src="../javascript/pharmacy-scan.js"></script> 
     </body>
 </html>
