@@ -46,7 +46,9 @@
     </div>
 
     <div class="main">
-        <?php foreach($patient_info as $info){ ?>
+        <?php 
+        // loops through the array
+        foreach($patient_info as $info){ ?>
             <div class="top">
                 <img src="../../assets/images/profile.png">
                 <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
@@ -74,7 +76,10 @@
                     </div>
                     <div class="info">
                         <p>Birthday:</p>
-                        <p>02/17/2002</p>
+                        <?php 
+                            echo htmlspecialchars(0 . $info['birthMonth'] . '/' . 
+                                $info['birthDay'] . '/' . $info['birthYear']);
+                        ?>
                     </div>
             </div>
         <?php } ?>
