@@ -70,32 +70,30 @@
 
         <div>
             <?php
-            if(isset($_POST['submit'])) {
-                foreach($patientLogin as $info) {
-                    if($oldPassword == "") echo "Please enter your old password.";
-                    else if($newPassword == "") echo "Please enter your new password.";
-                    else if($confirmNewPassword == "") echo "Please confirm your new password";
-                    else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
-                    else if($oldPassword == $newPassword) echo "Please enter a new password.";
-                    else if($newPassword != $confirmNewPassword) echo "New password and confirm password do not match. (pls edit grammar lmao)";
-                    else {
-                        $updatePassword = "UPDATE `patient_login` SET `id`='{$info['id']}',`email`='{$info['email']}',`password`='{$newPassword}' WHERE `id`='{$info['id']}'";
-                        $update = mysqli_query($conn, $updatePassword);
-
-                        //free result from memory
-                        mysqli_free_result($update);
+                if(isset($_POST['submit'])) {
+                    foreach($patientLogin as $info) {
+                        if($oldPassword == "") echo "Please enter your old password.";
+                        else if($newPassword == "") echo "Please enter your new password.";
+                        else if($confirmNewPassword == "") echo "Please confirm your new password";
+                        else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
+                        else if($oldPassword == $newPassword) echo "Please enter a new password.";
+                        else if($newPassword != $confirmNewPassword) echo "New password and confirm password do not match. (pls edit grammar lmao)";
+                        else {
+                            $updatePassword = "UPDATE `patient_login` SET `id`='{$info['id']}',`email`='{$info['email']}',`password`='{$newPassword}' WHERE `id`='{$info['id']}'";
+                            
+                            $update = mysqli_query($conn, $updatePassword);
+                        }
                     }
+
+                    $oldPassword = "";
+                    $newPassword = "";
+                    $confirmNewPassword = "";
+
                 }
-
-                $oldPassword = "";
-                $newPassword = "";
-                $confirmNewPassword = "";
-
-            }
             ?>
         </div>
     </div>
-
+    
     <nav class="footer">
         <ul>
             <a href="patient-toclaim-empty.php">
