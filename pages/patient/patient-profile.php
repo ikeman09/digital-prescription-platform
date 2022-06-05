@@ -1,3 +1,34 @@
+<?php
+
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $patientID = 1234;
+
+    // write query for all data in patient info
+    $sql = "SELECT * FROM patient_info WHERE patientID = {$patientID}";
+
+    // make query & get result
+    $result = mysqli_query($conn, $sql);
+
+    // fetch the resulting rows as an array
+    $patient_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    //free result from memory
+    mysqli_free_result($result);
+
+    // close connection
+    mysqli_close($conn);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,30 +46,59 @@
     </div>
 
     <div class="main">
-        <div class="top">
-            <img src="../../assets/images/profile.png">
-            <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
-        </div>
+        <?php 
+        // loops through the array
+        foreach($patient_info as $info){ ?>
+            <div class="top">
+                <img src="../../assets/images/profile.png">
+                <p id="name">
+                    <?php 
+                        echo htmlspecialchars(strtoupper($info['patientFirstName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['patientMiddleName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['patientLastName']));
+                    ?>
+                </p>
+            </div>
 
-        <div class="column">
-            <div class="info">
-                <p>Address:</p>
-                <p>Bolong subd. Kidapawan City</p>
-            </div>
-            <div class="info">
-                <p>Age:</p>
-                <p>20</p>
-            </div>
-            <div class="info">
-                <p>Sex:</p>
-                <p>Male</p>
-            </div>
-            <div class="info">
-                <p>Birthday:</p>
-                <p>02/17/2002</p>
-            </div>
-        </div>
+            <div class="column">
+                    <div class="info">
+                        <p>Address:</p>
+                        <?php echo htmlspecialchars($info['patientAddress']) ?>
+                    </div>
+                    <div class="info">
+                        <p>Age:</p>
+                        <?php 
+                            // Stores the birthday in "-" format
+                            $birthday = htmlspecialchars($info['birthYear'] . '-' . $info['birthMonth'].  '-' . $info['birthDay']);
 
+                            // Calculates age
+                            $age = floor((time() - strtotime($birthday)) / 31556926);
+
+                            echo $age;
+                        ?>
+                    </div>
+                    <div class="info">
+                        <p>Sex:</p>
+                        <?php 
+                            // Calculates sex
+                            if (htmlspecialchars($info['sex']) == 'M') {
+                                echo 'Male';
+                            }
+                            else {
+                                echo 'Female';
+                            }
+                        ?>
+                    </div>
+                    <div class="info">
+                        <p>Birthday:</p>
+                        <?php
+                            // Prints the birthday in "/" format
+                            echo htmlspecialchars($info['birthMonth'] . '/' .
+                                $info['birthDay'] . '/' . $info['birthYear']);
+                        ?>
+                    </div>
+            </div>
+        <?php } ?>
         
         <div class="changepass">
             <form>
