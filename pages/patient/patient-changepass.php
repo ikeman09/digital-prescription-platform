@@ -18,14 +18,14 @@
         <div class="back">
             <a href="patient-profile.php" id="back">Back</a>
         </div>
-        <form>
+        <form action="?" method="post">
             <div class="form-container">
                 <p>Old password: </p>
-                <input type="password">
+                <input type="password" name="oldPassword">
                 <p>New password: </p>
-                <input type="password">
+                <input type="password" name="newPassword">
                 <p>Confirm new password: </p>
-                <input type="password">
+                <input type="password" name="confirmNewPassword">
                 <p id="confirmation">*A confirmation email will be sent to your email address</p>
             </div>
 
