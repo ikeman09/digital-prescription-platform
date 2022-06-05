@@ -119,20 +119,20 @@ ul {
   padding: 2% 0 2% 0;
 }
 
-.main .form-container {
+.main form {
   padding-top: 2%;
 }
 
-.main .form-container form {
+.main form .form-container {
   padding-bottom: 1%;
 }
 
-.main .form-container form p {
+.main form .form-container p {
   font-size: 1.4rem;
   padding-bottom: 1%;
 }
 
-.main .form-container form input {
+.main form .form-container input {
   font-size: 1.8rem;
   width: 100%;
   padding-bottom: 1%;
@@ -140,12 +140,17 @@ ul {
   border-bottom: 1px solid #C4C4C4;
 }
 
-.main .changepass {
+.main form .form-container #confirmation {
+  font-size: 1rem;
+  padding-top: 2%;
+}
+
+.main form .changepass {
   text-align: center;
   padding-top: 10%;
 }
 
-.main .changepass input[type=button] {
+.main form .changepass input[type=button] {
   font-size: 1.4rem;
   -webkit-box-shadow: none;
           box-shadow: none;

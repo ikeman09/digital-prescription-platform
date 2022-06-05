@@ -8,9 +8,9 @@
         padding: 2% 0 2% 0;
     }
 
-    .form-container {
+    form {
         padding-top: 2%;
-        form {
+        .form-container {
             padding-bottom: 1%;
             p {
                 font-size: 1.4rem;
@@ -19,14 +19,18 @@
             input {
                 @include text-input();
             }
-        }
-    }
 
-    .changepass {
-        text-align: center;
-        padding-top: 10%;
-        input[type=button] {
-            @include big-button-2();
+            #confirmation {
+                font-size: 1rem;
+                padding-top: 2%;
+            }
+        }
+        .changepass {
+            text-align: center;
+            padding-top: 10%;
+            input[type=button] {
+                @include big-button-2();
+            }
         }
     }
 }

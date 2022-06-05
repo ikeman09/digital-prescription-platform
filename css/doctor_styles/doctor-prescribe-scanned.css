@@ -343,9 +343,5 @@ p {
     font-family: Inter-Bold;
     font-size: 1em;
   }
-  .main form input[type="button"] {
-    font-size: 1rem;
-    padding: 2% 10% 2% 10%;
-  }
 }
 /*# sourceMappingURL=doctor-prescribe-scanned.css.map */
