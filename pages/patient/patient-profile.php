@@ -10,7 +10,7 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $patientID = 1234;
+    $patientID = 4321;
 
     // write query for all data in patient info
     $sql = "SELECT * FROM patient_info WHERE patientID = {$patientID}";
@@ -80,6 +80,7 @@
                     <div class="info">
                         <p>Sex:</p>
                         <?php 
+                            // Calculates sex
                             if (htmlspecialchars($info['sex']) == 'M') {
                                 echo 'Male';
                             }
