@@ -68,11 +68,12 @@
             </div>
         </form>
 
-        <div>
+        <div class="cp-output">
             <?php
                 if(isset($_POST['submit'])) {
                     foreach($patientLogin as $info) {
-                        if($oldPassword == "") echo "Please enter your old password.";
+                        if($oldPassword == "" and $newPassword == "" and $confirmNewPassword == "") echo "Please fill out the form";
+                        else if($oldPassword == "") echo "Please enter your old password.";
                         else if($newPassword == "") echo "Please enter your new password.";
                         else if($confirmNewPassword == "") echo "Please confirm your new password";
                         else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
@@ -82,6 +83,8 @@
                             $updatePassword = "UPDATE `patient_login` SET `id`='{$info['id']}',`email`='{$info['email']}',`password`='{$newPassword}' WHERE `id`='{$info['id']}'";
                             
                             $update = mysqli_query($conn, $updatePassword);
+
+                            echo "Password changed successfully.";
                         }
                     }
 
