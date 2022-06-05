@@ -18,25 +18,21 @@
         <div class="back">
             <a href="patient-profile.php" id="back">Back</a>
         </div>
-
-        <div class="form-container">
-            <form>
+        <form>
+            <div class="form-container">
                 <p>Old password: </p>
                 <input type="password">
                 <p>New password: </p>
                 <input type="password">
                 <p>Confirm new password: </p>
                 <input type="password">
-            </form>
-            <p>*A confirmation email will be sent to your email address</p>
-        </div>
+                <p id="confirmation">*A confirmation email will be sent to your email address</p>
+            </div>
 
-        <div class="changepass">
-            <form>
+            <div class="changepass">
                 <input type="button" value="Change password">
-            </form>
-        </div>
-        
+            </div>
+        </form>
     </div>
 
     <nav class="footer">
