@@ -19,7 +19,7 @@
     $result = mysqli_query($conn, $sql);
 
     // fetch the resulting rows as an array
-    $patient_login = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $patientLogin = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     //free result from memory
     mysqli_free_result($result);
@@ -31,7 +31,6 @@
     $oldPassword = $_POST["oldPassword"];
     $newPassword = $_POST["newPassword"];
     $confirmNewPassword = $_POST["confirmNewPassword"];
-
 ?>
 
 
@@ -67,10 +66,27 @@
             </div>
 
             <div class="changepass">
-                <input type="submit" value="Change password">
+                <input type="submit" name="submit" value="Change password">
             </div>
-
         </form>
+
+        <div>
+            <?php
+            if(isset($_POST['submit'])) {
+                foreach($patientLogin as $info) {
+                    if($oldPassword == "") echo "Please enter your old password.";
+                    else if($newPassword == "") echo "Please enter your new password.";
+                    else if($confirmNewPassword == "") echo "Please confirm your new password";
+                    else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
+                    else if($newPassword != $confirmNewPassword) echo "New password and confirm password do not match. (pls edit grammar lmao)";
+                }
+
+                $oldPassword = "";
+                $newPassword = "";
+                $confirmNewPassword = "";
+            }
+            ?>
+        </div>
     </div>
 
     <nav class="footer">
