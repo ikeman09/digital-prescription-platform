@@ -1,3 +1,10 @@
+<?php
+    include "../../php_libraries/phpqrcode/qrlib.php";
+    $location = "../../assets/images/generated_qr".rand().".png";
+    $text = "TEST";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
