@@ -1,6 +1,6 @@
 <?php
 
-
+    $x = $_POST["oldPassword"];
 
 ?>
 
@@ -37,8 +37,9 @@
             </div>
 
             <div class="changepass">
-                <input type="button" value="Change password">
+                <input type="submit" value="Change password">
             </div>
+
         </form>
     </div>
 

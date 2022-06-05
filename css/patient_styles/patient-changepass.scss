@@ -28,7 +28,7 @@
         .changepass {
             text-align: center;
             padding-top: 10%;
-            input[type=button] {
+            input[type=submit] {
                 @include big-button-2();
             }
         }
