@@ -67,7 +67,15 @@
                     </div>
                     <div class="info">
                         <p>Age:</p>
-                        <p>20</p>
+                        <?php 
+                            // Stores the birthday in "-" format
+                            $birthday = htmlspecialchars($info['birthYear'] . '-' . $info['birthMonth'].  '-' . $info['birthDay']);
+
+                            // Calculates age
+                            $age = floor((time() - strtotime($birthday)) / 31556926);
+
+                            echo $age;
+                        ?>
                     </div>
                     <div class="info">
                         <p>Sex:</p>
@@ -82,10 +90,10 @@
                     </div>
                     <div class="info">
                         <p>Birthday:</p>
-                        <?php 
-                            echo htmlspecialchars(0 . $info['birthMonth'] . '/');
-                            echo htmlspecialchars($info['birthDay'] . '/');
-                            echo htmlspecialchars($info['birthYear']);
+                        <?php
+                            // Prints the birthday in "/" format
+                            echo htmlspecialchars($info['birthMonth'] . '/' .
+                                $info['birthDay'] . '/' . $info['birthYear']);
                         ?>
                     </div>
             </div>
