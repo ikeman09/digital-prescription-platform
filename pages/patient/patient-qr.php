@@ -22,9 +22,7 @@
     </div>
 
     <div class="main">
-        <?php QRcode::png($text, $location);?>
-
-        <img src="<?php echo $location; ?>">
+        <?php QRcode::png($text); ?>
         <h3>Patient Code: 1234567890</h3>
     </div>
 
