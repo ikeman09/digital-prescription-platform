@@ -51,7 +51,13 @@
         foreach($patient_info as $info){ ?>
             <div class="top">
                 <img src="../../assets/images/profile.png">
-                <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
+                <p id="name">
+                    <?php 
+                        echo htmlspecialchars(strtoupper($info['patientFirstName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['patientMiddleName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['patientLastName']));
+                    ?>
+                </p>
             </div>
 
             <div class="column">
@@ -77,8 +83,9 @@
                     <div class="info">
                         <p>Birthday:</p>
                         <?php 
-                            echo htmlspecialchars(0 . $info['birthMonth'] . '/' . 
-                                $info['birthDay'] . '/' . $info['birthYear']);
+                            echo htmlspecialchars(0 . $info['birthMonth'] . '/');
+                            echo htmlspecialchars($info['birthDay'] . '/');
+                            echo htmlspecialchars($info['birthYear']);
                         ?>
                     </div>
             </div>
