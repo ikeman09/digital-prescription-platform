@@ -1,5 +1,4 @@
 <?php
-
     // connect to database
     // Might have different username/password
     $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
@@ -24,13 +23,12 @@
     //free result from memory
     mysqli_free_result($result);
 
-    // close connection
-    mysqli_close($conn);
-
 
     $oldPassword = $_POST["oldPassword"];
     $newPassword = $_POST["newPassword"];
     $confirmNewPassword = $_POST["confirmNewPassword"];
+
+
 ?>
 
 
@@ -78,12 +76,21 @@
                     else if($newPassword == "") echo "Please enter your new password.";
                     else if($confirmNewPassword == "") echo "Please confirm your new password";
                     else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
+                    else if($oldPassword == $newPassword) echo "Please enter a new password.";
                     else if($newPassword != $confirmNewPassword) echo "New password and confirm password do not match. (pls edit grammar lmao)";
+                    else {
+                        $updatePassword = "UPDATE `patient_login` SET `id`='{$info['id']}',`email`='{$info['email']}',`password`='{$newPassword}' WHERE `id`='{$info['id']}'";
+                        $update = mysqli_query($conn, $updatePassword);
+
+                        //free result from memory
+                        mysqli_free_result($update);
+                    }
                 }
 
                 $oldPassword = "";
                 $newPassword = "";
                 $confirmNewPassword = "";
+
             }
             ?>
         </div>
