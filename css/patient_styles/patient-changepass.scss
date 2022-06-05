@@ -8,6 +8,12 @@
         padding: 2% 0 2% 0;
     }
 
+    .cp-output {
+        text-align: center;
+        padding-top: 8%;
+        color: red;
+    }
+
     form {
         padding-top: 2%;
         .form-container {
@@ -27,7 +33,7 @@
         }
         .changepass {
             text-align: center;
-            padding-top: 10%;
+            padding-top: 7%;
             input[type=submit] {
                 @include big-button-2();
             }

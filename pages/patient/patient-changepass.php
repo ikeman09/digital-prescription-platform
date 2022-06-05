@@ -84,7 +84,7 @@
                             
                             $update = mysqli_query($conn, $updatePassword);
 
-                            echo "Password changed successfully.";
+                            echo "<p style=\"color: #808080\"> Password changed successfully! </p>";
                         }
                     }
 

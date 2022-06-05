@@ -119,6 +119,12 @@ ul {
   padding: 2% 0 2% 0;
 }
 
+.main .cp-output {
+  text-align: center;
+  padding-top: 8%;
+  color: red;
+}
+
 .main form {
   padding-top: 2%;
 }
@@ -147,7 +153,7 @@ ul {
 
 .main form .changepass {
   text-align: center;
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
 .main form .changepass input[type=submit] {
