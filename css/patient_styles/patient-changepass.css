@@ -150,7 +150,7 @@ ul {
   padding-top: 10%;
 }
 
-.main form .changepass input[type=button] {
+.main form .changepass input[type=submit] {
   font-size: 1.4rem;
   -webkit-box-shadow: none;
           box-shadow: none;

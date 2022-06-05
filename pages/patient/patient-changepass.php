@@ -1,6 +1,36 @@
 <?php
 
-    $x = $_POST["oldPassword"];
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $patientID = 1234;
+
+    // write query for all data in patient info
+    $sql = "SELECT * FROM patient_login WHERE id = {$patientID}";
+
+    // make query & get result
+    $result = mysqli_query($conn, $sql);
+
+    // fetch the resulting rows as an array
+    $patient_login = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    //free result from memory
+    mysqli_free_result($result);
+
+    // close connection
+    mysqli_close($conn);
+
+
+    $oldPassword = $_POST["oldPassword"];
+    $newPassword = $_POST["newPassword"];
+    $confirmNewPassword = $_POST["confirmNewPassword"];
 
 ?>
 
