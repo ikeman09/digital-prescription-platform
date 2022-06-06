@@ -41,7 +41,7 @@
         </div>
 
         <div class="section">
-            <a href="./patient-toclaim-empty.php">
+            <a href="./patient-toclaim.php">
                 <p id="to-claim"> To Claim </p>
             </a>
             <a href="./patient-claimed.php">
