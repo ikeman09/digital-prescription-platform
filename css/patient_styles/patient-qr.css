@@ -127,9 +127,18 @@ ul {
           align-items: center;
 }
 
-.main img {
+.main #qrcode {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main #qrcode img {
   width: 50%;
-  border-radius: 5%;
 }
 
 .main h3 {
