@@ -1,3 +1,33 @@
+<?php
+    $conn = mysqli_connect('localhost', 'sample', '12345', 'prescription_platform');
+
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    $test_user_id = 1;
+
+    $sql = 'SELECT password FROM pharmacy_login WHERE id = ' . $test_user_id;
+
+    $result = mysqli_query($conn, $sql);
+
+    $pharmacy_login = mysqli_fetch_row($result);
+
+    if($_POST && $_POST["oldPassword"] == $pharmacy_login[0] && $_POST["newPassword"] == $_POST["confirmNewPassword"]) 
+    {
+        mysqli_query($conn, "UPDATE pharmacy_login set password='" . $_POST["newPassword"] . "' WHERE id = " . $test_user_id);
+        $message = "Password changed sucessfully!";
+    } 
+    else {
+        $message = "Password is incorrect!";
+    }
+
+    mysqli_free_result($result);
+
+    mysqli_close($conn);
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,20 +43,21 @@
                     <img src="../assets/images/prescription-logo.png" alt="logo">
                 </div>
             </div>
-
-            <form>
+            
+            <?php if(isset($message)) { echo $message; } ?>
+            <form action='pharmacy-change-password.php' method='POST'>
                 <div>
                     <p><b>Old password: </p></b>
-                    <input id= "inputted" type="password">
+                    <input id= "inputted" name="oldPassword" type="password">
                     <p><b>New password: </p></b>
-                    <input id= "inputted" type="password">
+                    <input id= "inputted" name="newPassword" type="password">
                     <p><b>Confirm new password: </p><b>
-                    <input id= "inputted" type="password">
+                    <input id= "inputted" name="confirmNewPassword" type="password">
                 </div>
 
                 <p id="confirmation"> *A confirmation email will be sent to your email address </p>
 
-                <input id="button" value="Change Password" type="submit">
+                <input id="button" name="submit" value="Change Password" type="submit">
             </form>
 
             <div class="navbar">
