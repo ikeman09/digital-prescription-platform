@@ -1,13 +1,3 @@
-// Generates a 5 digit random number and returns it as string
-let randomNumber = (min, max) => {
-    let subtrMinMax = max - min + 1;
-    let multByRand = Math.random() * subtrMinMax;
-    let floor = Math.floor(multByRand);
-    let result = floor + min;
-
-    return String(result); // returns string because QR only accepts strings
-};
-
 // Generates the QR code
 let generateQRCode = val => {
     let qrcode; // Stores the qr code.
@@ -20,9 +10,9 @@ let generateQRCode = val => {
     }
 };
 
-let random = randomNumber(10000, 99999); // Stores rand num from 10k to 99k (5 digits)
+let id = patientID[0].patientID // stores patientID
 
-document.getElementById("num").innerHTML = random; // Outputs the code if QR doesn't work
+document.getElementById("num").innerHTML = id; // Outputs the code if QR doesn't work
 
-generateQRCode(random); // Generates the QR code
+generateQRCode(id); // Generates the QR code
 
