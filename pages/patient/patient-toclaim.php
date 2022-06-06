@@ -50,11 +50,10 @@
         </div>
 
     </div>
-    
 
     <div class="main">
-        <div class="grid-container">
-            <div class="item">
+        <div id="items" class="grid-container">
+            <!-- <div class="item">
                 <div class="item-info">
                     <img src="../../assets/images/paracetamol.jpeg">
                     <div class="item-paragraph">
@@ -79,8 +78,7 @@
                     <img src="../../assets/images/qrcode-small.png">
                     <p> Check QR </p>
                 </div>
-            </div>
-            
+            </div> -->
         </div>
     </div>
 
@@ -109,7 +107,7 @@
     
 
     <!-- lets javascript access the array in php -->
-    <script> let phpArray = <?php echo json_encode($prescription); ?>; </script>
+    <script> let phpArray = <?php echo json_encode($prescription); ?>;</script>
     <!-- script -->
     <script src="../../javascript/patient_scripts/patient-toclaim.js"></script>
 </body>
