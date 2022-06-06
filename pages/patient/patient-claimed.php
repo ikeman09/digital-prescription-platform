@@ -23,10 +23,10 @@
         </div>
     </div>
 
-
     <div class="main">
         <div class="grid-container">
-            <div class="item">
+            
+            <!-- <div class="item">
                 <img src="../../assets/images/colace.jpeg">
                 <div class="item-info">
                     <p>Colace 100gm</p>
@@ -81,7 +81,7 @@
                     <p>Kaopectate</p>
                     <p>Sig: A.D.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
