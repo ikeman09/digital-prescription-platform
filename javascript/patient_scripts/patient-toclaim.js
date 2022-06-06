@@ -40,12 +40,12 @@ let createEmpty = container => {
     
     div.setAttribute('class', 'empty');
 
-    container.append('div');
-    div.append('h1');
-    div.append('p');
+    container.append(div);
+    div.append(h1);
+    div.append(p);
 
     h1.innerText = "You have no prescriptions!";
-    p.inerText = "You may get one from any of our registered doctors.";
+    p.innerText = "You may get one from any of our registered doctors.";
 };
 
 // Function to capitalize first letter
@@ -55,9 +55,10 @@ let capitalize = string => {
 
 // Gets the container of the items
 let grid = document.getElementById("items");
+let main = document.getElementsByClassName("main")[0];
 
 if(phpArray.length === 0) {
-    createEmpty(grid);
+    createEmpty(main);
 }
 else {
     // loops through the entire array and outputs it on the HTML
