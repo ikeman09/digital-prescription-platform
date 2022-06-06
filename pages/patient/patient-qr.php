@@ -17,7 +17,7 @@
 
     <div class="main">
         <div id='qrcode'></div>
-        <h3>Patient Code: 1234567890</h3>
+        <h3>Patient Code: <span id="num"></span></h3>
     </div>
 
     <nav class="footer">

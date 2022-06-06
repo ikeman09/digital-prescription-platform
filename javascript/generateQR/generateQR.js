@@ -22,4 +22,7 @@ let generateQRCode = val => {
 
 let random = randomNumber(10000, 99999); // Stores rand num from 10k to 99k (5 digits)
 
-generateQRCode(random);
+document.getElementById("num").innerHTML = random; // Outputs the code if QR doesn't work
+
+generateQRCode(random); // Generates the QR code
+
