@@ -64,7 +64,7 @@
                 <input id="button2" value="Enter" type="submit">
             </form>
 
-            <a href="2.php">
+            <a href="pharmacy-scan.php">
                 <input id="button3" value="Scan Again" type="submit">
             </a>
 
