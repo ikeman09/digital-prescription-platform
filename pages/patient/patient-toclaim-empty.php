@@ -18,7 +18,7 @@
     $sql = 'SELECT * FROM prescription INNER JOIN prescription_status
         ON prescription.prescriptionID = prescription_status.prescriptionID
         INNER JOIN prescription_medicine ON prescription.medicineID = prescription_medicine.id
-        WHERE prescription_status.claimedStatus = 1';
+        WHERE prescription_status.claimedStatus = 0';
 
     $result = mysqli_query($conn, $sql);
 
@@ -79,7 +79,9 @@
         </ul>
     </nav>
     
-    
-
+    <!-- lets javascript access the array in php -->
+    <script> let phpArray = <?php echo json_encode($prescription); ?>; </script>
+    <!-- script -->
+    <script src="../../javascript/patient_scripts/patient-toclaim.js"></script>
 </body>
 </html>
