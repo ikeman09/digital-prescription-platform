@@ -24,8 +24,8 @@
     </div>
 
     <div class="main">
-        <div class="grid-container">
-            
+        <div id="items" class="grid-container">
+
             <!-- <div class="item">
                 <img src="../../assets/images/colace.jpeg">
                 <div class="item-info">
