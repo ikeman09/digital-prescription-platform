@@ -1,13 +1,3 @@
-// Generates a 5 digit random number and returns it as string
-let randomNumber = (min, max) => {
-    let subtrMinMax = max - min + 1;
-    let multByRand = Math.random() * subtrMinMax;
-    let floor = Math.floor(multByRand);
-    let result = floor + min;
-
-    return String(result); // returns string because QR only accepts strings
-};
-
 // Generates the QR code
 let generateQRCode = val => {
     let qrcode; // Stores the qr code.

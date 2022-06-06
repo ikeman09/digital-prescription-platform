@@ -68,6 +68,9 @@
         </ul>
     </nav>
     
+    <!-- lets javascript access the array in php -->
+    <script> let patientID = <?php echo json_encode($patient_info); ?>;</script>
+    <!-- script -->
     <script src="../../javascript/generateQR/generateQR.js"></script>
 </body>
 </html>
