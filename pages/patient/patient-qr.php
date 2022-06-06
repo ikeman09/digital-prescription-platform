@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/patient_styles/patient-qr.css">
+    <script src="../../javascript/generateQR/qrcode.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
     </div>
 
     <div class="main">
-        <img src="../../assets/images/qrcode-grey-background.png" alt="qr code">
-        <h3>Patient Code: 1234567890</h3>
+        <div id='qrcode'></div>
+        <h3>Patient Code: <span id="num"></span></h3>
     </div>
 
     <nav class="footer">
@@ -42,5 +43,6 @@
         </ul>
     </nav>
     
+    <script src="../../javascript/generateQR/generateQR.js"></script>
 </body>
 </html>

@@ -8,11 +8,15 @@
     justify-content: center;
     align-items: center;
 
-    img {
-        width: 50%;
-        border-radius: 5%;
-    }
+    #qrcode {
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
+        img {
+            width: 50%;
+        }
+    }
     h3 {
         padding-top: 2%;
         font-size: 1.5rem;
