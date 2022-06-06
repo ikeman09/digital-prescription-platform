@@ -109,5 +109,6 @@
     </nav>
     
 
+    <script src="../../javascript/patient_scripts/patient-claimed.js"></script>
 </body>
 </html>
