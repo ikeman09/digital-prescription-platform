@@ -1,3 +1,28 @@
+<?php
+
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'digital_med_prescription');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $patientID = 321654;
+
+    // write query for all data in patient info
+    $sql = "SELECT patientID FROM patient_info WHERE patientID = {$patientID}";
+
+    // make query & get result
+    $result = mysqli_query($conn, $sql);
+
+    // fetch the resulting rows as an array
+    $patient_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
