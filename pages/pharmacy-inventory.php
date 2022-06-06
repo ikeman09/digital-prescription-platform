@@ -21,7 +21,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>DMPP</title>
+        <title>Inventory</title>
         <link rel="stylesheet" href="../css/pharmacy-inventory.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
