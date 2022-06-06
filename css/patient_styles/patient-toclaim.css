@@ -137,6 +137,28 @@ ul {
   padding: 2% 0 12% 0;
 }
 
+.main .empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+}
+
+.main .empty h1 {
+  font-family: 'Inter-Bold';
+  padding-bottom: 2%;
+}
+
 .main .grid-container {
   display: -ms-grid;
   display: grid;
@@ -198,16 +220,14 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #007BFF;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-radius: 8px;
-  width: 65%;
-  padding: 2% 0;
+  width: 50%;
+  padding: 2% 2%;
 }
 
 .main .grid-container .item .qrcode p {
@@ -215,7 +235,7 @@ ul {
 }
 
 .main .grid-container .item .qrcode img {
-  width: 40%;
+  width: 100%;
   border-radius: 8px;
 }
 

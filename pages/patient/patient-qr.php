@@ -22,7 +22,7 @@
 
     <nav class="footer">
         <ul>
-            <a href="patient-toclaim-empty.php">
+            <a href="patient-toclaim.php">
                 <li id="prescriptions">
                     <img src="../../assets/images/Circle_(grey).png">
                     <p>My prescriptions</p>
