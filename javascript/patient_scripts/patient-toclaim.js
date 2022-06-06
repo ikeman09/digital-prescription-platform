@@ -29,7 +29,6 @@ let createItem = (container, meds, notes) => {
 
     div.append(div4);
     div4.append(img2);
-    div4.append(p3);
 
 };
 
@@ -42,7 +41,7 @@ let capitalize = string => {
 let grid = document.getElementById("items");
 
 if(phpArray.length === 0) {
-    grid.document.innerText("No claimed"); // will edit later lmao
+    grid.document.innerText("No claim"); // will edit later lmao
 }
 else {
     // loops through the entire array and outputs it on the HTML
@@ -57,3 +56,11 @@ else {
 }
 
 
+
+
+// Go to QR page once clicked
+// Display QR
+//  -Get prescriptionID from the prescription
+//      >If user taps on prescription-N, return prescriptionID of prescription-N
+//  -Convert it into QR
+//  -Display QR

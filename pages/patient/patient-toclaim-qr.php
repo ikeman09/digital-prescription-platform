@@ -31,11 +31,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/patient_styles/patient-toclaim-empty.css">
+    <link rel="stylesheet" href="../../css/patient_styles/patient-toclaim.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+<div class="header">
         <div class="logo">
             <img src="../../assets/images/prescription-logo.png" alt="logo">
         </div>
@@ -52,13 +52,12 @@
     </div>
 
     <div class="main">
-        <h1> You have no prescriptions! </h1>
-        <p> You may get one from any of our registered doctors. </p>
+
     </div>
 
     <nav class="footer">
         <ul>
-            <a href="patient-toclaim-empty.php">
+            <a href="patient-toclaim.php">
                 <li id="prescriptions">
                     <img src="../../assets/images/Circle_(indigo).png">
                     <p>My prescriptions</p>
@@ -79,8 +78,9 @@
         </ul>
     </nav>
     
+
     <!-- lets javascript access the array in php -->
-    <script> let phpArray = <?php echo json_encode($prescription); ?>; </script>
+    <script> let phpArray = <?php echo json_encode($prescription); ?>;</script>
     <!-- script -->
     <script src="../../javascript/patient_scripts/patient-toclaim.js"></script>
 </body>
