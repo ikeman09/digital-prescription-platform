@@ -14,7 +14,7 @@ let createItem = (container, meds, notes) => {
     p.innerText = meds;
     p2.innerText = notes;
 
-    grid.append(div);
+    container.append(div);
     div.append(img);
     div.append(div2);
     div2.append(p);

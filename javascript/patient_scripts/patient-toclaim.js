@@ -20,7 +20,7 @@ let createItem = (container, meds, notes) => {
     p1.innerText = meds;
     p2.innerText = notes;
 
-    grid.append(div);
+    container.append(div);
     div.append(div2);
     div2.append(img);
     div2.append(div3);
@@ -32,6 +32,22 @@ let createItem = (container, meds, notes) => {
 
 };
 
+// Outputs text if there are no prescriptions to be claimed
+let createEmpty = container => {
+    const div = document.createElement('div');
+    const h1 = document.createElement('h1');
+    const p = document.createElement('p');
+    
+    div.setAttribute('class', 'empty');
+
+    container.append('div');
+    div.append('h1');
+    div.append('p');
+
+    h1.innerText = "You have no prescriptions!";
+    p.inerText = "You may get one from any of our registered doctors.";
+};
+
 // Function to capitalize first letter
 let capitalize = string => {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -41,7 +57,7 @@ let capitalize = string => {
 let grid = document.getElementById("items");
 
 if(phpArray.length === 0) {
-    grid.document.innerText("No claim"); // will edit later lmao
+    createEmpty(grid);
 }
 else {
     // loops through the entire array and outputs it on the HTML
