@@ -1,5 +1,4 @@
 <?php
-  session_start();
     $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
 
     if(!$conn)
@@ -35,14 +34,10 @@
         </div>
         <div id="box">
             
-            <?php foreach($dig as $digi) {
-                if($digi['pharmacyID'] == $_SESSION['pharmaID'])
-                {
-                
-                ?>
+            <?php foreach($dig as $digi) {?>
                 <div class="medicine">
                     <div id="image">
-                        <img src="../assets/images/meds.png" alt="medicine">
+                        <img src="../assets/images/paracetamol.jpg" alt="medicine">
                     </div>
                     <div id="text">
                         <?php 
@@ -54,7 +49,7 @@
                         
                     </div>
                 </div>
-            <?php }}?>
+            <?php }?>
              
 
             <div class="navbar">
