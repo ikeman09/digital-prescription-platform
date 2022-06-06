@@ -2,7 +2,7 @@
 
     // connect to database
     // Might have different username/password
-    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform_2');
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
 
     // check connection
     if(!$conn) {
@@ -51,9 +51,9 @@
 
     </div>
 
-    <div class="main">
-        <div id="items" class="grid-container">
-            <!-- <div class="item">
+    <div class="main" id="main">
+        <!-- <div id="items" class="grid-container">
+            <div class="item">
                 <div class="item-info">
                     <img src="../../assets/images/paracetamol.jpeg">
                     <div class="item-paragraph">
@@ -78,8 +78,8 @@
                     <img src="../../assets/images/qrcode-small.png">
                     <p> Check QR </p>
                 </div>
-            </div> -->
-        </div>
+            </div>
+        </div> -->
     </div>
 
     <nav class="footer">

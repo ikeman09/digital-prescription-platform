@@ -54,13 +54,16 @@ let capitalize = string => {
 };
 
 // Gets the container of the items
-let grid = document.getElementById("items");
-let main = document.getElementsByClassName("main")[0];
+let main = document.getElementById("main");
 
 if(phpArray.length === 0) {
     createEmpty(main);
 }
 else {
+    const divGrid = document.createElement('div');
+    divGrid.setAttribute('class', 'grid-container');
+    main.append(divGrid);
+
     // loops through the entire array and outputs it on the HTML
     for(let i = 0; i < phpArray.length; i++) {
         let medicineName = phpArray[i].genericName_dosage;
@@ -68,7 +71,7 @@ else {
 
         medicineName = capitalize(medicineName);
 
-        createItem(grid, medicineName, doctorNotes);
+        createItem(divGrid, medicineName, doctorNotes);
     }
 }
 
