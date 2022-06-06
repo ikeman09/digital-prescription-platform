@@ -63,7 +63,7 @@
                                 $state = true;
                                 $id= $data['id'];
                                 $_SESSION['pharmaID'] = $id;
-                                header('Location: pharmacy-inventory.php');
+                                header('Location: 2.php');
                                 break;
                             }
                         }

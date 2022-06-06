@@ -1,17 +1,126 @@
 body{
-    max-width: 400px;
+    max-width: 550px;
     margin: auto;
 }
 
 div#box{
-    width: 400px;
+    width: 100%;
     height: 100%;
-    overflow: auto;
-    padding-top: 25%;
+    overflow-y: hidden;
+    padding-top: 15%;
     margin-bottom: 15%;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#button1 {
+    display: block;
+    text-decoration: none;
+    font-weight:500;
+    color: #FFFFFF;
+    background-color: #49A0AE;
+    border-radius: 5px;
+    padding: 5%;
+    float: right;
+    font-family: Roboto-Light;
+    border:0px;
+}
+
+div#bar.container{
+    max-width: 550px;
+    position: fixed;
+    width: 100%;
+    background-color: #007BFF;
+    display: flex;
+    gap: 60%;
+}
+
+a{
+    margin: auto;
+}
+
+.item{
+    display: flex;
+}
+
+div#logo{
+    width: 15%;
+    float: left;
+    justify-content: center;
+}
+
+div#changePass{
+    width: 25%;
+    float: right;
+}
+
+div#logo img{
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#navbar.container{
+    max-width: 550px;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #808080;
+    background-color: #F0F3F8;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+div#navbar.container p{
+    margin: 0;
+    padding: 2%;
+    font-family: Roboto-Light;
+    font-size: 14px;
+    margin-bottom: 1%;
+}
+
+div#inventory.item{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: #007BFF;
+    display: flex;
+    flex-direction: column;
+}
+
+div#inventory img{
+    margin: auto;
+    padding-top: 3%;
+    width: 20%;
+}
+
+div#other.item{
+    width: 100%;
+    color: #808080;
+    background-color: #F0F3F8;
+    display: flex;
+    flex-direction: column;
+}
+
+div#other img{
+    margin: auto;
+    padding-top: 3%;
+    width: 20%;
+}
+
+
+
 div#qr{
+    text-align: center;
     width: 100%;
 }
 
@@ -20,97 +129,12 @@ video{
     visibility: visible;
 }
 
-div#bar{
-    background-color: #007BFF;
-    height: 8%;
-    width: 400px;
-    position: fixed;
-    display: block;
-}
-
-div#logo{
-    text-align: left;
-    padding: 1px 0px 1px 5px;
-}
-
 img#status{
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
-    visibility: hidden;
-}
-
-img{
     width: 15%;
     height: 90%;
-}
-
-.navbar__button {
-    text-decoration: none;
-    margin-top: 20px;
-    margin-right: 10px;
-    color: #FFFFFF;
-    background-color: #49A0AE;
-    border-radius: 5px;
-    float: right;
-    height: 20px;
-    font-family: Roboto-Light;
-}
-
-a {
-    text-decoration: none;
-}
-
-.navbar{
-    position: static;
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-    -webkit-column-count: 3;
-            column-count: 3;
-    color: #808080;
-    background-color: #F0F3F8;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.navbar img{
-    width: 25%;
-    margin-top: -50%;
-    margin-bottom: -10%;
-}
-
-.navbar .inventory{
-    padding: 11.5% 0 0.4% 0;
-}
-
-.navbar .scan{
-    background-color: #007BFF;
-    padding: 11.5% 0 0.4% 0;
-}
-
-.navbar .history {
-    padding: 11.5% 0 0.4% 0;
-}
-
-.navbar .scan p{
-    color: white;
-}
-
-.navbar p{
-    font-family: Roboto-Light;
-    font-size: 14px;
-    color: #808080;
-    margin-bottom: 1%;
-}
-
-.qr img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
 }
 
 p{
@@ -136,7 +160,7 @@ input#inputted{
     font-size: 1rem;
 }
 
-input#button{
+input#button2{
     float: right;
     width: 15%;
     height: 30px;
@@ -146,7 +170,7 @@ input#button{
     border-radius: 5px;
 }
 
-input#button2{
+input#button3{
     width: 25%;
     height: 30px;
     background-color: #54A7FF;
@@ -162,14 +186,4 @@ input#button2{
 @font-face {
     font-family: Roboto-Light;
     src: url(../assets/font/Roboto/Roboto-Light.ttf);
-}
-
-@media only screen and (max-width: 320px) {
-    body{
-        background-color: #fffafa;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    
 }
