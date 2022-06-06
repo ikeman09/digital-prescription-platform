@@ -1,3 +1,27 @@
+<?php
+
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $patientID = 1234;
+
+    // query for selecting prescriptions with a claimed status of 1
+    $status = "SELECT * FROM prescription_status WHERE claimedStatus = 1";
+    // make query & get result
+    $status_query = mysqli_query($conn, $status);
+    // fetch the resulting rows as an array
+    $status_result = mysqli_fetch_all($status_query, MYSQLI_ASSOC);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +49,6 @@
 
     <div class="main">
         <div id="items" class="grid-container">
-
             <!-- <div class="item">
                 <img src="../../assets/images/colace.jpeg">
                 <div class="item-info">
