@@ -1,3 +1,30 @@
+<?php
+
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $patientID = 1234;
+
+
+    // Joins 3 tables - prescription, prescription_medicine and prescription_status
+    // Only takes in the columns w/ a prescription status of 'claimed'/1
+    $sql = 'SELECT * FROM prescription INNER JOIN prescription_status
+        ON prescription.prescriptionID = prescription_status.prescriptionID
+        INNER JOIN prescription_medicine ON prescription.medicineID = prescription_medicine.id
+        WHERE prescription_status.claimedStatus = 1';
+
+    $result = mysqli_query($conn, $sql);
+
+    $prescription = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
