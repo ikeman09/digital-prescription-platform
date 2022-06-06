@@ -8,6 +8,7 @@ let createItem = (container, meds, notes) => {
     const p2 = document.createElement('p');
 
     const div4 = document.createElement('div');
+    const img2 = document.createElement('img');
     const p3 = document.createElement('p');
 
     div.setAttribute('class', 'item');
@@ -15,6 +16,7 @@ let createItem = (container, meds, notes) => {
     img.setAttribute('src', '../../assets/images/meds.png');
     div3.setAttribute('class', 'item-paragraph');
     div4.setAttribute('class', 'qrcode');
+    img2.setAttribute('src', '../../assets/images/qrcode-small.png')
     
     p1.innerText = meds;
     p2.innerText = notes;
@@ -28,6 +30,7 @@ let createItem = (container, meds, notes) => {
     div3.append(p2);
 
     div.append(div4);
+    div4.append(img2);
     div4.append(p3);
 
 };
@@ -54,3 +57,5 @@ else {
         createItem(grid, medicineName, doctorNotes);
     }
 }
+
+

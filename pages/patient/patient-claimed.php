@@ -52,6 +52,7 @@
 
     <div class="main">
         <div id="items" class="grid-container">
+            
         </div>
     </div>
 
