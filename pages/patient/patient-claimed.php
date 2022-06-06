@@ -52,62 +52,6 @@
 
     <div class="main">
         <div id="items" class="grid-container">
-            <!-- <div class="item">
-                <img src="../../assets/images/colace.jpeg">
-                <div class="item-info">
-                    <p>Colace 100gm</p>
-                    <p>Sig: Twice a day</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/ascorbic.jpeg">
-                <div class="item-info">
-                    <p>Ascorbic Acid Sig #30</p>
-                    <p>Once a day</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/zofran.jpeg">
-                <div class="item-info">
-                    <p>Zofran 4mg</p>
-                    <p>Sig: A.D.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/metformin.jpeg">
-                <div class="item-info">
-                    <p>Metformin</p>
-                    <p>1 tab</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/paracetamol.jpeg">
-                <div class="item-info">
-                    <p>Paracetamol Tab #30</p>
-                    <p>Sig: A.D.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/amoxicillin.jpeg">
-                <div class="item-info">
-                    <p>Amoxicillin #30</p>
-                    <p>Sig: Once a week</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/kaopectate.jpeg">
-                <div class="item-info">
-                    <p>Kaopectate</p>
-                    <p>Sig: A.D.</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="../../assets/images/kaopectate.jpeg">
-                <div class="item-info">
-                    <p>Kaopectate</p>
-                    <p>Sig: A.D.</p>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -134,7 +78,9 @@
         </ul>
     </nav>
     
-
+    <!-- lets javascript access the array in php -->
+    <script> let phpArray = <?php echo json_encode($prescription); ?>; </script>
+    <!-- script -->
     <script src="../../javascript/patient_scripts/patient-claimed.js"></script>
 </body>
 </html>
