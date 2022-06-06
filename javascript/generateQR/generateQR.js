@@ -10,9 +10,9 @@ let generateQRCode = val => {
     }
 };
 
-let random = randomNumber(10000, 99999); // Stores rand num from 10k to 99k (5 digits)
+let id = patientID[0].patientID // stores patientID
 
-document.getElementById("num").innerHTML = random; // Outputs the code if QR doesn't work
+document.getElementById("num").innerHTML = id; // Outputs the code if QR doesn't work
 
-generateQRCode(random); // Generates the QR code
+generateQRCode(id); // Generates the QR code
 
