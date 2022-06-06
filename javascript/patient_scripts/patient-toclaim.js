@@ -9,7 +9,6 @@ let createItem = (container, meds, notes) => {
 
     const div4 = document.createElement('div');
     const img2 = document.createElement('img');
-    const p3 = document.createElement('p');
 
     div.setAttribute('class', 'item');
     div2.setAttribute('class', 'item-info');
@@ -20,7 +19,6 @@ let createItem = (container, meds, notes) => {
     
     p1.innerText = meds;
     p2.innerText = notes;
-    p3.innerText = "Check QR";
 
     grid.append(div);
     div.append(div2);
