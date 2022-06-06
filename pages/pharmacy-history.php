@@ -39,7 +39,7 @@
                     <p>Scan Prescriptions</p>
                 </a>
                 <div class="history">
-                  <img src="../assets/images/circle.png" alt="circle">
+                  <img src="../assets/images/Circle_(indigo).png" alt="circle">
                   <p>History</p>
                 </div>
             </div>

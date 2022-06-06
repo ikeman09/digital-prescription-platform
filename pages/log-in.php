@@ -1,3 +1,23 @@
+<?php
+    session_start();
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+
+    if(!$conn)
+    {
+        echo "Connection error".mysqli_connect_error();
+    }
+
+    $sql = 'SELECT * FROM pharmacy_login';
+
+    $result = mysqli_query($conn, $sql);
+
+    $dig = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    mysqli_free_result($result);
+
+    mysqli_close($conn);
+?>
+
 <html>
     <head>
         <title>DMPP</title>
@@ -19,13 +39,37 @@
                 <p><b>Sign in</b></p>
             </div>
 
-            <form>
+            <form id="myForm" method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div>
-                    <input id= "inputted" type="text" placeholder="Email address *" required>
-                    <input id= "inputted" type="password" placeholder="Password *" required>
+                    <input id= "inputted" name="usName" type="text" placeholder="Email address *" required>
+                    <input id= "inputted" name="pwd" type="password" placeholder="Password *" required>
                 </div>
 
                 <input id = "button" value="Log in" type="submit">
+
+                <?php
+                    $name = $pass = "";
+                    if ($_SERVER["REQUEST_METHOD"]== "POST")
+                    {
+                        // Collects the values of the input field
+                        $state = false;
+                        $name= $_REQUEST["usName"]; //username
+                        $pass = $_REQUEST["pwd"]; //password
+
+                        foreach($dig as $data)
+                        {
+                            if($name == $data['email'] && $pass == $data['password'])
+                            {
+                                $state = true;
+                                $id= $data['id'];
+                                $_SESSION['pharmaID'] = $id;
+                                header('Location: pharmacy-inventory.php');
+                                break;
+                            }
+                        }
+
+                    }
+                ?>
             </form>
             <br>
 
