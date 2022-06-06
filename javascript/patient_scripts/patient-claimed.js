@@ -13,7 +13,6 @@ let createItem = (container, meds, notes) => {
 
     p.innerText = meds;
     p2.innerText = notes;
-
     container.append(div);
     div.append(img);
     div.append(div2);

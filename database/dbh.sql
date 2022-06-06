@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 05, 2022 at 05:47 PM
+-- Generation Time: Jun 06, 2022 at 10:59 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 8.0.6
 
@@ -35,6 +35,13 @@ CREATE TABLE `doctor_info` (
   `doctorLastName` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `doctor_info`
+--
+
+INSERT INTO `doctor_info` (`prcRegNumber`, `uniqueID`, `doctorFirstName`, `doctorMiddleName`, `doctorLastName`) VALUES
+(123456, 789123, 'Juan', 'Felix', 'Cena');
+
 -- --------------------------------------------------------
 
 --
@@ -59,6 +66,13 @@ CREATE TABLE `doctor_specialization` (
   `specialization` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `doctor_specialization`
+--
+
+INSERT INTO `doctor_specialization` (`prcRegNumber`, `specialization`) VALUES
+(123456, 'Thuganomics');
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +91,7 @@ CREATE TABLE `doctor_unique_id` (
 --
 
 CREATE TABLE `history` (
+  `pharmacyID` int(11) DEFAULT NULL,
   `prescriptionID` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -97,12 +112,14 @@ CREATE TABLE `inventory` (
 --
 
 INSERT INTO `inventory` (`pharmacyID`, `medicineID`, `quantityLeft`) VALUES
-(1, 1, 999),
-(1, 2, 789),
-(1, 3, 12),
-(1, 4, 357),
-(1, 5, 30),
-(1, 6, 5);
+(1, 1, 768),
+(1, 2, 768),
+(1, 3, 768),
+(1, 4, 768),
+(1, 5, 768),
+(1, 6, 768),
+(2, 1, 768),
+(2, 2, 747);
 
 -- --------------------------------------------------------
 
@@ -158,7 +175,8 @@ CREATE TABLE `pharmacy_info` (
 --
 
 INSERT INTO `pharmacy_info` (`pharmacyID`, `pharmacyName`, `location`) VALUES
-(1, 'RJC Pharmacy', 'Tagum City');
+(1, 'RJC Pharmacy', 'Tagum City'),
+(2, 'Perpetual Pharmacy', 'Tagum City');
 
 -- --------------------------------------------------------
 
@@ -172,6 +190,14 @@ CREATE TABLE `pharmacy_login` (
   `password` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `pharmacy_login`
+--
+
+INSERT INTO `pharmacy_login` (`id`, `email`, `password`) VALUES
+(1, 'rjcpharm@gmail.com', 'asdfghjkl987'),
+(2, 'perpetual@gmail.com', 'perpetual45');
+
 -- --------------------------------------------------------
 
 --
@@ -183,16 +209,17 @@ CREATE TABLE `prescription` (
   `medicineID` int(11) DEFAULT NULL,
   `diagnosis` varchar(30) NOT NULL,
   `datePrescribed` datetime NOT NULL,
-  `doctorNotes` varchar(30) NOT NULL
+  `doctorNotes` varchar(30) NOT NULL,
+  `pieces` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `prescription`
 --
 
-INSERT INTO `prescription` (`prescriptionID`, `medicineID`, `diagnosis`, `datePrescribed`, `doctorNotes`) VALUES
-(456789, 2, 'Take 3 times a day for', '2022-06-05 10:58:49', 'Lorem ipsum'),
-(6541230, 1, 'Take 3 times a day for', '2022-06-05 11:14:04', 'Ipsum Lorem');
+INSERT INTO `prescription` (`prescriptionID`, `medicineID`, `diagnosis`, `datePrescribed`, `doctorNotes`, `pieces`) VALUES
+(456789, 2, 'Take 3 times a day for', '2022-06-05 10:58:49', 'Lorem ipsum', 21),
+(6541230, 1, 'Take 3 times a day for', '2022-06-05 11:14:04', 'Ipsum Lorem', 10);
 
 -- --------------------------------------------------------
 
@@ -235,7 +262,7 @@ CREATE TABLE `prescription_status` (
 
 INSERT INTO `prescription_status` (`prescriptionID`, `claimedStatus`) VALUES
 (456789, 0),
-(6541230, 1);
+(6541230, 0);
 
 --
 -- Indexes for dumped tables
@@ -286,7 +313,7 @@ ALTER TABLE `patient_login`
 -- AUTO_INCREMENT for table `pharmacy_login`
 --
 ALTER TABLE `pharmacy_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112234;
 
 --
 -- AUTO_INCREMENT for table `prescription`
