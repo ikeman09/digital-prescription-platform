@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
 
     if(!$conn)
     {
@@ -63,7 +63,7 @@
                                 $state = true;
                                 $id= $data['id'];
                                 $_SESSION['pharmaID'] = $id;
-                                header('Location: 2.php');
+                                header('Location: pharmacy-scan.php');
                                 break;
                             }
                         }
