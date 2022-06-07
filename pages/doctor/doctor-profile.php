@@ -10,7 +10,7 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $doctorID = 4321;
+    $doctorID = $_SESSION['doctorID'];
 
     // write query for all data in patient info
     $sql = "SELECT * FROM doctor_info INNER JOIN doctor_specialization

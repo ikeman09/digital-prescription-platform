@@ -76,7 +76,6 @@
                                 $state = true;
                                 $id= $data['id'];
                                 $_SESSION['pharmaID'] = $id;
-                                $_SESSION['patientID'] = $id; // kailangan pa icombine later
                                 header('Location: pharmacy-inventory.php');
                                 break;
                             }
@@ -88,7 +87,7 @@
                             {
                                 $state = true;
                                 $id= $data['id'];
-                                $_SESSION['prcRegNumber'] = $id;
+                                $_SESSION['doctorID'] = $id;
                                 header('Location: ../pages/doctor/doctor-prescribe.php');
                                 break;
                             }
