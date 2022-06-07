@@ -8,7 +8,7 @@
 
     $pid = $_SESSION['pharmaID'];
 
-    $sql = 'SELECT password FROM pharmacy_login WHERE id = '".$pid.";
+    $sql = 'SELECT password FROM pharmacy_login WHERE id = ' .$pid;
 
     $result = mysqli_query($conn, $sql);
 
