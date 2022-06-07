@@ -18,7 +18,7 @@
     <div class="dmpp__wrapper">
       <div class="dmpp__left">
         <h1>Digital Medical Prescription</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Say goodbye to pen and paper! The Digital Medical Prescription provides an innovative solution to save time, paper, ink and provides a level of conveinece for the Doctors, Patients and Pharmacies alike. As the name suggests, it turns all of your prescriptions into digital form. </p>
       </div>
       <div class="dmpp__right">
         <img src="../assets/images/database-svgrepo-com.svg"  alt="">
@@ -58,7 +58,7 @@
       </div>
       <div class="doctor__right">
         <h1>Doctor</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Tired of writing prescriptions? Tired of running out of ink and borrowing a pen from your coworker? Do your fingers hurt after jotting down a plethora of prescriptions? With the Digital medical Prescription, all of this can be solved! Make prescriptions by simply tapping and typing on your phone, and you’re good to go.</p>
       </div>
     </div>
   </section>
@@ -67,7 +67,7 @@
     <div class="mainhero__wrapper">
       <div class="mainhero__left">
         <h1>Patient</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Have you ever experienced a time where you forgot what the doctor prescribed, and you can’t understand their writing from the prescription paper? How about losing your prescription paper? That’s absolutely horrible! Fear not, because the Digital Medial Prescription will solve your problems.</p>
       </div>
       <div class="mainhero__right">
         <img src="../assets/images/person-svgrepo-com.svg" alt="">
@@ -81,7 +81,7 @@
       </div>
       <div class="pharmacy__right">
         <h1>Pharmacy</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Sometimes, you just forget how much of the drugs are in stock. With the Digital Medial Prescription, you can keep track of your inventory and give out prescriptions to your customers just by using your fingertips.</p>
       </div>
     </div>
   </section>
