@@ -6,7 +6,9 @@
       echo "Connection error: " . mysqli_connect_error();
     }
 
-    $sql = 'SELECT * FROM history h INNER JOIN prescription p ON h.prescriptionID = p.prescriptionID INNER JOIN prescription_medicine m ON p.medicineID = m.id WHERE h.pharmacyID = 1';
+    $pid = $_SESSION['pharmaID'];
+
+    $sql = 'SELECT * FROM history h INNER JOIN prescription p ON h.prescriptionID = p.prescriptionID INNER JOIN prescription_medicine m ON p.medicineID = m.id WHERE h.pharmacyID = '".$pid.";
 
     $result = mysqli_query($conn, $sql);
 

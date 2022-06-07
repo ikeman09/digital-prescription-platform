@@ -6,9 +6,9 @@
         echo 'Connection error: ' . mysqli_connect_error();
     }
 
-    $test_user_id = 1;
+    $pid = $_SESSION['pharmaID'];
 
-    $sql = 'SELECT password FROM pharmacy_login WHERE id = ' . $test_user_id;
+    $sql = 'SELECT password FROM pharmacy_login WHERE id = '".$pid.";
 
     $result = mysqli_query($conn, $sql);
 
