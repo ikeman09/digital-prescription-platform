@@ -55,10 +55,12 @@
             }
 
             .item-info {
-                padding-top: 5%;
+                padding: 2% 0;
+                :first-child {
+                    font-family: Inter-Bold;
+                }
                 p {
                     color: white;
-                    font-size: 1.5rem;
                 }
             }
         }

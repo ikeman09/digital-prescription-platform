@@ -172,12 +172,15 @@ ul {
 }
 
 .main .grid-container .item .item-info {
-  padding-top: 5%;
+  padding: 2% 0;
+}
+
+.main .grid-container .item .item-info :first-child {
+  font-family: Inter-Bold;
 }
 
 .main .grid-container .item .item-info p {
   color: white;
-  font-size: 1.5rem;
 }
 
 .footer #prescriptions {

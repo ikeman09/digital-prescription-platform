@@ -1,23 +1,33 @@
 
 // Creates the item to be put on the HTML
-let createItem = (container, meds, notes) => {
+let createItem = (container, meds, diagnosis, date, notes, pieces) => {
     const div = document.createElement('div');
     const img = document.createElement('img');
     const div2 = document.createElement('div');
     const p = document.createElement('p');
     const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
+    const p4 = document.createElement('p');
+    const p5 = document.createElement('p');
 
     div.setAttribute('class', 'item');
     img.setAttribute('src', '../../assets/images/meds.png');
     div2.setAttribute('class', 'item-info');
 
     p.innerText = meds;
-    p2.innerText = notes;
+    p2.innerText = diagnosis;
+    p3.innerText = date;
+    p4.innerText = `${pieces} pieces`;
+    p5.innerText = notes;
+
     container.append(div);
     div.append(img);
     div.append(div2);
     div2.append(p);
     div2.append(p2);
+    div2.append(p3);
+    div2.append(p4);
+    div2.append(p5);
 };
 
 // Function to capitalize first letter
@@ -43,6 +53,6 @@ else {
 
         medicineName = capitalize(medicineName);
 
-        createItem(grid, medicineName, doctorNotes);
+        createItem(grid, medicineName, diagnosis, date, doctorNotes, pieces);
     }
 }
