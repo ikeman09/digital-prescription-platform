@@ -24,7 +24,9 @@
     //free result from memory
     mysqli_free_result($result);
 
-
+    $oldPassword = $_POST["oldPassword"] = "";
+    $newPassword = $_POST["newPassword"] = "";
+    $confirmNewPassword = $_POST["confirmNewPassword"] = "";
     error_reporting(E_ERROR | E_PARSE);
 ?>
 
