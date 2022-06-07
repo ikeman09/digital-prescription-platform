@@ -1,3 +1,35 @@
+<?php
+    session_start();
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $doctorID = 1234;
+
+    // write query for all data in patient info
+    $sql = "SELECT * FROM doctor_info INNER JOIN doctor_specialization
+        ON doctor_info.prcRegNumber = doctor_specialization.prcRegNumber
+        WHERE doctor_info.prcRegNumber = {$doctorID}";
+
+    // make query & get result
+    $result = mysqli_query($conn, $sql);
+
+    // fetch the resulting rows as an array
+    $doctor_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    //free result from memory
+    mysqli_free_result($result);
+
+    // close connection
+    mysqli_close($conn);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,29 +46,31 @@
     </div>
 
     <div class="content">
-        <div class="top">
-            <img src="../../assets/images/profile.png">
-            <p id="name">JOHN RAY CLEMENTZ A. SERVO</p>
-        </div>
+    <?php 
+        // loops through the array
+        foreach($doctor_info as $info){ ?>
+            <div class="top">
+                <img src="../../assets/images/profile.png">
+                <p id="name">
+                    <?php 
+                        echo htmlspecialchars(strtoupper($info['doctorFirstName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['doctorMiddleName'])) . ' ';
+                        echo htmlspecialchars(strtoupper($info['doctorLastName']));
+                    ?>
+                </p>
+            </div>
 
-        <div class="column">
-            <div class="info">
-                <p>Address:</p>
-                <p>Bolong subd. Kidapawan City</p>
+            <div class="column">
+                <div class="info">
+                    <p>PRC Registration Number:</p>
+                    <?php echo htmlspecialchars($info['prcRegNumber']) ?>
+                </div>
+                <div class="info">
+                    <p>Specialization:</p>
+                    <?php echo htmlspecialchars($info['specialization']) ?>
+                </div>
             </div>
-            <div class="info">
-                <p>Age:</p>
-                <p>20</p>
-            </div>
-            <div class="info">
-                <p>Sex:</p>
-                <p>Male</p>
-            </div>
-            <div class="info">
-                <p>Birthday:</p>
-                <p>02/17/2002</p>
-            </div>
-        </div>
+        <?php } ?>
 
         
         <div class="changepass">

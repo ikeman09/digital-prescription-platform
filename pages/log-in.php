@@ -88,7 +88,7 @@
                             {
                                 $state = true;
                                 $id= $data['id'];
-                                $_SESSION['doctorID'] = $id;
+                                $_SESSION['prcRegNumber'] = $id;
                                 header('Location: ../pages/doctor/doctor-prescribe.php');
                                 break;
                             }
