@@ -1,7 +1,8 @@
 <?php
+    session_start();
     // connect to database
     // Might have different username/password
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
 
     // check connection
     if(!$conn) {
@@ -9,7 +10,7 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $patientID = 1234;
+    $patientID = $_SESSION['patientID'];
 
     // write query for all data in patient info
     $sql = "SELECT * FROM patient_login WHERE id = {$patientID}";
