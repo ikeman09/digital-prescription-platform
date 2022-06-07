@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+$conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
 
 if(!$conn){
   echo "Connection error".mysqli_connect_error();

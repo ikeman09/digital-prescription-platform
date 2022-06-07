@@ -2,7 +2,7 @@
     session_start();
     // connect to database
     // Might have different username/password
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
 
     // check connection
     if(!$conn) {
