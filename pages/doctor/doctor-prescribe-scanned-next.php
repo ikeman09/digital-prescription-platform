@@ -7,8 +7,7 @@
         echo "Connection error".mysqli_connect_error();
     }
 
-    //$docID = $_SESSION['doctorID'];
-    $docID = 789456;
+    $docID = $_SESSION['doctorID'];
     $patientID = $_SESSION['patientID'];
 
     $sql = "SELECT patientFirstName, patientMiddleName, patientLastName FROM patient_info WHERE patient_info.patientID = '".$patientID."'";
@@ -128,12 +127,14 @@
 
         <div id="navbar" class="container">
             <div id="scan" class="item">
-                <img src="../../assets/images/qrcode-small.png" alt="qr code">
-                <p>Scan Patient ID</p>
+                <a href="../doctor/doctor-scan.php">
+                    <img src="../../assets/images/qrcode-small.png" alt="qr code">
+                    <p>Scan Patient ID</p>
+                </a>
             </div>
             
             <div id="other" class="item">
-                <a href="pharmacy-history.php">
+                <a href="../doctor/doctor-profile.php">
                     <img src="../../assets/images/circle.png" alt="circle">
                     <p>Profile</p>
                 </a>
