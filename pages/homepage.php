@@ -17,10 +17,11 @@
   <section class="dmpp">
     <div class="dmpp__wrapper">
       <div class="dmpp__left">
+        <h1>Digital Medical Prescription</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div class="dmpp__right">
-        <h1>Digital Medical Prescription</h1>
+        <img src="../assets/images/database-svgrepo-com.svg"  alt="">
       </div>
     </div>
   </section>
@@ -53,9 +54,10 @@
   <section class="doctor">
     <div class="doctor__wrapper">
       <div class="doctor__left">
-        <h1>Doctor</h1>
+        <img src="../assets/images/doctor-svgrepo-com.svg" alt="">
       </div>
       <div class="doctor__right">
+        <h1>Doctor</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
@@ -64,19 +66,21 @@
   <section class="mainhero">
     <div class="mainhero__wrapper">
       <div class="mainhero__left">
+        <h1>Patient</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
       <div class="mainhero__right">
-        <h1>Patient</h1>
+        <img src="../assets/images/person-svgrepo-com.svg" alt="">
       </div>
     </div>
   </section>
   <section class="pharmacy">
     <div class="pharmacy__wrapper">
       <div class="pharmacy__left">
-        <h1>Pharmacy</h1>
+        <img src="../assets/images/pharmacy-svgrepo-com.svg" alt="">
       </div>
       <div class="pharmacy__right">
+        <h1>Pharmacy</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>

@@ -177,6 +177,10 @@ html body {
   }
 }
 
+.dmpp__right img {
+  width: 300px;
+}
+
 .mainhero {
   padding: 30px 10px;
   text-align: center;
@@ -236,6 +240,10 @@ html body {
   .mainhero__right {
     padding: 20px;
   }
+}
+
+.mainhero__right img {
+  width: 300px;
 }
 
 .how-it-works {
@@ -371,6 +379,10 @@ html body {
   }
 }
 
+.doctor__left img {
+  width: 300px;
+}
+
 .doctor__right {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -433,6 +445,10 @@ html body {
   }
 }
 
+.pharmacy__left img {
+  width: 300px;
+}
+
 .pharmacy__right {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -490,5 +506,20 @@ html body {
   margin-right: 20px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .dmpp__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mainhero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 /*# sourceMappingURL=homepage.css.map */
