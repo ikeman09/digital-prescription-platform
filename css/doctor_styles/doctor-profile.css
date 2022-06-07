@@ -126,6 +126,28 @@ p, ul {
   }
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  color: white;
+  font-family: Inter-Bold;
+  background-color: red;
+  padding: 1%;
+  margin-right: 2%;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .content {
   padding: 2% 0;
 }
