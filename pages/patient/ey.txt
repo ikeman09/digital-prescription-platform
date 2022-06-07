@@ -1,0 +1,20 @@
+> Patient goes to doctor
+> Doctor prescribes drugs to Patient
+    -Doctor puts the prescription to the database
+    -From the database, the info from the doctor gets extracted by the Patient
+        + The output will be shown on the To claim tab
+    [-Doctor puts prescriptionID on database
+     -From the database, the prescriptionID gets extracted by the Patient]
+
+    # What if there are prescriptions from other people on the table?
+        - Possible solution: Give out one prescriptionID for all of the drugs prescribed by the doctor in one checkup
+
+
+> Patient goes to pharmacy
+> Patient presents QR code
+    - Pharmacy scans QR code
+    - The QR code/s will output the prescriptionID of the prescriptions
+    - The pharmacy checks if the drug is available
+    - If available, set prescripionStatus to claimed
+        + The precsriptions will be removed from the To Claim tab
+        + The prescriptions will appear on the Claimed tab

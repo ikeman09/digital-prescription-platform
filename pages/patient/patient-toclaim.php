@@ -1,8 +1,8 @@
 <?php
-
+    session_start();
     // connect to database
     // Might have different username/password
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'prescription_platform');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
 
     // check connection
     if(!$conn) {
@@ -10,7 +10,7 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $patientID = 1234;
+    $patientID = $_SESSION['patientID'];
 
 
     // Joins 3 tables - prescription, prescription_medicine and prescription_status
@@ -23,6 +23,7 @@
     $result = mysqli_query($conn, $sql);
 
     $prescription = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>

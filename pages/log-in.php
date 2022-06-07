@@ -1,13 +1,13 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
 
     if(!$conn)
     {
         echo "Connection error".mysqli_connect_error();
     }
 
-    $sql = 'SELECT * FROM pharmacy_login';
+    $sql = 'SELECT * FROM patient_login UNION SELECT * FROM pharmacy_login';
 
     $result = mysqli_query($conn, $sql);
 
@@ -16,6 +16,7 @@
     mysqli_free_result($result);
 
     mysqli_close($conn);
+
 ?>
 
 <html>
@@ -63,7 +64,8 @@
                                 $state = true;
                                 $id= $data['id'];
                                 $_SESSION['pharmaID'] = $id;
-                                header('Location: 2.php');
+                                $_SESSION['patientID'] = $id; // kailangan pa icombine later
+                                header('Location: ./patient/patient-toclaim.php');
                                 break;
                             }
                         }
