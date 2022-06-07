@@ -10,12 +10,12 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $doctorID = 1234;
+    $doctorID = 4321;
 
     // write query for all data in patient info
     $sql = "SELECT * FROM doctor_info INNER JOIN doctor_specialization
         ON doctor_info.prcRegNumber = doctor_specialization.prcRegNumber
-        WHERE doctor_info.prcRegNumber = {$doctorID}";
+        WHERE doctor_info.uniqueID = {$doctorID}";
 
     // make query & get result
     $result = mysqli_query($conn, $sql);
