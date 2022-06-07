@@ -8,7 +8,7 @@
 <div class="homepage">
   <section class="navbar">
     <div class="navbar__wrapper">
-      <a href="homepage.php">
+      <a href="index.php">
         <img class="navbar__logo" alt="DMPPLogo" src="../assets/images/prescription-logo.png">
       </a>
       <a class="navbar__button" href="sign-up.php">Get Started</a>

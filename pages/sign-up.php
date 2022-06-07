@@ -20,13 +20,13 @@
             <br>
 
             <a href="sign-up-customer.php">
-                <button type="button">Patient<br><br><p id="button">Lorem ipsum dolor sit amet, consectetur adipiscing</p></button>
+                <button type="button">Patient<br><br><p id="button">Experience paperless prescriptions and fast access to pharmacies!</p></button>
             </a><br>
             <a href="sign-up-doctor.php">
-                <button type="button">Doctor<br><br><p id="button">Lorem ipsum dolor sit amet, consectetur adipiscing</p></button>
+                <button type="button">Doctor<br><br><p id="button">Reach and monitor your patients!</p></button>
             </a><br>
             <a href="sign-up-pharmacy.php">
-                <button type="button">Pharmacy Institution<br><br><p id="button">Lorem ipsum dolor sit amet, consectetur adipiscing</p></button>
+                <button type="button">Pharmacy Institution<br><br><p id="button">Track and manage your inventory!</p></button>
             </a><br>
 
             <div id="log-in">
