@@ -87,7 +87,7 @@ mysqli_close($conn);
           $state = true;
           $id= $data['id'];
           $_SESSION['doctorID'] = $id;
-          header('Location: ../pages/doctor/doctor-prescribe.php');
+          header('Location: ../pages/doctor/doctor-scan.php');
           break;
         }
       }
