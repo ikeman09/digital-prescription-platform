@@ -1,5 +1,18 @@
+// Generates the QR code
+let generateQRCode = (val, i) => {
+    let qrcode; // Stores the qr code.
+    
+    if(qrcode === undefined) {
+        qrcode = new QRCode('qrcode' + i, val);
+    } else {
+        qrcode.clear();
+        qrcode.makeCode(val);
+    }
+    
+};
+
 // Creates the item to be put on the HTML
-let createItem = (container, meds, notes) => {
+let createItem = (container, meds, notes, prescriptionID, qr, i) => {
     const div = document.createElement('div');
     const div2 = document.createElement('div');
     const div3 = document.createElement('div');
@@ -15,7 +28,8 @@ let createItem = (container, meds, notes) => {
     img.setAttribute('src', '../../assets/images/meds.png');
     div3.setAttribute('class', 'item-paragraph');
     div4.setAttribute('class', 'qrcode');
-    img2.setAttribute('src', '../../assets/images/qrcode-small.png')
+    div4.setAttribute('id', 'qrcode' + i);
+    // img2.setAttribute('src', '../../assets/images/qrcode-small.png')
     
     p1.innerText = meds;
     p2.innerText = notes;
@@ -28,8 +42,7 @@ let createItem = (container, meds, notes) => {
     div3.append(p2);
 
     div.append(div4);
-    div4.append(img2);
-
+    qr(prescriptionID, i);
 };
 
 // Outputs text if there are no prescriptions to be claimed
@@ -68,9 +81,10 @@ else {
     for(let i = 0; i < phpArray.length; i++) {
         let medicineName = phpArray[i].genericName_dosage;
         let doctorNotes = phpArray[i].doctorNotes;
+        let prescriptionID = phpArray[i].prescriptionID;
 
         medicineName = capitalize(medicineName);
 
-        createItem(divGrid, medicineName, doctorNotes);
+        createItem(divGrid, medicineName, doctorNotes, prescriptionID, generateQRCode, i);
     }
 }

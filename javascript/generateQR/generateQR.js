@@ -16,3 +16,4 @@ document.getElementById("num").innerHTML = id; // Outputs the code if QR doesn't
 
 generateQRCode(id); // Generates the QR code
 
+
