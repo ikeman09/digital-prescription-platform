@@ -28,17 +28,23 @@
   <section class="how-it-works">
     <div class="how-it-works__items">
       <div class="how-it-works__item">
-        <div class="how-it-works__item-image"></div>
+        <div class="how-it-works__item-image">
+          <img src="../assets/images/doctor-svgrepo-com.svg" alt="">
+        </div>
         <h1>Doctor</h1>
       </div>
       <div class="how-it-works__arrow"><img src="../assets/images/arrow.svg" alt="Arrow pointing to the right"></div>
       <div class="how-it-works__item">
-        <div class="how-it-works__item-image"></div>
+        <div class="how-it-works__item-image">
+          <img src="../assets/images/person-svgrepo-com.svg" alt="">
+        </div>
         <h1>Patient</h1>
       </div>
       <div class="how-it-works__arrow"><img src="../assets/images/arrow.svg" alt="Arrow pointing to the right"></div>
       <div class="how-it-works__item">
-        <div class="how-it-works__item-image"></div>
+        <div class="how-it-works__item-image">
+          <img src="../assets/images/pharmacy-svgrepo-com.svg" alt="">
+        </div>
         <h1>Pharmacy</h1>
       </div>
     </div>
