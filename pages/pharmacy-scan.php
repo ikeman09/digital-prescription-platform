@@ -169,8 +169,12 @@
                     }
                 }
             ?>
+
         </div>
 
+        <div class="logout">
+            <a href="log-in.php">Log-out</a>
+        </div>
         <div id="navbar" class="container">
             <div id="other" class="item">
                 <a href="pharmacy-inventory.php">
