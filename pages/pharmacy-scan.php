@@ -101,7 +101,6 @@
                         {
                             $sufficient = true;
                             $quantity = $medicine['quantityLeft'] - $pcs;
-                            echo $quantity;
                             break;
                         }
                     }
