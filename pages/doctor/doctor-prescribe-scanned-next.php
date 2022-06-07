@@ -42,7 +42,7 @@
             </div>
             <div class="logout">
                 <div class="logout-wrapper">
-                <a href="log-in.php">Logout</a>
+                <a href="./log-in.php">Logout</a>
             </div>
         </div>
         </div>
