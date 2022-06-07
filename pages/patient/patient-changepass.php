@@ -25,11 +25,6 @@
     mysqli_free_result($result);
 
 
-    $oldPassword = $_POST["oldPassword"];
-    $newPassword = $_POST["newPassword"];
-    $confirmNewPassword = $_POST["confirmNewPassword"];
-
-
     error_reporting(E_ERROR | E_PARSE);
 ?>
 
@@ -74,6 +69,9 @@
         <div class="cp-output">
             <?php
                 if(isset($_POST['submit'])) {
+                    $oldPassword = $_POST["oldPassword"];
+                    $newPassword = $_POST["newPassword"];
+                    $confirmNewPassword = $_POST["confirmNewPassword"];
                     foreach($patientLogin as $info) {
                         if($oldPassword == "" and $newPassword == "" and $confirmNewPassword == "") echo "Please fill out the form";
                         else if($oldPassword == "") echo "Please enter your old password.";
