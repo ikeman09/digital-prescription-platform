@@ -232,6 +232,8 @@ ul {
 
 .main .grid-container .item .qrcode img {
   width: 100%;
+  padding: 3%;
+  background-color: white;
   border-radius: 8px;
 }
 
