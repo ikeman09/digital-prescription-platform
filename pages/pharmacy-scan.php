@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
 
     if(!$conn)
     {
@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2</title>
+        <title>Scan Prescription</title>
         <link rel="stylesheet" href="../css/pharmacy-scan.css">
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
         <script src="../javascript/instascan.min.js"></script>

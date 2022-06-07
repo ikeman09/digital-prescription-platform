@@ -1,27 +1,28 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
 
     if(!$conn)
     {
         echo "Connection error".mysqli_connect_error();
     }
 
-    $pid = $_SESSION['pharmaID'];
+    //$docID = $_SESSION['doctorID'];
+    $docID = 789456;
+    $patientID = $_SESSION['patientID'];
 
-    $sql = "SELECT * FROM history INNER JOIN prescription ON history.prescriptionID = prescription.prescriptionID 
-    WHERE history.pharmacyID = '".$pid."'";
-
-    $result = mysqli_query($conn, $sql);
-
-    $dig = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-    $sql = "SELECT pharmacyName from pharmacy_info WHERE pharmacyID = '".$pid."'";
+    $sql = "SELECT patientFirstName, patientMiddleName, patientLastName FROM patient_info WHERE patient_info.patientID = '".$patientID."'";
 
     $result = mysqli_query($conn, $sql);
 
-    $name = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $patientData = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+    $sql = "SELECT doctorFirstName, doctorMiddleName, doctorLastName FROM doctor_info WHERE doctor_info.uniqueID = '".$docID."'";
+
+    $result = mysqli_query($conn, $sql);
+
+    $doctorData = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    
     //mysqli_free_result($result);
 
     //mysqli_close($conn);
@@ -29,9 +30,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Inventory</title>
+        <title>Prescribe</title>
         <link rel="stylesheet" href="2.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
     </head>
     
     <body>
@@ -39,77 +40,107 @@
             <div id="logo" class="item">
                 <img src="../assets/images/prescription-logo.png" alt="logo">
             </div>
-            <div id="changePass" class="item">
-                <a href="pharmacy-change-password.php">
-                    <input id="button" value="Change Password" type="submit">
-                </a>
+            <div class="logout">
+                <div class="logout-wrapper">
+                <a href="log-in.php">Logout</a>
             </div>
         </div>
-
-        <div id="header">
-            <?php 
-            foreach($name as $pharmaName)
-            {
-                print htmlspecialchars($pharmaName['pharmacyName'])." Inventory";
-            }?>
         </div>
 
         <div id="box" class="container">
-            <?php foreach($dig as $digi) {?>
-                <div class="medicine">
-                    <div id="image">
-                        <img src="../assets/images/meds.png" alt="medicine">
-                    </div>
-                    <div id="text">
-                        <?php
-                            $medID = $digi['medicineID'];
-                            $presID = $digi['prescriptionID'];
-                            $sql2 = "SELECT * FROM prescription_medicine WHERE prescription_medicine.id = '".$medID."'";
-                            $result2 = mysqli_query($conn, $sql2);
-                            $medName = mysqli_fetch_all($result2, MYSQLI_ASSOC);
+            <div id="info" class="item">
+                <?php
+                    foreach($patientData as $patient)
+                    {
+                        print "Patient Name: ".htmlspecialchars($patient['patientFirstName'])." ".htmlspecialchars($patient['patientMiddleName'])." ".htmlspecialchars($patient['patientLastName']);
+                        print "<br>Patient ID: ".htmlspecialchars($patientID);
+                    }
 
-                            $sql3 = "SELECT price FROM inventory WHERE inventory.pharmacyID = '".$pid."'AND inventory.medicineID = ".$medID."";
-                            $result3 = mysqli_query($conn, $sql3);
-                            $price = mysqli_fetch_all($result3, MYSQLI_ASSOC);
+                    foreach($doctorData as $doctor)
+                    {
+                        print "<br><br>Doctor Name: ".htmlspecialchars($doctor['doctorFirstName'])." ".htmlspecialchars($doctor['doctorMiddleName'])." ".htmlspecialchars($doctor['doctorLastName']);
+                    }
+                ?>
+            </div>
+            <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <p>Patient ID: </p>
+                <input class="input" name="patID" type="number" required>
+                <p>Diagnosis:</p>
+                <input class="input" name="diagnosis" type="text" required>
+                <p>Medicine Generic Name: </p>
+                <input class="input" name="genericName" type="text" required>
+                <p>Medicine Brand Name: </p>
+                <input class="input" name="brandName" type="text" required>
+                <p>No. of Tablets/Capsules/Pieces: </p>
+                <input class="input" name="pieces" type="number" required>
+                <p>Date prescribed: </p>
+                <input class="input" name="date" type="date" required>
+                <p>Doctor Notes: </p>
+                <input class="input" name="notes" type="text" required>
 
-                            print "Prescription ID: " . htmlspecialchars($digi['prescriptionID']) . "<br>";
-                            foreach($medName as $name)
-                            {
-                                print "Medicine Prescribed: ".htmlspecialchars($name['genericName_dosage'])." ".htmlspecialchars($name['brandName_dosage'])."<br>";
-                            }
-                            print "Pieces Purchased: " . htmlspecialchars($digi['pieces']) . "<br>";
-                            foreach($price as $amount)
-                            {
-                                print "<div id=quantity> TOTAL: PHP ". $amount['price']*$digi['pieces']."</div>";
-                            }
-                        ?>
-                        <!--<p>pieces left</p>-->
+                
+                <input id="button" type="submit" value="Prescribe">
 
-                    </div>
-                </div>
-            <?php }?>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"]== "POST")
+                {
+                    $patID= $_REQUEST["patID"];
+                    $diagnosis = $_REQUEST["diagnosis"]; 
+                    $genericName = $_REQUEST["genericName"]; 
+                    $brandName = $_REQUEST["brandName"];
+                    $pieces = $_REQUEST["pieces"];
+                    $datePrescribed = $_REQUEST["date"];
+                    $doctorNotes = $_REQUEST["notes"];
+
+                    $sql = "SELECT id FROM prescription_medicine WHERE genericName_dosage = '$genericName' AND  brandName_dosage = '$brandName'";
+
+                    $result = mysqli_query($conn, $sql);
+
+                    $medID = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+                    if(empty($medID))
+                    {
+                        echo "<script>alert(\"Medicine not found!\");</script>";
+                    }
+                    else
+                    {
+                        foreach($medID as $id)
+                        {
+                            $meds = $id['id'];
+                            $sql = "INSERT INTO prescription (medicineID, diagnosis, datePrescribed, doctorNotes, pieces, patientID)
+                            VALUES ('$meds', '$diagnosis', '$datePrescribed', '$doctorNotes', '$pieces', '$patID')";
+                            mysqli_query($conn, $sql);
+
+                            $last_id = $conn->insert_id;
+
+                            $sql = "INSERT INTO prescription_status (prescriptionID, claimedStatus)
+                            VALUES ('$last_id', '0')";
+                            mysqli_query($conn, $sql);
+
+                            echo "<script>alert(\"Medicine prescribed!\");</script>";
+
+                        }
+                    }
+
+
+
+                }
+            ?>
+            </form>
         </div>
 
         <div id="navbar" class="container">
-            <div id="other" class="item">
-                <img src="../assets/images/circle.png" alt="circle">
-                <p>Inventory</p>
-            </div> 
-
-            <div id="other" class="item">
-                <a href="pharmacy-scan.php">
-                    <img src="../assets/images/qrcode-small.png" alt="qr code">
-                    <p>Scan Prescriptions</p>
-                </a>
+            <div id="scan" class="item">
+                <img src="../assets/images/qrcode-small.png" alt="qr code">
+                <p>Scan Patient ID</p>
             </div>
             
-            <div id="history" class="item">
+            <div id="other" class="item">
                 <a href="pharmacy-history.php">
-                    <img src="../assets/images/Circle_(indigo).png" alt="circle">
-                    <p>History</p>
+                    <img src="../assets/images/circle.png" alt="circle">
+                    <p>Profile</p>
                 </a>
             </div>
         </div>
-        <script src="2.js"></script> 
     </body>
 </html>
