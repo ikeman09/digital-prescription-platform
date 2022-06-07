@@ -26,7 +26,6 @@
 
     // close connection
     mysqli_close($conn);
-
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +41,15 @@
     <div class="header">
         <div class="logo">
             <img src="../../assets/images/prescription-logo.png" alt="logo">
+            <form method="post">
+                <a href="../log-in.php" name="logout">Log-out</a>
+
+                <?php 
+                    if(isset($_POST['logout'])) {
+                        session_destroy();
+                    }
+                ?>
+            </form>
         </div>
     </div>
 

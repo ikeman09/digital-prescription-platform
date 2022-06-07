@@ -1,22 +1,45 @@
 @import "./patient-default";
 
+.header {
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        form {
+            background-color: red;
+            padding: 1%;
+            margin-right: 2%;
+            border-radius: 5px;
+
+            a {
+                color: white;
+                font-family: Inter-Bold;
+            }
+        }
+    }
+}
+
 .main {
     padding-bottom: 10%;
+
     .top {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 2%;
-        
+
         img {
             width: 30%;
         }
+
         p {
             font-size: 1.5rem;
             padding-top: 4%;
         }
+
         padding-bottom: 2%;
-    }   
+    }
 
     .column {
         padding-bottom: 3%;
@@ -35,6 +58,7 @@
 
     .changepass {
         text-align: center;
+
         form {
             input {
                 @include big-button-2();
@@ -52,13 +76,14 @@
 @media (max-width: 1024px) {
     .main {
         .top {
-            img { 
+            img {
                 width: 40%;
             }
         }
 
         .changepass {
             padding-top: 5%;
+
             form {
                 input {
                     padding: 2% 12% 2% 12%
@@ -66,16 +91,20 @@
             }
         }
     }
-    
+
 }
 
-@media (max-width: 767px) { //767px kay yawa ning ipad mini
+@media (max-width: 767px) {
+
+    //767px kay yawa ning ipad mini
     .main {
         padding-top: 5%;
+
         .top {
-            img { 
+            img {
                 width: 70%;
             }
+
             p {
                 font-size: 1rem;
             }
@@ -87,6 +116,7 @@
 
         .changepass {
             padding-top: 10%;
+
             form {
                 input {
                     font-size: 1.2rem;
@@ -96,5 +126,3 @@
         }
     }
 }
-
-
