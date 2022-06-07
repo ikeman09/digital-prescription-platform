@@ -7,11 +7,20 @@
         echo "Connection error".mysqli_connect_error();
     }
 
-    $sql = 'SELECT * FROM inventory INNER JOIN prescription_medicine ON inventory.medicineID = prescription_medicine.id';
+    $pid = $_SESSION['pharmaID'];
+
+    $sql = "SELECT * FROM inventory INNER JOIN prescription_medicine ON inventory.medicineID = prescription_medicine.id 
+    WHERE inventory.pharmacyID = '".$pid."'";
 
     $result = mysqli_query($conn, $sql);
 
     $dig = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $sql = "SELECT pharmacyName from pharmacy_info WHERE pharmacyID = '".$pid."'";
+
+    $result = mysqli_query($conn, $sql);
+
+    $name = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     mysqli_free_result($result);
 
@@ -37,12 +46,16 @@
             </div>
         </div>
 
+        <div id="header">
+            <?php 
+            foreach($name as $pharmaName)
+            {
+                print htmlspecialchars($pharmaName['pharmacyName']);
+            }?>
+        </div>
+
         <div id="box" class="container">
-            <?php foreach($dig as $digi) {
-                if($digi['pharmacyID'] == $_SESSION['pharmaID'])
-                {
-                
-                ?>
+            <?php foreach($dig as $digi) {?>
                 <div class="medicine">
                     <div id="image">
                         <img src="../assets/images/meds.png" alt="medicine">
@@ -57,7 +70,7 @@
                         
                     </div>
                 </div>
-            <?php }}?>
+            <?php }?>
         </div>
 
         <div id="navbar" class="container">

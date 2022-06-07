@@ -1,7 +1,25 @@
 @import "./doctor-base";
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: white;
+        font-family: Inter-Bold;
+        background-color: red;
+        padding: 1%;
+        margin-right: 2%;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+}
+
 .content {
     padding: 2% 0;
+
     .top {
         display: flex;
         flex-direction: column;
@@ -76,4 +94,3 @@
         }
     }
 }
-

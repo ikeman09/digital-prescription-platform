@@ -88,7 +88,7 @@ div#navbar.container p{
     margin-bottom: 1%;
 }
 
-div#inventory.item{
+div#scan.item{
     width: 100%;
     color: white;
     font-weight: bold;
@@ -97,7 +97,7 @@ div#inventory.item{
     flex-direction: column;
 }
 
-div#inventory img{
+div#scan img{
     margin: auto;
     padding-top: 3%;
     width: 20%;
@@ -181,6 +181,25 @@ input#button3{
     margin-left: auto;
     margin-right: auto;
     visibility: hidden;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout > .logout-wrapper {
+    background-color: red;
+    padding: 3% 10%;
+    border-radius: 10px;
+}
+
+.logout > .logout-wrapper > a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 700;
 }
 
 @font-face {

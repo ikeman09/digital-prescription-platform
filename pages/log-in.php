@@ -1,21 +1,34 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_medical_prescription');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
 
     if(!$conn)
     {
         echo "Connection error".mysqli_connect_error();
     }
 
-    $sql = 'SELECT * FROM pharmacy_login';
+    $sql = 'SELECT * FROM patient_login UNION SELECT * FROM pharmacy_login';
 
     $result = mysqli_query($conn, $sql);
 
-    $dig = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $pharma = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $sql = 'SELECT * FROM doctor_login';
+
+    $result = mysqli_query($conn, $sql);
+
+    $doctor = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    $sql = 'SELECT * FROM patient_login';
+
+    $result = mysqli_query($conn, $sql);
+
+    $patient = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     mysqli_free_result($result);
 
     mysqli_close($conn);
+
 ?>
 
 <html>
@@ -56,14 +69,39 @@
                         $name= $_REQUEST["usName"]; //username
                         $pass = $_REQUEST["pwd"]; //password
 
-                        foreach($dig as $data)
+                        foreach($pharma as $data)
                         {
                             if($name == $data['email'] && $pass == $data['password'])
                             {
                                 $state = true;
                                 $id= $data['id'];
                                 $_SESSION['pharmaID'] = $id;
-                                header('Location: pharmacy-scan.php');
+                                $_SESSION['patientID'] = $id; // kailangan pa icombine later
+                                header('Location: pharmacy-inventory.php');
+                                break;
+                            }
+                        }
+
+                        foreach($doctor as $data)
+                        {
+                            if($name == $data['email'] && $pass == $data['password'])
+                            {
+                                $state = true;
+                                $id= $data['id'];
+                                $_SESSION['doctorID'] = $id;
+                                header('Location: ../pages/doctor/doctor-prescribe.php');
+                                break;
+                            }
+                        }
+
+                        foreach($patient as $data)
+                        {
+                            if($name == $data['email'] && $pass == $data['password'])
+                            {
+                                $state = true;
+                                $id= $data['id'];
+                                $_SESSION['patientID'] = $id;
+                                header('Location: ../pages/patient/patient-toclaim.php');
                                 break;
                             }
                         }

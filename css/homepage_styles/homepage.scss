@@ -66,6 +66,10 @@
   &__right {
     flex-basis: 50%;
     @include cell-padding;
+
+    img {
+      width: 300px;
+    }
   }
 }
 
@@ -93,6 +97,9 @@
   &__right {
     flex-basis: 50%;
     @include cell-padding;
+    img {
+      width: 300px;
+    }
   }
 }
 
@@ -117,6 +124,13 @@
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100px;
+    }
   }
 
   &__arrow {
@@ -152,6 +166,9 @@
   &__left {
     @include cell-padding;
     flex-basis: 50%;
+    img {
+      width: 300px;
+    }
   }
 
   &__right {
@@ -180,6 +197,10 @@
   &__left {
     @include cell-padding;
     flex-basis: 50%;
+
+    img {
+      width: 300px;
+    }
   }
 
   &__right {
@@ -215,6 +236,20 @@
       margin-right: 20px;
       text-decoration: none;
       color: $color_white-text;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dmpp {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .mainhero {
+    &__wrapper {
+      flex-direction: column-reverse;
     }
   }
 }

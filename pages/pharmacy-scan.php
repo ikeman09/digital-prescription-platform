@@ -169,6 +169,13 @@
                     }
                 }
             ?>
+
+            
+        </div>
+        <div class="logout">
+            <div class="logout-wrapper">
+                <a href="log-in.php">Log-out</a>
+            </div>
         </div>
 
         <div id="navbar" class="container">
@@ -179,7 +186,7 @@
                 </a>
             </div> 
 
-            <div id="inventory" class="item">
+            <div id="scan" class="item">
                 <img src="../assets/images/qrcode-small.png" alt="qr code">
                 <p>Scan Prescriptions</p>
             </div>
