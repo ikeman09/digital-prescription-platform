@@ -6,33 +6,35 @@
         padding: 2% 3%;
     }
 
-    .form-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        form {
-            width: 95%;
+    .cp-output {
+        text-align: center;
+        padding-top: 8%;
+        color: red;
+    }
+
+    form {
+        padding-top: 2%;
+        .form-container {
             padding-bottom: 1%;
             p {
                 font-size: 1.4rem;
-                padding: 1%;
+                padding-bottom: 1%;
             }
-            input[type=password] {
+            input {
                 @include text-input();
-                
+            }
+
+            #confirmation {
+                font-size: 1rem;
+                padding-top: 2%;
             }
         }
-        p {
-            align-self: flex-start;
-            padding-left: 3%;
-        }
-    }
-
-    .changepass {
-        text-align: center;
-        padding-top: 10%;
-        input[type=button] {
-            @include button-color-2;
+        .changepass {
+            text-align: center;
+            padding-top: 7%;
+            input[type=submit] {
+                @include button-color-2();
+            }
         }
     }
 }

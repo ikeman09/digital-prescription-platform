@@ -134,30 +134,26 @@ p, ul {
   padding: 2% 3%;
 }
 
-.content .form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.content .cp-output {
+  text-align: center;
+  padding-top: 8%;
+  color: red;
 }
 
-.content .form-container form {
-  width: 95%;
+.content form {
+  padding-top: 2%;
+}
+
+.content form .form-container {
   padding-bottom: 1%;
 }
 
-.content .form-container form p {
+.content form .form-container p {
   font-size: 1.4rem;
-  padding: 1%;
+  padding-bottom: 1%;
 }
 
-.content .form-container form input[type=password] {
+.content form .form-container input {
   font-size: 1.8rem;
   width: 100%;
   padding-bottom: 1%;
@@ -165,18 +161,17 @@ p, ul {
   border-bottom: 1px solid #C4C4C4;
 }
 
-.content .form-container p {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  padding-left: 3%;
+.content form .form-container #confirmation {
+  font-size: 1rem;
+  padding-top: 2%;
 }
 
-.content .changepass {
+.content form .changepass {
   text-align: center;
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
-.content .changepass input[type=button] {
+.content form .changepass input[type=submit] {
   font-size: 1.4rem;
   -webkit-box-shadow: none;
           box-shadow: none;
