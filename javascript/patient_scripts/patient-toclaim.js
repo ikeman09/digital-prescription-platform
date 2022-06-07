@@ -74,13 +74,3 @@ else {
         createItem(divGrid, medicineName, doctorNotes);
     }
 }
-
-
-
-
-// Go to QR page once clicked
-// Display QR
-//  -Get prescriptionID from the prescription
-//      >If user taps on prescription-N, return prescriptionID of prescription-N
-//  -Convert it into QR
-//  -Display QR
