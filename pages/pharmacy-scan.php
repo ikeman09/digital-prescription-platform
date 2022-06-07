@@ -179,7 +179,7 @@
                 </a>
             </div> 
 
-            <div id="inventory" class="item">
+            <div id="scan" class="item">
                 <img src="../assets/images/qrcode-small.png" alt="qr code">
                 <p>Scan Prescriptions</p>
             </div>

@@ -88,7 +88,7 @@ div#navbar.container p{
     margin-bottom: 1%;
 }
 
-div#inventory.item{
+div#scan.item{
     width: 100%;
     color: white;
     font-weight: bold;
@@ -97,7 +97,7 @@ div#inventory.item{
     flex-direction: column;
 }
 
-div#inventory img{
+div#scan img{
     margin: auto;
     padding-top: 3%;
     width: 20%;
