@@ -35,7 +35,11 @@ else {
     // loops through the entire array and outputs it on the HTML
     for(let i = 0; i < phpArray.length; i++) {
         let medicineName = phpArray[i].genericName_dosage;
+        let diagnosis = phpArray[i].diagnosis;
+        let date = phpArray[i].datePrescribed;
         let doctorNotes = phpArray[i].doctorNotes;
+        let pieces = phpArray[i].pieces;
+        let prescriptionID = phpArray[i].prescriptionID;
 
         medicineName = capitalize(medicineName);
 

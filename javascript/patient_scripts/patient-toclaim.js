@@ -12,13 +12,16 @@ let generateQRCode = (val, i) => {
 };
 
 // Creates the item to be put on the HTML
-let createItem = (container, meds, notes, prescriptionID, qr, i) => {
+let createItem = (container, meds, diagnosis, date, notes, pieces, prescriptionID, qr, i) => {
     const div = document.createElement('div');
     const div2 = document.createElement('div');
     const div3 = document.createElement('div');
     const img = document.createElement('img');
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
+    const p4 = document.createElement('p');
+    const p5 = document.createElement('p');
 
     const div4 = document.createElement('div');
     const img2 = document.createElement('img');
@@ -32,7 +35,10 @@ let createItem = (container, meds, notes, prescriptionID, qr, i) => {
     // img2.setAttribute('src', '../../assets/images/qrcode-small.png')
     
     p1.innerText = meds;
-    p2.innerText = notes;
+    p2.innerText = diagnosis;
+    p3.innerText = date;
+    p4.innerText = `${pieces} pieces`;
+    p5.innerText = notes;
 
     container.append(div);
     div.append(div2);
@@ -40,6 +46,9 @@ let createItem = (container, meds, notes, prescriptionID, qr, i) => {
     div2.append(div3);
     div3.append(p1);
     div3.append(p2);
+    div3.append(p3);
+    div3.append(p4);
+    div3.append(p5);
 
     div.append(div4);
     qr(prescriptionID, i);
@@ -80,11 +89,14 @@ else {
     // loops through the entire array and outputs it on the HTML
     for(let i = 0; i < phpArray.length; i++) {
         let medicineName = phpArray[i].genericName_dosage;
+        let diagnosis = phpArray[i].diagnosis;
+        let date = phpArray[i].datePrescribed;
         let doctorNotes = phpArray[i].doctorNotes;
+        let pieces = phpArray[i].pieces;
         let prescriptionID = phpArray[i].prescriptionID;
 
         medicineName = capitalize(medicineName);
 
-        createItem(divGrid, medicineName, doctorNotes, prescriptionID, generateQRCode, i);
+        createItem(divGrid, medicineName, diagnosis, date, doctorNotes, pieces, prescriptionID, generateQRCode, i);
     }
 }
