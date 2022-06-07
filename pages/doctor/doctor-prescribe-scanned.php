@@ -199,7 +199,7 @@
     <nav class="footer">
         <div class="footer-wrapper">
             <ul>
-                <a href="doctor-prescribe.php">
+                <a href="doctor-scan.php">
                     <li id="prescribe">
                         <img src="../../assets/images/Circle_(indigo).png">
                         <p>Prescribe</p>
