@@ -10,7 +10,7 @@
     }
 
     // Stores the primary key to know who is who (DI PA NI COMLETE)
-    $patientID = 4567;
+    $patientID = $_SESSION['patientID'];
     
     // write query for all data in patient info
     $sql = "SELECT * FROM patient_info WHERE patientID = {$patientID}";
