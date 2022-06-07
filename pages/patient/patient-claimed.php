@@ -15,10 +15,10 @@
 
     // Joins 3 tables - prescription, prescription_medicine and prescription_status
     // Only takes in the columns w/ a prescription status of 'claimed'/1
-    $sql = 'SELECT * FROM prescription INNER JOIN prescription_status
+    $sql = "SELECT * FROM prescription INNER JOIN prescription_status
         ON prescription.prescriptionID = prescription_status.prescriptionID
         INNER JOIN prescription_medicine ON prescription.medicineID = prescription_medicine.id
-        WHERE prescription_status.claimedStatus = 1';
+        WHERE prescription.patientID = {$patientID} AND prescription_status.claimedStatus = 1";
 
     $result = mysqli_query($conn, $sql);
 
