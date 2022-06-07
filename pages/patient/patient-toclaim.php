@@ -2,7 +2,7 @@
 
     // connect to database
     // Might have different username/password
-    $conn = mysqli_connect('localhost', 'shaun', 'test1234', 'prescription_platform');
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'prescription_platform');
 
     // check connection
     if(!$conn) {
