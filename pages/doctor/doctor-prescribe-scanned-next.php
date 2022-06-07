@@ -133,7 +133,7 @@
             </div>
             
             <div id="other" class="item">
-                <a href="pharmacy-history.php">
+                <a href="doctor-profile.php">
                     <img src="../../assets/images/circle.png" alt="circle">
                     <p>Profile</p>
                 </a>
