@@ -169,6 +169,13 @@
                     }
                 }
             ?>
+
+            
+        </div>
+        <div class="logout">
+            <div class="logout-wrapper">
+                <a href="log-in.php">Log-out</a>
+            </div>
         </div>
 
         <div id="navbar" class="container">
