@@ -53,11 +53,10 @@
         width: 95%;
         border-radius: 15px;
 
-    
+
 
         .item {
             display: flex;
-            align-items: center;
             justify-content: space-between;
 
             background-color: #30AADD;
@@ -69,17 +68,23 @@
 
             .item-info {
                 display: flex;
-                justify-content: flex-start;
                 align-items: flex-start;
+                align-self: flex-start;
 
                 p {
                     color: white;
-                    font-size: 1rem;
                 }
 
                 img {
-                    width: 30%;
+                    width: 20%;
                     border-radius: 20px;
+                }
+
+                .item-paragraph {
+                    :first-child {
+                        font-size: 1.4rem;
+                        font-family: Inter-Bold;
+                    }
                 }
             }
 
@@ -88,7 +93,7 @@
                 align-items: center;
                 justify-content: space-around;
                 border-radius: 8px;
-                width: 50%;
+                width: 100%;
                 padding: 2% 2%;
 
                 p {
@@ -97,6 +102,8 @@
 
                 img {
                     width: 100%;
+                    padding: 3%;
+                    background-color: white;
                     border-radius: 8px;
                 }
             }

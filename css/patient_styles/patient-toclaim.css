@@ -181,9 +181,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -198,22 +195,25 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .main .grid-container .item .item-info p {
   color: white;
-  font-size: 1rem;
 }
 
 .main .grid-container .item .item-info img {
-  width: 30%;
+  width: 20%;
   border-radius: 20px;
+}
+
+.main .grid-container .item .item-info .item-paragraph :first-child {
+  font-size: 1.4rem;
+  font-family: Inter-Bold;
 }
 
 .main .grid-container .item .qrcode {
@@ -226,7 +226,7 @@ ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 8px;
-  width: 50%;
+  width: 100%;
   padding: 2% 2%;
 }
 
@@ -236,6 +236,8 @@ ul {
 
 .main .grid-container .item .qrcode img {
   width: 100%;
+  padding: 3%;
+  background-color: white;
   border-radius: 8px;
 }
 
