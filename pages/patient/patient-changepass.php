@@ -24,10 +24,6 @@
     //free result from memory
     mysqli_free_result($result);
 
-    $oldPassword = $_POST["oldPassword"] = "";
-    $newPassword = $_POST["newPassword"] = "";
-    $confirmNewPassword = $_POST["confirmNewPassword"] = "";
-    error_reporting(E_ERROR | E_PARSE);
 ?>
 
 
@@ -52,7 +48,7 @@
             <a href="patient-profile.php" id="back">Back</a>
         </div>
         
-        <form action="?" method="post">
+        <form method="post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <div class="form-container">
                 <p>Old password: </p>
                 <input type="password" name="oldPassword">
