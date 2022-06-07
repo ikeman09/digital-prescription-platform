@@ -1,3 +1,37 @@
+<?php
+    session_start();
+    // connect to database
+    // Might have different username/password
+    $conn = mysqli_connect('localhost', 'RJC', '123456', 'digital_med_prescription_2');
+
+    // check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+
+    // Stores the primary key to know who is who (DI PA NI COMLETE)
+    $doctorID = $_SESSION['doctorID'];
+
+    // write query for all data in patient info
+    $sql = "SELECT * FROM doctor_login WHERE id = {$doctorID}";
+
+    // make query & get result
+    $result = mysqli_query($conn, $sql);
+
+    // fetch the resulting rows as an array
+    $doctor_info = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    //free result from memory
+    mysqli_free_result($result);
+
+
+    $oldPassword = $_POST["oldPassword"];
+    $newPassword = $_POST["newPassword"];
+    $confirmNewPassword = $_POST["confirmNewPassword"];
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,22 +52,47 @@
             <a href="doctor-profile.php" id="back">Back</a>
         </div>
 
-        <div class="form-container">
-            <form>
+        <form action="?" method="post">
+            <div class="form-container">
                 <p>Old password: </p>
-                <input type="password">
+                <input type="password" name="oldPassword">
                 <p>New password: </p>
-                <input type="password">
+                <input type="password" name="newPassword">
                 <p>Confirm new password: </p>
-                <input type="password">
-            </form>
-            <p>*A confirmation email will be sent to your email address</p>
-        </div>
+                <input type="password" name="confirmNewPassword">
+                <p id="confirmation">*A confirmation email will be sent to your email address</p>
+            </div>
 
-        <div class="changepass">
-            <form>
-                <input type="button" value="Change password">
-            </form>
+            <div class="changepass">
+                <input type="submit" name="submit" value="Change password">
+            </div>
+        </form>
+
+        <div class="cp-output">
+            <?php
+                if(isset($_POST['submit'])) {
+                    foreach($doctor_info as $info) {
+                        if($oldPassword == "" and $newPassword == "" and $confirmNewPassword == "") echo "Please fill out the form";
+                        else if($oldPassword == "") echo "Please enter your old password.";
+                        else if($newPassword == "") echo "Please enter your new password.";
+                        else if($confirmNewPassword == "") echo "Please confirm your new password";
+                        else if($oldPassword != $info['password']) echo "Please re-enter your old password.";
+                        else if($oldPassword == $newPassword) echo "Please enter a new password.";
+                        else if($newPassword != $confirmNewPassword) echo "New password and confirm password do not match. (pls edit grammar lmao)";
+                        else {
+                            $updatePassword = "UPDATE `doctor_login` SET `id`='{$info['id']}',`email`='{$info['email']}',`password`='{$newPassword}' WHERE `id`='{$info['id']}'";
+                            
+                            $update = mysqli_query($conn, $updatePassword);
+
+                            echo "<p style=\"color: #808080\"> Password changed successfully! </p>";
+                        }
+                    }
+
+                    $oldPassword = "";
+                    $newPassword = "";
+                    $confirmNewPassword = "";
+                }
+            ?>
         </div>
         
     </div>
