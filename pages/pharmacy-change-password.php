@@ -16,7 +16,7 @@
 
     if($_POST && $_POST["oldPassword"] == $pharmacy_login[0] && $_POST["newPassword"] == $_POST["confirmNewPassword"]) 
     {
-        mysqli_query($conn, "UPDATE pharmacy_login set password='" . $_POST["newPassword"] . "' WHERE id = " . $test_user_id);
+        mysqli_query($conn, "UPDATE pharmacy_login set password='" . $_POST["newPassword"] . "' WHERE id = " . $pid);
         $message = "Password changed sucessfully!";
     } 
     else {
