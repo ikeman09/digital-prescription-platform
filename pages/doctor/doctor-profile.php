@@ -10,6 +10,7 @@
 <body>
     <div class="header">
         <img src="../../assets/images/prescription-logo.png" alt="logo">
+        <a href="../log-in.php" name="logout">Log-out</a>
     </div>
 
     <div class="content">
